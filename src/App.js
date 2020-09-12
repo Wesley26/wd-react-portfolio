@@ -13,7 +13,7 @@ import Home from './webPages/Home.js'
 
 function App() {
   return (
-    <div className="body-color absolute bottom-0 top-0">
+    <div className="bg-body-gray absolute bottom-0 top-0">
       <Router>
 
       <main className="html">
