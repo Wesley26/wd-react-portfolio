@@ -8,15 +8,17 @@ import './index.css';
 import './tailwind.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
+
+import Portfolio from './webPages/Portfolio.js';
 import About from './webPages/About.js';
 import Home from './webPages/Home.js'
 
 function App() {
   return (
-    <div className="bg-body-gray absolute bottom-0 top-0">
+    <div className="bg-body-gray absolute bottom-0 top-0 left-0 right-0">
       <Router>
 
-      <main className="html">
+      <main className="bg-body-gray html">
         <div className="text-center">
           <Header />
 
@@ -26,6 +28,9 @@ function App() {
             </Route>
             <Route exact path="/about">
               <About />   
+            </Route>
+            <Route exact path="/portfolio">
+              <Portfolio />   
             </Route>
           </Switch>
 

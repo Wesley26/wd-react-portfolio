@@ -34,9 +34,16 @@ let aboutText = {
                                 support position located at southern  New Jersey in the online iGaming casino industry. For more 
                                 information, feel free to visit the LinkedIn and GitHub profile links.`
                 };
+/**
+ *  //////////////////////////////////////////////// PORTFOLIO PAGE CONTENT ///////////////////////////////////////////////////////////////////
+ */
+let portfolioText = {
+                titleP: "Portfolio Content",
+                };
 
 module.exports = {
     noImage,
     homeText,
-    aboutText
+    aboutText,
+    portfolioText
 };
