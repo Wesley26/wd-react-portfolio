@@ -39,11 +39,12 @@ let aboutText = {
  */
 let portfolioText = {
                 titleP: "Portfolio Content",
+                subtitle1: "My Personal C++ Shopping Cart application project."
                 };
 
 module.exports = {
     noImage,
     homeText,
     aboutText,
-    portfolioText
+    portfolioText, 
 };

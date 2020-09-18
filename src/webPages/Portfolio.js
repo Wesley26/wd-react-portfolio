@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectOne from './portfolioComponents/projectOne'
 import { portfolioText } from './contentMaster/PageContents.js'
 
 function Portfolio() {
@@ -13,22 +14,22 @@ function Portfolio() {
                         </h3>
 
                         <div className="grid grid-cols-3 grid-rows-3 gap-4 justify-items-auto">
-                            <div className="bg-gray-300 flex justify-center items-center">
-                                1
+                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
+                                <ProjectOne />
                             </div>
-                            <div className="bg-gray-500 flex justify-center items-center">
+                            <div className="bg-gray-500 flex justify-center items-center h-auto w-auto">
                                 2
                             </div>
-                            <div className="bg-gray-300 flex justify-center items-center">
+                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
                                 3
                             </div>
-                            <div className="bg-gray-500 flex justify-center items-center">
+                            <div className="bg-gray-500 flex justify-center items-center h-auto w-auto">
                                 4
                             </div>
-                            <div className="bg-gray-300 flex justify-center items-center">
+                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
                                 5
                             </div>
-                            <div className="bg-gray-500 flex justify-center items-center">
+                            <div className="bg-gray-500 flex justify-center items-center h-auto w-auto">
                                 6
                             </div>
                         </div>
