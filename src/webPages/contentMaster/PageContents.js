@@ -4,6 +4,7 @@
  * Universal Page Content - Page content that can appear on any web page.
  * Home Page Content - Page content that can appear on Home.js
  * About Page Content - Page content that can appear on About.js
+ * Portfolio Page Content - Page content that can appear on Portfolio.js
  */
 
 /**
