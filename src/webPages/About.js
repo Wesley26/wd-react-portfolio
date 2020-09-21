@@ -5,7 +5,7 @@ function About(){
     return (
         <div className="bg-gray-100 m-6">
             <div className="text-left p-6">
-                <div className="flex justify-evenly">
+                <div className="md:flex md:justify-evenly lg:flex lg:justify-evenly xl:flex xl:justify-evenly">
 
                     <div className="left-0 p-3">
                         <img src={require("../images/WesleyP18.jpg")} alt={noImage}></img>
@@ -22,7 +22,7 @@ function About(){
                             </p>
                             <br>
                             </br>
-                            <div className="ml-48 mr-48 grid grid-flow-col">
+                            <div className="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col">
                                 <div>
                                     <a href={`https://github.com/Wesley26`}>
                                         <img src={require("../images/GitHub-Mark-120px-plus.png")} alt={noImage}></img>

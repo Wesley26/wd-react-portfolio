@@ -10,7 +10,7 @@ function NavigationMenu(props) {
     */
 
     return(
-        <div className="absolute pl-20 text-center px-3">
+        <div className="sm:absolute sm:pl-3 sm:text-center sm:pr-3 md:absolute md:pl-12 md:text-center md:pr-3 lg:absolute lg:pl-20 lg:text-center lg:px-3 xl:absolute xl:pl-20 xl:text-center xl:px-3">
             <div>
                 <h3 className="font-semibold">
                     Wesley Dzitzer
