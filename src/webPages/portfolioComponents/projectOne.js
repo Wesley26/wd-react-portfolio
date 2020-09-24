@@ -8,7 +8,7 @@ function ProjectOne() {
      * hoverOver - boolean to determine if the mouse is hovering over portfolio item.
      * setHoverOver - sets the hoverOver constant value
      * 
-     * visibleTransitions - animates the paragraph JSX element
+     * visibleTransitions - animates the paragraph JSX element (the clickable link description)
      */
 
     const [hoverOver, setHoverOver] = useState(false);
@@ -20,24 +20,30 @@ function ProjectOne() {
     });
 
     return(
-        <div
+        <div 
             onMouseEnter={() => setHoverOver(!hoverOver)}
             onMouseLeave={() => setHoverOver(false)}
-            className="m-3 p-3 bg-project-one h-48 w-4/5 flexbox justify-items-auto">
+            className="m-3 p-3 h-64 w-20long flexbox justify-items-auto">
 
-            <img className="ml-16 mr-12 p-1 h-2/5 w-2/5" src={require("./C++Logo.png")} alt={noImage}></img>
+                <div className="bg-project-one bg-left-bottom h-full w-full">
 
-            { 
-                hoverOver && visibleTransitions.map(({item, key, props}) => 
-                item &&
-                <animated.p
-                    key = {key}
-                    style = {props}
-                    className="bg-gray-600 text-gray-200 text-center font-medium w-48">
-                    <a href={`https://github.com/Wesley26/ShoppingCart`}>{portfolioText.subtitle1}</a>
-                </animated.p>
-                )
-            }
+                    <div>
+                        <img className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={require("./C++Logo.png")} alt={noImage}></img>
+
+                        { 
+                            hoverOver && visibleTransitions.map(({item, key, props}) => 
+                            item &&
+                            <animated.p
+                                key = {key}
+                                style = {props}
+                                className="bg-gray-600 text-gray-200 text-center font-medium w-11long ml-16">
+                                <a href={`https://github.com/Wesley26/ShoppingCart`}>{portfolioText.subtitle1}</a>
+                            </animated.p>
+                            )
+                        }
+                    </div>
+
+                </div>
 
         </div>
     );
