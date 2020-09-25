@@ -28,8 +28,16 @@ function ProjectOne() {
                 <div className="bg-project-one bg-left-bottom h-full w-full">
 
                     <div>
-                        <img className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={require("./C++Logo.png")} alt={noImage}></img>
-
+                        {
+                            hoverOver && visibleTransitions.map(({item, key, props}) => 
+                            item &&
+                            <animated.img
+                                key = {key}
+                                style = {props}
+                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={require("./C++Logo.png")} alt={noImage}>
+                            </animated.img>
+                            )
+                        }
                         { 
                             hoverOver && visibleTransitions.map(({item, key, props}) => 
                             item &&
