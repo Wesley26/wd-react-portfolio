@@ -11,7 +11,9 @@ import Header from './components/Header';
 
 import Portfolio from './webPages/Portfolio.js';
 import About from './webPages/About.js';
-import Home from './webPages/Home.js'
+import Home from './webPages/Home.js';
+import Resume from './webPages/Resume.js';
+import ContactMe from './webPages/ContactMe.js';
 
 function App() {
   return (
@@ -31,6 +33,12 @@ function App() {
             </Route>
             <Route exact path="/portfolio">
               <Portfolio />   
+            </Route>
+            <Route exact path="/resume">
+              <Resume />
+            </Route>
+            <Route exact path="/contactMe">
+              <ContactMe />
             </Route>
           </Switch>
 

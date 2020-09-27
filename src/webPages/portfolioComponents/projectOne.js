@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { noImage, portfolioText } from '../contentMaster/PageContents.js'
+import { noImage, portfolioTextPersonal1 } from '../contentMaster/PageContents.js'
 import {useTransition, animated} from 'react-spring'
 
 function ProjectOne() {
@@ -45,7 +45,7 @@ function ProjectOne() {
                                 key = {key}
                                 style = {props}
                                 className="bg-gray-600 text-gray-200 text-center font-medium w-11long ml-16">
-                                <a href={`https://github.com/Wesley26/ShoppingCart`}>{portfolioText.subtitle1}</a>
+                                <a href={`https://github.com/Wesley26/ShoppingCart`}>{portfolioTextPersonal1.subtitleP2_1}</a>
                             </animated.p>
                             )
                         }

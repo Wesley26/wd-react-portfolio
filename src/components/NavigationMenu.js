@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom'
 function NavigationMenu(props) {
 
     /*
-    To edit which Navigation Menu pages you have, add a new list item containing
-    the Link you want to name it. Next, go to App.js, and add a new Route with
-    the JSX page content that you want to feature inside.
+    * To edit which Navigation Menu pages you have, add a new list item containing
+    * the Link you want to name it. Next, go to App.js, and add a new Route with
+    * the JSX page content that you want to feature inside.
     */
 
     return(
@@ -38,6 +38,18 @@ function NavigationMenu(props) {
                     to="/portfolio" 
                     className="text-blue-500 py-3 block border-black border-b"
                     onClick={props.closeMenu}>Portfolio Gallery</Link>
+                </li>
+                <li>
+                <Link 
+                    to="/resume" 
+                    className="text-blue-500 py-3 block border-black border-b"
+                    onClick={props.closeMenu}>Resume</Link>
+                </li>
+                <li>
+                <Link 
+                    to="/contactMe" 
+                    className="text-blue-500 py-3 block border-black border-b"
+                    onClick={props.closeMenu}>Contact Me</Link>
                 </li>
             </ul>
         </div>
