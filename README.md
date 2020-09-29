@@ -3,6 +3,8 @@ Implements [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs
 
 # Information
 
+- Note: This website is currently WIP and has not reached Minimal Viable Product (MVP) state yet; the files listed below are not up to date.
+
 ## Important Instructions
 
 - When installing for the first time, run `npm install`. 

@@ -23,7 +23,7 @@ function ProjectTwo() {
         <div 
             onMouseEnter={() => setHoverOver(!hoverOver)}
             onMouseLeave={() => setHoverOver(false)}
-            className="m-3 p-3 h-64 w-20long flexbox justify-items-auto">
+            className="m-3 p-3 h-64 w-20long flexbox">
 
                 <div className="bg-project-two bg-bottom-left h-full w-full">
 

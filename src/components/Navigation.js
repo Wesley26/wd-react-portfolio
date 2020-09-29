@@ -33,7 +33,7 @@ function Navigation() {
 
     return (
         <nav>
-            <span className="p-3 absolute right-0 float-right text-l">
+            <span className="p-3 absolute right-0 float-right text-l rounded-full hover:bg-gray-300 hover:opacity-75">
                 <FontAwesomeIcon 
                     icon={faBars}
 

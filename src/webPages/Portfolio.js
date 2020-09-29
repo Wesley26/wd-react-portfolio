@@ -23,7 +23,7 @@ function Portfolio() {
                             {portfolioTextWeb1.titleP1}
                         </h3>
 
-                        <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-auto">
+                        <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
                             <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
                                 <WebsiteOne />
                             </div>
@@ -33,7 +33,7 @@ function Portfolio() {
                             {portfolioTextPersonal1.titleP2}
                         </h3>
 
-                        <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-auto">
+                        <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
                             <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
                                 <ProjectOne />
                             </div>

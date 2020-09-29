@@ -23,14 +23,22 @@ function About(){
                             <br>
                             </br>
                             <div className="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col">
-                                <div>
+                                <div className="p-3 flex rounded-full justify-center hover:bg-gray-300">
                                     <a href={`https://github.com/Wesley26`}>
-                                        <img src={require("../images/GitHub-Mark-120px-plus.png")} alt={noImage}></img>
+                                        <img 
+                                            src={require("../images/GitHub-Mark-120px-plus.png")} 
+                                            alt={noImage}
+                                            className="focus:outline-none">
+                                        </img>
                                     </a>
                                 </div>
-                                <div>
+                                <div className="p-3 flex rounded-full justify-center hover:bg-gray-300">
                                     <a href={`https://www.linkedin.com/in/wesleydzitzer/`}>
-                                        <img src={require("../images/linkedin-logo.png")} alt={noImage}></img>
+                                        <img 
+                                            src={require("../images/linkedin-logo.png")} 
+                                            alt={noImage}
+                                            className="focus:outline-none">
+                                        </img>
                                     </a>
                                 </div>
                             </div>

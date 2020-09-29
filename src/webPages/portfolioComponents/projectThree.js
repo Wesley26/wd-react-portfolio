@@ -23,7 +23,7 @@ function ProjectThree() {
         <div 
             onMouseEnter={() => setHoverOver(!hoverOver)}
             onMouseLeave={() => setHoverOver(false)}
-            className="m-3 p-3 h-64 w-20long flexbox justify-items-auto">
+            className="m-3 p-3 h-64 w-20long flexbox">
 
                 <div className="bg-project-three bg-left h-full w-full">
 

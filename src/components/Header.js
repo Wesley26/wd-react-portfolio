@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 
 function Header() {
     return (
-        <header className="bg-header-blue border-b p-3 flex justify-between">
+        <header className="bg-header-blue border-b mb-3 p-6 flex justify-between">
             <h1>
                 <span className="font-bold float-left">
                     Wesley Dzitzer
