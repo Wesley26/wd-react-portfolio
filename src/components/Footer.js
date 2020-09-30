@@ -1,11 +1,13 @@
 import React from 'react'
-
-let pageCreated = document.lastModified;
+import { copyrightText, currentYear, theTime } from './navMaster/NavContents.js'
 
 function Footer() {
     return (
         <footer className="bg-footer-blue text-center text-xs p-3 fixed bottom-0 w-full">
-            &copy; Copyright {pageCreated}
+            &copy; {copyrightText} {currentYear}
+            <br>
+            </br>
+            {theTime}
         </footer>
     );
 };

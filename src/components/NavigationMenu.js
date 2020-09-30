@@ -1,5 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { navTitleField,
+        navItemOne, 
+        navItemTwo, 
+        navItemThree, 
+        navItemFour, 
+        navItemFive } from './navMaster/NavContents.js'
+
+
+/**
+ * @param props is passed from Web Component Navigation in Navigation.js (line 64). Controls closing nav menu arrow function.
+ */
 
 function NavigationMenu(props) {
 
@@ -13,9 +24,9 @@ function NavigationMenu(props) {
         <div className="sm:absolute sm:pl-3 sm:text-center sm:pr-3 md:absolute md:pl-12 md:text-center md:pr-3 lg:absolute lg:pl-20 lg:text-center lg:px-3 xl:absolute xl:pl-20 xl:text-center xl:px-3">
             <div>
                 <h3 className="font-semibold">
-                    Wesley Dzitzer
+                    {navTitleField.lineOne}
                 <br/>
-                    Click outside of this main menu to close.
+                    {navTitleField.lineTwo}
                 </h3>
             </div>
                 <br/>
@@ -24,32 +35,32 @@ function NavigationMenu(props) {
                 <li>
                 <Link 
                     to="/" 
-                    className="text-blue-500 py-3 block border-black border-b border-t"
-                    onClick={props.closeMenu}>Home</Link>
+                    className="text-blue-500 py-3 block border-black border-b border-t rounded-full hover:bg-gray-400"
+                    onClick={props.closeMenu}>{navItemOne}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/about" 
-                    className="text-blue-500 py-3 block border-black border-b"
-                    onClick={props.closeMenu}>About Me</Link>
+                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    onClick={props.closeMenu}>{navItemTwo}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/portfolio" 
-                    className="text-blue-500 py-3 block border-black border-b"
-                    onClick={props.closeMenu}>Portfolio Gallery</Link>
+                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    onClick={props.closeMenu}>{navItemThree}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/resume" 
-                    className="text-blue-500 py-3 block border-black border-b"
-                    onClick={props.closeMenu}>Resume</Link>
+                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    onClick={props.closeMenu}>{navItemFour}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/contactMe" 
-                    className="text-blue-500 py-3 block border-black border-b"
-                    onClick={props.closeMenu}>Contact Me</Link>
+                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    onClick={props.closeMenu}>{navItemFive}</Link>
                 </li>
             </ul>
         </div>

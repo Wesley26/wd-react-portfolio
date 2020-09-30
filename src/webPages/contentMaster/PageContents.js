@@ -1,5 +1,5 @@
 /**
- * Content on every individual webpage is imported from this JS file.
+ * Content on every informational webpage is imported from this JS file.
  * NOTE: Each object can carry up to five values, otherwise the string content may not appear on the app. Do NOT
  * assign a variable to an array of objects.
  * 
@@ -15,13 +15,13 @@
  * //////////////////////////////////////////////// UNIVERSAL PAGE CONTENT //////////////////////////////////////////////////////////////
  */
 
-let noImage = "Image has failed to load."; //Image failed to load message.
+const noImage = "Image has failed to load."; //Image failed to load message.
 
 /**
  * //////////////////////////////////////////////// HOME PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
 
-let homeText = {
+const homeText = {
                 subHeaderH: `Hello there! Welcome to my corner of online web development.`,
                 mainParagraphH: `Feel free to take a look around. You are currently viewing my home page. The about page contains more
                 information about me and my developer background.`
@@ -30,7 +30,7 @@ let homeText = {
 /**
  * //////////////////////////////////////////////// ABOUT PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
-let aboutText = {
+const aboutText = {
                 titleA: "Hello World! Meet Wesley Dzitzer",
                 mainParagraphA: `Wesley Dzitzer is a bachelor of science Managment Information Systems graduate from Rowan University
                                 since May of 2017. At Rowan University, Wesley studied object oriented programming, web design, and
@@ -44,12 +44,12 @@ let aboutText = {
  *  //////////////////////////////////////////////// PORTFOLIO PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
 
-let portfolioTextWeb1 = {
+const portfolioTextWeb1 = {
                 titleP1: "Website Portfolio",
                 subtitleP1_1: "Website overhaul for Smile Design Dental Office.",
                 };
 
-let portfolioTextPersonal1 = {
+const portfolioTextPersonal1 = {
                 titleP2: "Personal Projects",
                 subtitleP2_1: "My Personal C++ Shopping Cart application project.",
                 subtitleP2_2: "My Personal Javascript application collection project.",
