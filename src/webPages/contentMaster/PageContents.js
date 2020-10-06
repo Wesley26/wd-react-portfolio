@@ -24,7 +24,9 @@ const noImage = "Image has failed to load."; //Image failed to load message.
 const homeText = {
                 subHeaderH: `Hello there! Welcome to my corner of online web development.`,
                 mainParagraphH: `Feel free to take a look around. You are currently viewing my home page. The about page contains more
-                information about me and my developer background.`
+                information about me and my developer background.`,
+                captionH: `The photo above was taken in person outside the South-East doorway of the Philladelphia Art Museum overlooking 
+                            the famed Rocky Steps in Philladelphia, P.A.`
                 }; 
 
 /**
@@ -42,6 +44,9 @@ const aboutText = {
                 };
 /**
  *  //////////////////////////////////////////////// PORTFOLIO PAGE CONTENT ///////////////////////////////////////////////////////////////////
+ *
+ *  Note: portfolioTextWeb"n" object variables are for website portfolio items.
+ *        portfolioTextPersonal"n" object variables are for personal project portfolio items.
  */
 
 const portfolioTextWeb1 = {

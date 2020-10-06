@@ -9,12 +9,12 @@ import WebsiteOne from './portfolioComponents/websiteOne.js'
 function Portfolio() {
 
     /**
-     * Note: On JSX div elements line 22 and 32, for every 3 portfolio items added, the CSS class
+     * Note: On JSX div elements line 26 and 36, for every 3 portfolio items added, the CSS class
      * 'lg:grid-rows-1' must increase by one row.
      */
 
     return (
-        <div className="bg-gray-100 m-6">
+        <div className="bg-gray-100 m-6 overflow-auto">
             <div className="text-left p-6">
                 <div className="flex justify-evenly">
 
