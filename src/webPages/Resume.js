@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
 function Resume() {
     
     return(
-        <div>
-            Resume (React-PDF) Placeholder text.
+        <div className="bg-gray-100 m-6">
+            Resume Placeholder
         </div>
     )
 };
