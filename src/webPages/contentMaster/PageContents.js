@@ -65,6 +65,11 @@ const portfolioTextPersonal1 = {
  *  //////////////////////////////////////////////// RESUME PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
 
+const resumeText = {
+                infoR: `To view the full PDF file of my resume, select the download link at the bottom of this page.`,
+                downloadR: "Download My Resume",
+                };
+
 /**
  *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
@@ -75,4 +80,5 @@ module.exports = {
     aboutText,
     portfolioTextWeb1,
     portfolioTextPersonal1,
+    resumeText,
 };

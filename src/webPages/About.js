@@ -8,7 +8,7 @@ function About(){
                 <div className="md:flex md:justify-evenly lg:flex lg:justify-evenly xl:flex xl:justify-evenly">
 
                     <div className="left-0 p-3">
-                        <img src={require("../images/WesleyP18.jpg")} alt={noImage}></img>
+                        <img src={require("../images/WesleyP18_V2.jpg")} alt={noImage}></img>
                     </div>
                     <div className="right-0 p-3">
                         <h1 className="font-bold text-3x1 text-center">
