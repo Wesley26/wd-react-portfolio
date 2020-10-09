@@ -21,6 +21,9 @@ const noImage = "Image has failed to load."; //Image failed to load message.
  * //////////////////////////////////////////////// HOME PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
 
+const philly_P = require("../../images/PhillyPA_Portrait.jpg"); //Philly homepage photo for mobile view
+const philly_L = require("../../images/PhillyPA_Landscape.jpg"); //Philly homepage photo for tablet/desktop view
+
 const homeText = {
                 subHeaderH: `Hello there! Welcome to my corner of online web development.`,
                 mainParagraphH: `Feel free to take a look around. You are currently viewing my home page. The about page contains more
@@ -32,6 +35,11 @@ const homeText = {
 /**
  * //////////////////////////////////////////////// ABOUT PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
+
+const wd_About_Photo = require("../../images/WesleyP18_V2.jpg"); //Main photo used on about page.
+const githubLogo = require("../../images/GitHub-Mark-120px-plus.png"); //GitHub Logo
+const linkedInLogo = require("../../images/linkedin-logo.png"); //LinkedIn Logo
+
 const aboutText = {
                 titleA: "Hello World! Meet Wesley Dzitzer",
                 mainParagraphA: `Wesley Dzitzer is a bachelor of science Managment Information Systems graduate from Rowan University
@@ -47,12 +55,17 @@ const aboutText = {
  *
  *  Note: portfolioTextWeb"n" object variables are for website portfolio items.
  *        portfolioTextPersonal"n" object variables are for personal project portfolio items.
+ * 
+ *  Each portfolioText object cooresponds with an icon image const and a repo link const.
  */
 
 const portfolioTextWeb1 = {
                 titleP1: "Website Portfolio",
                 subtitleP1_1: "Website overhaul for Smile Design Dental Office.",
                 };
+    
+    //Logo used is jSLogo
+    const w1Link = `https://github.com/Wesley26/GA-Final-Project-Smile-Design`; //Link cooresponds with portfolioTextWeb1.subtitleP1_1
 
 const portfolioTextPersonal1 = {
                 titleP2: "Personal Projects",
@@ -61,24 +74,56 @@ const portfolioTextPersonal1 = {
                 subtitleP2_3: "Installation 01 Halo fan game prototype discord bot.",
                 };
 
+    const cPlusPlusLogo = require("../../images/portfolio_Icon_Images/C++Logo.png"); //C++ Portfolio Item Icon
+    const cPlusPlusLink = `https://github.com/Wesley26/ShoppingCart`; //Link cooresponds with portfolioTextPersonal1.subtitleP2_1
+
+    const jSLogo = require("../../images/portfolio_Icon_Images/JavascriptLogo.png"); //JS Portfolio Item Icon
+    const p2Link = `https://github.com/Wesley26/Wesley26.github.io/blob/master/projectTwo.html`; //Link cooresponds with portfolioTextPersonal1.subtitleP2_2
+
+    const i01MonitorLogo = require("../../images/portfolio_Icon_Images/greeni01Monitor.png"); //i01 Related Portfolio Item Icon
+    const i01BotLink = `https://github.com/Wesley26/i01-bot-prototype-framework`; //Link cooresponds with portfolioTextPersonal1.subtitleP2_3
+
+
 /**
- *  //////////////////////////////////////////////// RESUME PAGE CONTENT ///////////////////////////////////////////////////////////////////
+ *  //////////////////////////////////////////////// RESUME PAGE CONTENT ///////////////////////////////////////////////////////////////////////
  */
 
 const resumeText = {
                 infoR: `To view the full PDF file of my resume, select the download link at the bottom of this page.`,
                 downloadR: "Download My Resume",
                 };
+    
+    const resumeImg = require("../../images/resumeImage/WD_Resume_IMG.png"); //Image version of Resume
+    const resumeLink = `https://drive.google.com/file/d/1nUh4co4WAaiHz_6Ja6AQJLeiw4Qcy7MA/view?usp=sharing`; //Google Drive resume PDF download link
 
 /**
- *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ///////////////////////////////////////////////////////////////////
+ *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ////////////////////////////////////////////////////////////////////
  */
 
 module.exports = {
     noImage,
+    //////////////////
+    philly_P,
+    philly_L,
     homeText,
+    //////////////////
+    wd_About_Photo,
+    githubLogo,
+    linkedInLogo,
     aboutText,
+    //////////////////
     portfolioTextWeb1,
+        w1Link,
     portfolioTextPersonal1,
+        cPlusPlusLogo,
+        cPlusPlusLink,
+        jSLogo,
+        p2Link,
+        i01MonitorLogo,
+        i01BotLink,
+    //////////////////
     resumeText,
+        resumeImg,
+        resumeLink,
+    //////////////////
 };

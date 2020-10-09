@@ -1,5 +1,8 @@
 import React from 'react'
-import { noImage, homeText } from './contentMaster/PageContents.js'
+import { noImage,
+        philly_P,
+        philly_L,
+        homeText } from './contentMaster/PageContents.js'
 
 function Home(){
     return (
@@ -20,12 +23,12 @@ function Home(){
                 <div>
                     <figure>
                         <img 
-                            src={require("../images/PhillyPA_Portrait.jpg")} 
+                            src={philly_P} 
                             alt={noImage}
                             className="lg:hidden focus:outline-none">
                         </img>
                         <img 
-                            src={require("../images/PhillyPA_Landscape.jpg")} 
+                            src={philly_L} 
                             alt={noImage}
                             className="invisible h-1 w-1 lg:visible lg:h-full lg:w-full focus:outline-none">
                         </img>

@@ -1,5 +1,9 @@
 import React from 'react'
-import { noImage, aboutText } from './contentMaster/PageContents.js'
+import { noImage, 
+        wd_About_Photo, 
+        githubLogo,
+        linkedInLogo, 
+        aboutText } from './contentMaster/PageContents.js';
 
 function About(){
     return (
@@ -8,7 +12,7 @@ function About(){
                 <div className="md:flex md:justify-evenly lg:flex lg:justify-evenly xl:flex xl:justify-evenly">
 
                     <div className="left-0 p-3">
-                        <img src={require("../images/WesleyP18_V2.jpg")} alt={noImage}></img>
+                        <img src={wd_About_Photo} alt={noImage}></img>
                     </div>
                     <div className="right-0 p-3">
                         <h1 className="font-bold text-3x1 text-center">
@@ -26,7 +30,7 @@ function About(){
                                 <div className="p-3 flex rounded-full justify-center hover:bg-gray-300">
                                     <a href={`https://github.com/Wesley26`}>
                                         <img 
-                                            src={require("../images/GitHub-Mark-120px-plus.png")} 
+                                            src={githubLogo} 
                                             alt={noImage}
                                             className="focus:outline-none">
                                         </img>
@@ -35,7 +39,7 @@ function About(){
                                 <div className="p-3 flex rounded-full justify-center hover:bg-gray-300">
                                     <a href={`https://www.linkedin.com/in/wesleydzitzer/`}>
                                         <img 
-                                            src={require("../images/linkedin-logo.png")} 
+                                            src={linkedInLogo} 
                                             alt={noImage}
                                             className="focus:outline-none">
                                         </img>

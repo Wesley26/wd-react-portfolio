@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import { noImage, portfolioTextWeb1 } from '../contentMaster/PageContents.js'
+import { noImage,
+        jSLogo,
+        w1Link,
+        portfolioTextWeb1 } from '../contentMaster/PageContents.js'
 import {useTransition, animated} from 'react-spring'
 
 function WebsiteOne() {
@@ -34,7 +37,7 @@ function WebsiteOne() {
                             <animated.img
                                 key = {key}
                                 style = {props}
-                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={require("./JavascriptLogo.png")} alt={noImage}>
+                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={jSLogo} alt={noImage}>
                             </animated.img>
                             )
                         }
@@ -45,7 +48,7 @@ function WebsiteOne() {
                                 key = {key}
                                 style = {props}
                                 className="bg-gray-600 text-gray-200 text-center font-medium w-11long ml-16">
-                                <a href={`https://github.com/Wesley26/GA-Final-Project-Smile-Design`}>{portfolioTextWeb1.subtitleP1_1}</a>
+                                <a href={w1Link}>{portfolioTextWeb1.subtitleP1_1}</a>
                             </animated.p>
                             )
                         }

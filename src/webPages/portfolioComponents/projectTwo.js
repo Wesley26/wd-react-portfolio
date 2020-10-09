@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import { noImage, portfolioTextPersonal1 } from '../contentMaster/PageContents.js'
+import { noImage,
+        jSLogo,
+        p2Link,
+        portfolioTextPersonal1 } from '../contentMaster/PageContents.js'
 import {useTransition, animated} from 'react-spring'
 
 function ProjectTwo() {
@@ -34,7 +37,7 @@ function ProjectTwo() {
                             <animated.img
                                 key = {key}
                                 style = {props}
-                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={require("./JavascriptLogo.png")} alt={noImage}>
+                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={jSLogo} alt={noImage}>
                             </animated.img>
                             )
                         }
@@ -45,7 +48,7 @@ function ProjectTwo() {
                                 key = {key}
                                 style = {props}
                                 className="bg-gray-600 text-gray-200 text-center font-medium w-11long ml-16">
-                                <a href={`https://github.com/Wesley26/Wesley26.github.io/blob/master/projectTwo.html`}>{portfolioTextPersonal1.subtitleP2_2}</a>
+                                <a href={p2Link}>{portfolioTextPersonal1.subtitleP2_2}</a>
                             </animated.p>
                             )
                         }

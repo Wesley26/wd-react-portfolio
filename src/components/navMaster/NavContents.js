@@ -79,11 +79,13 @@ let theTime = clockTime(currentTime);
 
 module.exports = {
     navTitleField,
+    //////////////////////////
     navItemOne,
     navItemTwo,
     navItemThree,
     navItemFour,
     navItemFive,
+    //////////////////////////
     copyrightText,
     currentYear,
     theTime,

@@ -1,5 +1,8 @@
 import React, { useState } from 'react'
-import { noImage, portfolioTextPersonal1 } from '../contentMaster/PageContents.js'
+import { noImage,
+        i01MonitorLogo,
+        i01BotLink,
+        portfolioTextPersonal1 } from '../contentMaster/PageContents.js'
 import {useTransition, animated} from 'react-spring'
 
 function ProjectThree() {
@@ -34,7 +37,7 @@ function ProjectThree() {
                             <animated.img
                                 key = {key}
                                 style = {props}
-                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={require("./greeni01Monitor.png")} alt={noImage}>
+                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={i01MonitorLogo} alt={noImage}>
                             </animated.img>
                             )
                         }
@@ -45,7 +48,7 @@ function ProjectThree() {
                                 key = {key}
                                 style = {props}
                                 className="bg-gray-600 text-gray-200 text-center font-medium w-11long ml-16">
-                                <a href={`https://github.com/Wesley26/i01-bot-prototype-framework`}>{portfolioTextPersonal1.subtitleP2_3}</a>
+                                <a href={i01BotLink}>{portfolioTextPersonal1.subtitleP2_3}</a>
                             </animated.p>
                             )
                         }
