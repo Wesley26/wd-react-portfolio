@@ -16,6 +16,7 @@
  */
 
 const noImage = "Image has failed to load."; //Image failed to load message.
+const websiteMasterLogo = require("../../images/logoImage/WD_Logo.png"); //Master website logo image.
 
 /**
  * //////////////////////////////////////////////// HOME PAGE CONTENT ///////////////////////////////////////////////////////////////////
@@ -102,6 +103,7 @@ const resumeText = {
 
 module.exports = {
     noImage,
+    websiteMasterLogo,
     //////////////////
     philly_P,
     philly_L,

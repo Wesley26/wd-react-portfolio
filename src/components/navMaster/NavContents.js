@@ -11,6 +11,7 @@
  * //////////////////////////////////////////////// UNIVERSAL TITLE PAGE CONTENT ///////////////////////////////////////////////////////////
  */
 
+const websiteMasterLogo_Alt = require("../../images/logoImage/WD_Logo_Alt.png"); //Nav bar alternate version of logo page.
 const navTitleField = {
     lineOne: "Wesley Dzitzer",
     lineTwo: "Click outside of this main menu to close.",
@@ -78,6 +79,7 @@ let clockTime = currentTime => {
 let theTime = clockTime(currentTime);
 
 module.exports = {
+    websiteMasterLogo_Alt,
     navTitleField,
     //////////////////////////
     navItemOne,
