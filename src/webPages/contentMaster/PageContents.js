@@ -101,6 +101,18 @@ const resumeText = {
  *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ////////////////////////////////////////////////////////////////////
  */
 
+    /**
+     *  SERVICE_ID, TEMPLATE_ID, USER_ID, and ACCESS_TOKEN are the API key data for EmailJS account access.
+     *  ACCESS_TOKEN is on reserve, SERVICE_ID, TEMPLATE_ID, and USER_ID are implemented on ../src/webPages/ContactMe.js
+     *  NOTE: ../../clientSecret/secrets.json is to NOT be tracked on git for security purposes and must be manually provided.
+     */
+    const {
+        SERVICE_ID,
+        TEMPLATE_ID,
+        USER_ID,
+        ACCESS_TOKEN
+    } = require("../../clientSecret/secrets.json");
+
 module.exports = {
     noImage,
     websiteMasterLogo,
@@ -128,4 +140,8 @@ module.exports = {
         resumeImg,
         resumeLink,
     //////////////////
+        SERVICE_ID,
+        TEMPLATE_ID,
+        USER_ID,
+        ACCESS_TOKEN,
 };

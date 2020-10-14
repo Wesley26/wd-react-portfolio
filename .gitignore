@@ -8,6 +8,9 @@
 # tailwind dependencies
 src/tailwind.css
 
+# client secrets
+src/clientSecret
+
 # testing
 /coverage
 
