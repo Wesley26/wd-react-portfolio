@@ -12,12 +12,13 @@
     "autoprefixer": "^9.8.6",
     "emailjs-com": "^2.6.3",
     "postcss-cli": "^7.1.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-google-recaptcha": "^2.1.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
-    "tailwindcss": "^1.9.1"
+    "tailwindcss": "^1.9.2"
   },
   "scripts": {
     "build:css": "postcss src/index.css -o src/tailwind.css",

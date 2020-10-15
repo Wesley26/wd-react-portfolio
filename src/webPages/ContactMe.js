@@ -1,9 +1,11 @@
 import React from 'react'
 import emailjs from 'emailjs-com';
+import ReCAPTCHA from "react-google-recaptcha";
 import {
         SERVICE_ID,
         TEMPLATE_ID,
-        USER_ID } from './contentMaster/PageContents.js';
+        USER_ID,
+        RECAPTCHA_CLIENT_SIDE_KEY, } from './contentMaster/PageContents.js';
 
 function ContactMe() {
 
@@ -18,24 +20,35 @@ function ContactMe() {
         });
         e.target.reset(); //reset the form
     };
+
+    let onChange = () => {
+        console.log("Ok");
+    };
   
     return (
-      <form onSubmit={sendEmail}>
-        <input type="hidden" name="contact_number" />
+      <div>
+      
+        <form onSubmit={sendEmail}>
+        <ReCAPTCHA
+          sitekey={RECAPTCHA_CLIENT_SIDE_KEY}
+          onChange={onChange}/>
+          
+          <input type="hidden" name="contact_number" />
 
-        <label>Subject</label>
-        <input type="text" name ="subject"/>
+          <label>Subject</label>
+          <input type="text" name ="subject"/>
 
-        <label>Name</label>
-        <input type="text" name="name" />
+          <label>Name</label>
+          <input type="text" name="name" />
 
-        <label>Email</label>
-        <input type="email" name="email" />
+          <label>Email</label>
+          <input type="email" name="email" />
 
-        <label>Message</label>
-        <textarea name="message" />
+          <label>Message</label>
+          <textarea name="message" />
         <input type="submit" value="Send" />
-      </form>
+        </form>
+    </div>
     );
 };
 

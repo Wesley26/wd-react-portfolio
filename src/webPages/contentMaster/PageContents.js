@@ -104,13 +104,18 @@ const resumeText = {
     /**
      *  SERVICE_ID, TEMPLATE_ID, USER_ID, and ACCESS_TOKEN are the API key data for EmailJS account access.
      *  ACCESS_TOKEN is on reserve, SERVICE_ID, TEMPLATE_ID, and USER_ID are implemented on ../src/webPages/ContactMe.js
+     *  RECAPTCHA_CLIENT_SIDE_KEY is reCaptcha v2 client side key
+     *  
      *  NOTE: ../../clientSecret/secrets.json is to NOT be tracked on git for security purposes and must be manually provided.
      */
     const {
+        ///////////EmailJS////////
         SERVICE_ID,
         TEMPLATE_ID,
         USER_ID,
-        ACCESS_TOKEN
+        ACCESS_TOKEN,
+        ////////reCaptcha_v2///////
+        RECAPTCHA_CLIENT_SIDE_KEY,
     } = require("../../clientSecret/secrets.json");
 
 module.exports = {
@@ -144,4 +149,6 @@ module.exports = {
         TEMPLATE_ID,
         USER_ID,
         ACCESS_TOKEN,
+        //////////////
+        RECAPTCHA_CLIENT_SIDE_KEY,
 };
