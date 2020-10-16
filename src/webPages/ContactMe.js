@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
 import {
@@ -9,7 +9,13 @@ import {
 
 function ContactMe() {
 
-    function sendEmail(e) {
+    /**
+     * botCheck, setBotCheck hooks as a string to match the TailwindCSS className
+     * to control making the form input JSX element be "visible" or "hidden"
+     */
+    const [botCheck, setBotCheck] = useState("hidden");
+
+    let sendEmail = e => {
       e.preventDefault();
   
       emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -21,17 +27,22 @@ function ContactMe() {
         e.target.reset(); //reset the form
     };
 
-    let onChange = () => {
-        console.log("Ok");
+    let onPass = () => {
+        //Passed reCaptcha - legitamate pass
+        //add tailwindCSS class 'visible'
+        setBotCheck("visible");
+    };
+
+    let onFail = () => {
+        //Failed reCaptcha - time-out or any fail reason
+        //add tailwindCSS class 'hidden'
+        setBotCheck("hidden");
     };
   
     return (
       <div>
       
         <form onSubmit={sendEmail}>
-        <ReCAPTCHA
-          sitekey={RECAPTCHA_CLIENT_SIDE_KEY}
-          onChange={onChange}/>
           
           <input type="hidden" name="contact_number" />
 
@@ -46,7 +57,21 @@ function ContactMe() {
 
           <label>Message</label>
           <textarea name="message" />
-        <input type="submit" value="Send" />
+
+          <ReCAPTCHA
+              sitekey={RECAPTCHA_CLIENT_SIDE_KEY}
+              onChange={onPass}
+              onExpired={onFail}
+              onErrored={onFail} 
+          />
+
+        <div>
+            <input
+                className={botCheck}
+                type="submit" 
+                value="Send"
+            />
+        </div>
         </form>
     </div>
     );
