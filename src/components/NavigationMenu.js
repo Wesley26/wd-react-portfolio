@@ -35,31 +35,31 @@ function NavigationMenu(props) {
                 <li>
                 <Link 
                     to="/" 
-                    className="text-blue-500 py-3 block border-black border-b border-t rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b border-t rounded-full hover:bg-gray-400"
                     onClick={props.closeMenu}>{navItemOne}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/about" 
-                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
                     onClick={props.closeMenu}>{navItemTwo}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/portfolio" 
-                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
                     onClick={props.closeMenu}>{navItemThree}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/resume" 
-                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
                     onClick={props.closeMenu}>{navItemFour}</Link>
                 </li>
                 <li>
                 <Link 
                     to="/contactMe" 
-                    className="text-blue-500 py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
                     onClick={props.closeMenu}>{navItemFive}</Link>
                 </li>
             </ul>

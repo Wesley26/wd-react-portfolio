@@ -1,5 +1,8 @@
 import React from 'react'
-import { portfolioTextWeb1, portfolioTextPersonal1 } from './contentMaster/PageContents.js'
+import { portfolioRepoForThisSite,
+        portfolioRepoForThisSiteLink,
+        portfolioTextWeb1, 
+        portfolioTextPersonal1 } from './contentMaster/PageContents.js'
 
 import ProjectOne from './portfolioComponents/projectOne.js'
 import ProjectTwo from './portfolioComponents/projectTwo.js'
@@ -19,6 +22,18 @@ function Portfolio() {
                 <div className="flex justify-evenly">
 
                     <div className="left-0 p-3">
+                        
+                        <div className="p-6 text-center">
+                            <p>
+                            {portfolioRepoForThisSite.pRFTS1_1}
+                                <a 
+                                    href={portfolioRepoForThisSiteLink}
+                                    className="p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-300">
+                                    {portfolioRepoForThisSite.pRFTS1_2}
+                                </a>
+                            </p>
+                        </div>
+                        
                         <h3 className="p-3 text-center font-bold">
                             {portfolioTextWeb1.titleP1}
                         </h3>

@@ -58,7 +58,20 @@ const aboutText = {
  *        portfolioTextPersonal"n" object variables are for personal project portfolio items.
  * 
  *  Each portfolioText object cooresponds with an icon image const and a repo link const.
+ * 
+ *  portfolioRepoForThisSite, and portfolioRepoForThisSiteLink each coorespond with the link and text at the top of
+ *  the portfolio list webpage. The link takes you to the git repo of this website.
  */
+
+const portfolioRepoForThisSite = {
+                                pRFTS1_1: `To view the entire design for this website, visit`,
+                                pRFTS1_2: `this following repo.`
+                                };
+const portfolioRepoForThisSiteLink = `https://github.com/Wesley26/wd-react-portfolio`;
+
+    /**
+     *  Individual portfolio items are declared and listed after this point.
+     */
 
 const portfolioTextWeb1 = {
                 titleP1: "Website Portfolio",
@@ -131,6 +144,8 @@ module.exports = {
     linkedInLogo,
     aboutText,
     //////////////////
+    portfolioRepoForThisSite,
+    portfolioRepoForThisSiteLink,
     portfolioTextWeb1,
         w1Link,
     portfolioTextPersonal1,

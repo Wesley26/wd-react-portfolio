@@ -36,7 +36,7 @@ function Navigation() {
             <span className="p-3 absolute right-0 float-right text-l rounded-full hover:bg-gray-300 hover:opacity-75">
                 <FontAwesomeIcon 
                     icon={faBars}
-
+                    className="text-3xl"
                     onClick={() => setShowMenu(!showMenu)}
                 />
             </span>
@@ -58,7 +58,7 @@ function Navigation() {
                     <animated.div 
                         key={key} 
                         style={props}
-                        className="p-3 border-solid border-gray-500 bg-gray-300 fixed top-0 left-0 w-2/5 h-full z-50 shadow"
+                        className="p-3 border-solid border-gray-500 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow"
                     >
                         <NavigationMenu 
                             closeMenu={() => setShowMenu(false)}
