@@ -17,37 +17,49 @@ function ContactMe() {
     const [botCheck, setBotCheck] = useState("hidden p-3 rounded-full hover:bg-gray-600");
 
     /**
-     * Each input field value is assigned a variable.
-     * emailSubject - Email Subject input line
-     * emailName - Email User's Name input line
-     * emailEmail - Email User's Email input line
-     * emailMessage - Email User's message of the email
+     * subject, setSubject - Hook recieves user input for input name: subject
+     * name, setName - Hook recieves user input for input name: name
+     * email, setEmail - Hook recieves user input for input name: email
+     * message, setMessage - Hook recieves user input for input name: message
      */
-    //let emailSubject, emailName, emailEmail, emailMessage;
+    const [subject, setSubject] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [message, setMessage] = useState('');
+    let allowSend = true; //boolean to check if user input is filled out legitamately
+
+    const submitValue = () => {
+        const formDetails = {
+            "The Subject" : subject,
+            "The Name" : name,
+            "The Email" : email,
+            "The Message" : message,
+        };
+        console.dir(formDetails);
+        
+        if (!subject ||
+            !name ||
+            !email ||
+            !message ) {
+            alert("ALL fields must be filled in to proceed.");
+            allowSend = false;
+            return; //check to ensure all fields are filled in, if not - do not send email
+        };
+    };
 
     let sendEmail = e => {
-      e.preventDefault();
+        e.preventDefault();
 
-      //console.log(emailSubject, emailName, emailEmail, emailMessage);
-
-      /**
-      if (!emailSubject ||
-        !emailName ||
-        !emailEmail ||
-        !emailMessage) {
-        alert("ALL fields must be filled in to proceed.");
-        return; //check to ensure all fields are filled in
-      };
-      */
-      
-      emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-        //sends the form
-        .then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-        e.target.reset(); //reset the form
+        if (allowSend === true) {
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
+            //sends the form
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+            e.target.reset(); //reset the form
+        };
     };
 
     let onPass = () => {
@@ -80,6 +92,7 @@ function ContactMe() {
                         type="text" 
                         name ="subject"
                         size="25"
+                        onChange={e => setSubject(e.target.value)}
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
@@ -88,6 +101,7 @@ function ContactMe() {
                         type="text" 
                         name="name"
                         size="25"
+                        onChange={e => setName(e.target.value)}
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
@@ -96,14 +110,16 @@ function ContactMe() {
                         type="email" 
                         name="email"
                         size="25"
+                        onChange={e => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
                     <label className="p-3 flex justify-center">Message</label>
-                    <textarea 
+                    <textarea
                         name="message"
                         rows="8"
                         cols="25"
+                        onChange={e => setMessage(e.target.value)}
                     />
                 </div>
 
@@ -119,6 +135,7 @@ function ContactMe() {
                 <div className="p-3 flex justify-center">
                     <input
                         className={botCheck}
+                        onClick={submitValue}
                         type="submit" 
                         value="Send"
                     />
