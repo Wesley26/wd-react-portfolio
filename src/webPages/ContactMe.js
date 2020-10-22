@@ -11,36 +11,47 @@ function ContactMe() {
 
     /**
      * botCheck, setBotCheck hooks as a string to match the TailwindCSS className
-     * to control making the form input JSX element be "visible" or "hidden"
+     * to control making the type send form input JSX element be "visible" or "hidden"
      * plus padding and button display style TailwindCSS classes
      */
     const [botCheck, setBotCheck] = useState("hidden p-3 rounded-full hover:bg-gray-600");
 
     /**
-     * subject, setSubject - Hook recieves user input for input name: subject
-     * name, setName - Hook recieves user input for input name: name
-     * email, setEmail - Hook recieves user input for input name: email
-     * message, setMessage - Hook recieves user input for input name: message
+     * formInput, setFormInput - Hook recieves user input for input name: 
+     * subject, name, email, and message
      */
-    const [subject, setSubject] = useState('');
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
+    const [formInput, setFormInput] = useState({subject: '', name: '', email: '', message: ''});
     let allowSend = true; //boolean to check if user input is filled out legitamately
+
+    const handleInputChange = e => setFormInput({
+        /**
+        *  On event (e), looks for the current target input JSX element on entire form,
+        *  pushes the current target value into formInput as it spreads over entire 
+        *  JSX input current target element
+        */
+        ...formInput, 
+        [e.currentTarget.name]: e.currentTarget.value
+    });
 
     const submitValue = () => {
         const formDetails = {
-            "The Subject" : subject,
-            "The Name" : name,
-            "The Email" : email,
-            "The Message" : message,
+            "The Subject" : formInput.subject,
+            "The Name" : formInput.name,
+            "The Email" : formInput.email,
+            "The Message" : formInput.message,
         };
-        console.dir(formDetails);
+        console.dir(formDetails); //Uncomment to see the object contents
+
+        if (!formDetails) {
+            alert("An error has occurred with the form, please email me for further assistance.");
+            allowSend = false;
+            return; //check to ensure the formDetails object exists, if not - do not send email
+        };
         
-        if (!subject ||
-            !name ||
-            !email ||
-            !message ) {
+        if (!formInput.subject ||
+            !formInput.name ||
+            !formInput.email ||
+            !formInput.message ) {
             alert("ALL fields must be filled in to proceed.");
             allowSend = false;
             return; //check to ensure all fields are filled in, if not - do not send email
@@ -51,13 +62,14 @@ function ContactMe() {
         e.preventDefault();
 
         if (allowSend === true) {
-            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
-            //sends the form
+            emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID) //sends the form
+
             .then((result) => {
                 console.log(result.text);
             }, (error) => {
                 console.log(error.text);
             });
+
             e.target.reset(); //reset the form
         };
     };
@@ -92,7 +104,7 @@ function ContactMe() {
                         type="text" 
                         name ="subject"
                         size="25"
-                        onChange={e => setSubject(e.target.value)}
+                        onChange={handleInputChange}
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
@@ -101,7 +113,7 @@ function ContactMe() {
                         type="text" 
                         name="name"
                         size="25"
-                        onChange={e => setName(e.target.value)}
+                        onChange={handleInputChange}
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
@@ -110,7 +122,7 @@ function ContactMe() {
                         type="email" 
                         name="email"
                         size="25"
-                        onChange={e => setEmail(e.target.value)}
+                        onChange={handleInputChange}
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
@@ -119,7 +131,7 @@ function ContactMe() {
                         name="message"
                         rows="8"
                         cols="25"
-                        onChange={e => setMessage(e.target.value)}
+                        onChange={handleInputChange}
                     />
                 </div>
 
