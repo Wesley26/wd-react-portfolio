@@ -114,12 +114,48 @@ const resumeText = {
  *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ////////////////////////////////////////////////////////////////////
  */
 
+const contactMeHeaderText = "Contact Me"; //Contact Me page header text
+
     /**
+     * contactMeInstructions A-H are strings that contain
+     * each part of the full instructions for the user
+     * to complete the contact me page form
+     */
+    const contactMeInstructionsA = `Thank you for your interest in reaching out to me! Complete
+                                    this form to send an email and I will return a reply.
+                                    For my reply to be sent back to you, be sure to include all the
+                                    following details on this form:`;
+    const contactMeInstructionsB = " - This is the subject line of the email I receive.";
+    const contactMeInstructionsC = " - You enter your full name on this line. You may use your first, last, or full name.";
+    const contactMeInstructionsD = " - You enter the email you prefer me to reply back to on this line (example: your_email_here@mail.com).";
+    const contactMeInstructionsE = " - You enter in your message to me in this text box.";
+    const contactMeInstructionsF = "Be sure to fill out ";
+    const contactMeInstructionsG = "ALL";
+    const contactMeInstructionsH = ` provided fields below. If the ReCaptcha test
+                                    does not appear, refresh this page. You need to verify that you are human
+                                    to use this email form. A send button will only appear on the bottom of 
+                                    this form if you complete verification.`;
+
+    /**
+     * commonFormText - contains the most common used word 
+     * groups in both the instructions of the form and
+     * the form itself
+     */
+    const commonContactFormText = {
+                            subjectText: "Subject",
+                            nameText: "Name",
+                            emailText: "Email",
+                            messageText: "Message"
+                        };
+
+    /**
+     *  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      *  SERVICE_ID, TEMPLATE_ID, USER_ID, and ACCESS_TOKEN are the API key data for EmailJS account access.
      *  ACCESS_TOKEN is on reserve, SERVICE_ID, TEMPLATE_ID, and USER_ID are implemented on ../src/webPages/ContactMe.js
      *  RECAPTCHA_CLIENT_SIDE_KEY is reCaptcha v2 client side key
      *  
      *  NOTE: ../../clientSecret/secrets.json is to NOT be tracked on git for security purposes and must be manually provided.
+     *  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      */
     const {
         ///////////EmailJS////////
@@ -160,6 +196,19 @@ module.exports = {
         resumeImg,
         resumeLink,
     //////////////////
+    contactMeHeaderText,
+        ////////////////////////
+        contactMeInstructionsA,
+        contactMeInstructionsB,
+        contactMeInstructionsC,
+        contactMeInstructionsD,
+        contactMeInstructionsE,
+        contactMeInstructionsF,
+        contactMeInstructionsG,
+        contactMeInstructionsH,
+        ////////////////////////
+        commonContactFormText,
+        //////////////
         SERVICE_ID,
         TEMPLATE_ID,
         USER_ID,
