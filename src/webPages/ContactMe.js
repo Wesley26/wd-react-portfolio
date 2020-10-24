@@ -89,7 +89,7 @@ function ContactMe() {
   
     return (
       <div className="bg-gray-100 m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto">
-          <div className="md:ml-32 md:mr-32 lg:ml-64 lg:mr-64 p-3 grid grid-cols-1 items-center text-center">
+          <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
               <h3 className="p-3 font-bold bg-transparent">
                 {contactMeHeaderText}
               </h3>
@@ -97,16 +97,16 @@ function ContactMe() {
                 {contactMeInstructionsA}
               </p>
               <div className="pl-3 pr-3 pt-3 md:flex md:justify-start text-left">
-                    <p className="p-3">
+                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
                         <b>{commonContactFormText.subjectText}</b>{contactMeInstructionsB}
                     </p>
-                    <p className="p-3">
+                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
                         <b>{commonContactFormText.nameText}</b>{contactMeInstructionsC}
                     </p>
-                    <p className="p-3">
+                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
                         <b>{commonContactFormText.emailText}</b>{contactMeInstructionsD}
                     </p>
-                    <p className="p-3">
+                    <p className="p-3 border-b-4 md:border-b-0 border-gray-400">
                         <b>{commonContactFormText.messageText}</b>{contactMeInstructionsE}
                     </p>
               </div>
@@ -116,10 +116,10 @@ function ContactMe() {
           </div>
           <br>
           </br>
-          <div className="bg-header-blue p-6 flex justify-center place-items-center">
+          <div className="bg-body-gray p-6 flex justify-center place-items-center">
       
             <form
-                className="bg-gray-300 grid grid-cols-1 items-center"
+                className="bg-gray-300 md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center"
                 onSubmit={sendEmail}
             >
                 <div className="pl-64 pr-64 pt-3 pb-3">
@@ -178,7 +178,7 @@ function ContactMe() {
                         className={botCheck}
                         onClick={submitValue}
                         type="submit" 
-                        value="Send"
+                        value="Send Information"
                     />
                     </p>
                 </div>
