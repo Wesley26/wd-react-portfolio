@@ -47,7 +47,7 @@ function ProjectThree() {
                             <animated.p
                                 key = {key}
                                 style = {props}
-                                className="bg-gray-600 text-gray-200 text-center font-medium w-11long ml-16">
+                                className="bg-gray-600 hover:bg-gray-700 active:bg-gray-800 text-gray-200 text-center font-medium w-11long ml-16">
                                 <a href={i01BotLink}>{portfolioTextPersonal1.subtitleP2_3}</a>
                             </animated.p>
                             )

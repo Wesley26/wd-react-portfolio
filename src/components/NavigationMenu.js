@@ -21,48 +21,57 @@ function NavigationMenu(props) {
     */
 
     return(
-        <div className="sm:absolute sm:pl-3 sm:text-center sm:pr-3 md:absolute md:pl-12 md:text-center md:pr-3 lg:absolute lg:pl-20 lg:text-center lg:px-3 xl:absolute xl:pl-20 xl:text-center xl:px-3">
-            <div>
+        <div className="sm:absolute sm:text-center sm:px-3 md:px-6 lg:px-12 justify-evenly items-center">
+            <div className="border-solid border-b-4 border-black md:text-2x1 lg:text-3xl">
                 <h3 className="font-semibold">
                     {navTitleField.lineOne}
-                <br/>
-                    {navTitleField.lineTwo}
+                </h3>
+                <h3 className="pb-3 font-semibold">
+                    {navTitleField.lineThree}
                 </h3>
             </div>
-                <br/>
-                <br/>
-            <ul>
-                <li>
+            <ul className="pt-6 pb-12">
+                <li className="pb-2">
                 <Link 
                     to="/" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b border-t rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
                     onClick={props.closeMenu}>{navItemOne}</Link>
                 </li>
-                <li>
+                <li className="pt-3">
                 <Link 
                     to="/about" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
                     onClick={props.closeMenu}>{navItemTwo}</Link>
                 </li>
-                <li>
+                <li className="pt-3">
                 <Link 
                     to="/portfolio" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
                     onClick={props.closeMenu}>{navItemThree}</Link>
                 </li>
-                <li>
+                <li className="pt-3">
                 <Link 
                     to="/resume" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
                     onClick={props.closeMenu}>{navItemFour}</Link>
                 </li>
-                <li>
+                <li className="pt-3">
                 <Link 
                     to="/contactMe" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-b rounded-full hover:bg-gray-400"
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
                     onClick={props.closeMenu}>{navItemFive}</Link>
                 </li>
             </ul>
+            <br>
+            </br>
+            <div>
+                <h3 
+                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    onClick={props.closeMenu}
+                    >
+                    {navTitleField.lineTwo}
+                </h3>
+            </div>
         </div>
     );
 };

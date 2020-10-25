@@ -5,10 +5,10 @@ import { noImage } from '../webPages/contentMaster/PageContents.js'
 
 function Header() {
     return (
-        <header className="bg-header-blue border-b mb-3 p-3 flex justify-between">
+        <header className="bg-header-blue mb-3 pl-3 pr-3 pt-1 pb-6 flex justify-between shadow-lg">
             <h1>
-                <span className="font-bold float-left">
-                    <div className="grid grid-cols-1 items-center">
+                <span className="pt-3 pl-3 font-bold float-left">
+                    <div className="grid grid-cols-1 items-center md:text-2xl">
                         <img
                             src={websiteMasterLogo_Alt}
                             alt={noImage}

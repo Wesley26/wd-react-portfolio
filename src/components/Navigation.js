@@ -19,12 +19,6 @@ function Navigation() {
    
     const [showMenu, setShowMenu] = useState(false);
 
-    const maskTransitions = useTransition(showMenu, null, {
-        from: { position: 'absolute', opacity: 0 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0 },
-    });
-
     const menuTransitions = useTransition(showMenu, null, {
         from: { opacity: 0, transform: 'translateX(-100%)' },
         enter: { opacity: 1, transform: 'translateX(0%)' },
@@ -33,32 +27,22 @@ function Navigation() {
 
     return (
         <nav>
-            <span className="mr-3 p-3 absolute right-0 float-right text-l rounded-full hover:bg-gray-300 hover:opacity-75">
-                <FontAwesomeIcon 
-                    icon={faBars}
-                    className="text-3xl"
-                    onClick={() => setShowMenu(!showMenu)}
-                />
+            <span className="mr-3 pt-3 pb-3 pr-3 pl-12 absolute right-0 float-right text-l">
+                <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black">
+                    <FontAwesomeIcon 
+                        icon={faBars}
+                        className="mr-2 p-2 text-5xl hover:bg-gray-300 hover:opacity-75 active:bg-gray-500"
+                        onClick={() => setShowMenu(!showMenu)}
+                    />
+                </div>
             </span>
-            {
-                maskTransitions.map(({ item, key, props }) =>
-                    item && 
-                    <animated.div 
-                        key={key} 
-                        style={props}
-                        className="bg-black bg-opacity-50 fixed top-0 left-0 w-full h-full z-50"
-                        onClick={() => setShowMenu(false)}
-                    >
-                    </animated.div>
-                ) 
-            }
             {
                 menuTransitions.map(({ item, key, props }) =>
                     item && 
                     <animated.div 
                         key={key} 
                         style={props}
-                        className="p-3 border-solid border-gray-500 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow"
+                        className="p-3 border-solid border-4 border-gray-500 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg"
                     >
                         <NavigationMenu 
                             closeMenu={() => setShowMenu(false)}

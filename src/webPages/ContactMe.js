@@ -13,7 +13,7 @@ function ContactMe() {
      * botCheck, setBotCheck hooks as a string to match the TailwindCSS className
      * to control making the type send form input JSX element be "visible" or "hidden"
      */
-    const [botCheck, setBotCheck] = useState("hidden bg-transparent");
+    const [botCheck, setBotCheck] = useState("hidden bg-transparent font-semibold");
 
     /**
      * formInput, setFormInput - Hook recieves user input for input name: 
@@ -78,17 +78,17 @@ function ContactMe() {
     const onPass = () => {
         //Passed reCaptcha - legitamate pass
         //add tailwindCSS class 'visible'
-        setBotCheck("visible bg-transparent");
+        setBotCheck("visible bg-transparent font-semibold");
     };
 
     const onFail = () => {
         //Failed reCaptcha - time-out or any fail reason
         //add tailwindCSS class 'hidden'
-        setBotCheck("hidden bg-transparent");
+        setBotCheck("hidden bg-transparent font-semibold");
     };
   
     return (
-      <div className="bg-gray-100 m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto">
+      <div className="bg-gray-100 m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
           <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
               <h3 className="p-3 font-bold bg-transparent">
                 {contactMeHeaderText}
@@ -116,10 +116,10 @@ function ContactMe() {
           </div>
           <br>
           </br>
-          <div className="bg-body-gray p-6 flex justify-center place-items-center">
+          <div className="bg-body-gray p-6 flex justify-center place-items-center shadow-lg">
       
             <form
-                className="bg-gray-300 md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center"
+                className="bg-gray-300 md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center shadow-md"
                 onSubmit={sendEmail}
             >
                 <div className="pl-64 pr-64 pt-3 pb-3">
@@ -129,6 +129,7 @@ function ContactMe() {
                 <div className="p-3 grid justify-items-center">
                     <label className="p-3"><b>{commonContactFormText.subjectText}</b></label>
                     <input
+                        className="shadow-lg"
                         type="text" 
                         name ="subject"
                         size="25"
@@ -137,7 +138,8 @@ function ContactMe() {
                 </div>
                 <div className="p-3 grid justify-items-center">
                     <label className="p-3"><b>{commonContactFormText.nameText}</b></label>
-                    <input 
+                    <input
+                        className="shadow-lg"
                         type="text" 
                         name="name"
                         size="25"
@@ -146,7 +148,8 @@ function ContactMe() {
                 </div>
                 <div className="p-3 grid justify-items-center">
                     <label className="p-3"><b>{commonContactFormText.emailText}</b></label>
-                    <input 
+                    <input
+                        className="shadow-lg"
                         type="email" 
                         name="email"
                         size="25"
@@ -156,6 +159,7 @@ function ContactMe() {
                 <div className="p-3 grid justify-items-center">
                     <label className="p-3 flex justify-center"><b>{commonContactFormText.messageText}</b></label>
                     <textarea
+                        className="shadow-lg"
                         name="message"
                         rows="8"
                         cols="25"
@@ -165,6 +169,7 @@ function ContactMe() {
 
                 <div className="p-3 flex justify-center">
                     <ReCAPTCHA
+                        className="shadow-lg"
                         sitekey={RECAPTCHA_CLIENT_SIDE_KEY}
                         onChange={onPass}
                         onExpired={onFail}
@@ -173,14 +178,14 @@ function ContactMe() {
                 </div>
 
                 <div className="p-3 flex justify-center">
-                    <p className="p-3 rounded-full hover:bg-gray-500">
-                    <input
-                        className={botCheck}
-                        onClick={submitValue}
-                        type="submit" 
-                        value="Send Information"
-                    />
-                    </p>
+                    <div className="p-3 border-solid border-l-4 border-r-4 border-gray-400 rounded-full hover:bg-gray-500 active:bg-gray-600">
+                        <input
+                            className={botCheck}
+                            onClick={submitValue}
+                            type="submit" 
+                            value="Send Information"
+                        />
+                    </div>
                 </div>
             </form>
 

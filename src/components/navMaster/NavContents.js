@@ -14,7 +14,8 @@
 const websiteMasterLogo_Alt = require("../../images/logoImage/WD_Logo_Alt.png"); //Nav bar alternate version of logo page.
 const navTitleField = {
     lineOne: "Wesley Dzitzer",
-    lineTwo: "Click outside of this main menu to close.",
+    lineTwo: "Close Menu",
+    lineThree: "Let's Build A New Era Together",
 };
 
 /**

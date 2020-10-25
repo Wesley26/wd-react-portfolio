@@ -20,7 +20,7 @@ function App() {
     <div className="bg-body-gray absolute bottom-0 top-0 left-0 right-0">
       <Router>
 
-      <main className="bg-body-gray html border-solid border-gray-400 border-4 pb-16">
+      <main className="bg-body-gray html border-solid border-gray-400 border-t-4 border-l-4 border-r-4 pb-16">
         <div className="text-center">
           <Header />
 

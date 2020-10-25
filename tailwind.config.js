@@ -29,6 +29,7 @@ module.exports = {
     },
   },
   variants: {
+    backgroundColor: ['responsive', 'hover', 'focus', 'active'],
     gridAutoFlow: ['responsive', 'hover', 'focus'],
   },
   plugins: [],

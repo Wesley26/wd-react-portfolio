@@ -17,7 +17,7 @@ function Portfolio() {
      */
 
     return (
-        <div className="bg-gray-100 m-6 overflow-auto">
+        <div className="bg-gray-100 m-6 overflow-auto shadow-xl">
             <div className="text-left p-6">
                 <div className="flex justify-evenly">
 
@@ -28,7 +28,7 @@ function Portfolio() {
                             {portfolioRepoForThisSite.pRFTS1_1}
                                 <a 
                                     href={portfolioRepoForThisSiteLink}
-                                    className="p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-300">
+                                    className="p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-300 active:bg-gray-500">
                                     {portfolioRepoForThisSite.pRFTS1_2}
                                 </a>
                             </p>
@@ -39,7 +39,7 @@ function Portfolio() {
                         </h3>
 
                         <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
-                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
+                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <WebsiteOne />
                             </div>
                         </div>
@@ -49,13 +49,13 @@ function Portfolio() {
                         </h3>
 
                         <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
-                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
+                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <ProjectOne />
                             </div>
-                            <div className="bg-gray-500 flex justify-center items-center h-auto w-auto">
+                            <div className="bg-gray-500 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <ProjectTwo />
                             </div>
-                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto">
+                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <ProjectThree />
                             </div>
                         </div>
