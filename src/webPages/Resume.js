@@ -7,7 +7,7 @@ import { noImage,
 function Resume() {
     
     return(
-        <div className="bg-gray-100 m-6 shadow-xl">
+        <div className="bg-gray-100 m-6 sm:pb-6 shadow-xl">
 
             <div className="px-5 py-3">
                 <div className="p-3 text-center">
@@ -27,6 +27,13 @@ function Resume() {
                         {resumeText.downloadR}
                     </a>
                 </div>
+            </div>
+
+            <div className="sm:visible sm:mb-32long md:hidden">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
             </div>
 
         </div>

@@ -119,10 +119,10 @@ function ContactMe() {
           <div className="bg-body-gray p-6 flex justify-center place-items-center shadow-lg">
       
             <form
-                className="bg-gray-300 md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center shadow-md"
+                className="bg-gray-300 md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
                 onSubmit={sendEmail}
             >
-                <div className="pl-64 pr-64 pt-3 pb-3">
+                <div className="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3">
                     <br>
                     </br>
                 </div>

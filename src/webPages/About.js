@@ -51,6 +51,13 @@ function About(){
 
                 </div>
             </div>
+            <div className="pb-6">
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+                <br></br>
+            </div>
         </div>
     );
 };
