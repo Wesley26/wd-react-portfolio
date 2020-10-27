@@ -21,7 +21,7 @@ function NavigationMenu(props) {
     */
 
     return(
-        <div className="sm:absolute sm:text-center sm:px-3 md:px-6 lg:px-12 justify-evenly items-center">
+        <div className="font-title sm:absolute sm:text-center sm:px-3 md:px-6 lg:px-12 justify-evenly items-center">
             <div className="border-solid border-b-4 border-black md:text-2x1 lg:text-3xl">
                 <h3 className="font-semibold">
                     {navTitleField.lineOne}
@@ -30,7 +30,7 @@ function NavigationMenu(props) {
                     {navTitleField.lineThree}
                 </h3>
             </div>
-            <ul className="pt-6 pb-12">
+            <ul className="font-title pt-6 pb-12">
                 <li className="pb-2">
                 <Link 
                     to="/" 

@@ -17,13 +17,13 @@ function Portfolio() {
      */
 
     return (
-        <div className="bg-gray-100 m-6 overflow-auto shadow-xl">
+        <div className="font-body bg-gray-100 m-6 overflow-auto shadow-xl">
             <div className="text-left p-6">
                 <div className="flex justify-evenly">
 
                     <div className="left-0 p-3">
                         
-                        <div className="p-6 text-center">
+                        <div className="text-lg p-6 text-center">
                             <p>
                             {portfolioRepoForThisSite.pRFTS1_1}
                                 <a 
@@ -34,7 +34,7 @@ function Portfolio() {
                             </p>
                         </div>
                         
-                        <h3 className="p-3 text-center font-bold">
+                        <h3 className="font-title text-xl p-3 text-center font-bold">
                             {portfolioTextWeb1.titleP1}
                         </h3>
 
@@ -44,7 +44,7 @@ function Portfolio() {
                             </div>
                         </div>
 
-                        <h3 className="p-3 text-center font-bold">
+                        <h3 className="font-title text-xl p-3 text-center font-bold">
                             {portfolioTextPersonal1.titleP2}
                         </h3>
 

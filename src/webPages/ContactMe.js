@@ -88,29 +88,29 @@ function ContactMe() {
     };
   
     return (
-      <div className="bg-gray-100 m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
+      <div className="font-body bg-gray-100 m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
           <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
-              <h3 className="p-3 font-bold bg-transparent">
+              <h3 className="font-title text-xl p-3 font-bold bg-transparent">
                 {contactMeHeaderText}
               </h3>
-              <p className="p-3">
+              <p className="text-lg p-3">
                 {contactMeInstructionsA}
               </p>
-              <div className="pl-3 pr-3 pt-3 md:flex md:justify-start text-left">
+              <div className="text-lg pl-3 pr-3 pt-3 md:flex md:justify-start text-left">
                     <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
-                        <b>{commonContactFormText.subjectText}</b>{contactMeInstructionsB}
+                        <b className="font-title text-xl">{commonContactFormText.subjectText}</b>{contactMeInstructionsB}
                     </p>
                     <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
-                        <b>{commonContactFormText.nameText}</b>{contactMeInstructionsC}
+                        <b className="font-title text-xl">{commonContactFormText.nameText}</b>{contactMeInstructionsC}
                     </p>
                     <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
-                        <b>{commonContactFormText.emailText}</b>{contactMeInstructionsD}
+                        <b className="font-title text-xl">{commonContactFormText.emailText}</b>{contactMeInstructionsD}
                     </p>
                     <p className="p-3 border-b-4 md:border-b-0 border-gray-400">
-                        <b>{commonContactFormText.messageText}</b>{contactMeInstructionsE}
+                        <b className="font-title text-xl">{commonContactFormText.messageText}</b>{contactMeInstructionsE}
                     </p>
               </div>
-              <p className="pt-3">
+              <p className="text-lg pt-3">
                 {contactMeInstructionsF}<b>{contactMeInstructionsG}</b>{contactMeInstructionsH}
               </p>
           </div>
@@ -127,7 +127,7 @@ function ContactMe() {
                     </br>
                 </div>
                 <div className="p-3 grid justify-items-center">
-                    <label className="p-3"><b>{commonContactFormText.subjectText}</b></label>
+                    <label className="font-title text-xl p-3"><b>{commonContactFormText.subjectText}</b></label>
                     <input
                         className="shadow-lg"
                         type="text" 
@@ -137,7 +137,7 @@ function ContactMe() {
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
-                    <label className="p-3"><b>{commonContactFormText.nameText}</b></label>
+                    <label className="font-title text-xl p-3"><b>{commonContactFormText.nameText}</b></label>
                     <input
                         className="shadow-lg"
                         type="text" 
@@ -147,7 +147,7 @@ function ContactMe() {
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
-                    <label className="p-3"><b>{commonContactFormText.emailText}</b></label>
+                    <label className="font-title text-xl p-3"><b>{commonContactFormText.emailText}</b></label>
                     <input
                         className="shadow-lg"
                         type="email" 
@@ -157,7 +157,7 @@ function ContactMe() {
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
-                    <label className="p-3 flex justify-center"><b>{commonContactFormText.messageText}</b></label>
+                    <label className="font-title text-xl p-3 flex justify-center"><b>{commonContactFormText.messageText}</b></label>
                     <textarea
                         className="shadow-lg"
                         name="message"
@@ -178,7 +178,7 @@ function ContactMe() {
                 </div>
 
                 <div className="p-3 flex justify-center">
-                    <div className="p-3 border-solid border-l-4 border-r-4 border-gray-400 rounded-full hover:bg-gray-500 active:bg-gray-600">
+                    <div className="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-400 rounded-full hover:bg-gray-500 active:bg-gray-600">
                         <input
                             className={botCheck}
                             onClick={submitValue}

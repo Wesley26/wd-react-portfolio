@@ -7,21 +7,21 @@ import { noImage,
 
 function About(){
     return (
-        <div className="bg-gray-100 m-6 shadow-xl">
+        <div className="font-body bg-gray-100 m-6 shadow-xl">
             <div className="text-left p-6">
-                <div className="md:flex md:justify-evenly lg:flex lg:justify-evenly xl:flex xl:justify-evenly">
+                <div className="lg:flex lg:justify-evenly">
 
                     <div className="left-0 p-3">
                         <img className="shadow-lg" src={wd_About_Photo} alt={noImage}></img>
                     </div>
-                    <div className="right-0 p-3">
+                    <div className="md:pl-6 font-title text-xl right-0 p-3">
                         <h1 className="font-bold text-3x1 text-center">
                             {aboutText.titleA}
                         </h1>
                         <br>
                         </br>
                         <div>
-                            <p>
+                            <p className="font-body text-md">
                                 {aboutText.mainParagraphA}
                             </p>
                             <br>

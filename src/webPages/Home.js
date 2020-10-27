@@ -7,7 +7,7 @@ import { noImage,
 
 function Home(){
     return (
-        <div className="bg-gray-100 m-6 shadow-xl">
+        <div className="font-body bg-gray-100 m-6 shadow-xl">
 
             <div className="p-6">
                 <div className="pb-10">
@@ -18,12 +18,12 @@ function Home(){
                         className="focus:outline-none">
                         </img>
                     </div>
-                    <h3 className="text-center font-bold">
+                    <h3 className="font-title text-xl text-center font-bold">
                         {homeText.subHeaderH}
                     </h3>
                     <br>
                     </br>
-                    <p>
+                    <p className="text-lg">
                         {homeText.mainParagraphH}
                     </p>
                     <br>

@@ -16,6 +16,10 @@ module.exports = {
         'project-two': "url('./images/portfolio_BG_Images/JSCalculatorApp.PNG')",
         'project-three': "url('./images/portfolio_BG_Images/i01Bot.PNG')",
       }),
+      fontFamily: {
+        'title': ['Carter One', 'cursive'],
+        'body': ['Josefin Sans', 'sans-serif'],
+      },
       colors: {
         'header-blue': '#a8dcd4',
         'footer-blue': '#a8dcd4',

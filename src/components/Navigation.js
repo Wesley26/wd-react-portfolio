@@ -27,7 +27,7 @@ function Navigation() {
 
     return (
         <nav>
-            <span className="mr-3 pt-3 pb-3 pr-3 pl-12 absolute right-0 float-right text-l">
+            <span className="font-body mr-3 pt-3 pb-3 pr-3 pl-12 absolute right-0 float-right text-l">
                 <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black">
                     <FontAwesomeIcon 
                         icon={faBars}
