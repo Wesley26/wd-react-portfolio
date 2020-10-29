@@ -42,7 +42,7 @@ function Navigation() {
                     <animated.div 
                         key={key} 
                         style={props}
-                        className="p-3 border-solid border-4 border-gray-500 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg"
+                        className="p-3 border-solid border-4 border-gray-500 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg overflow-auto"
                     >
                         <NavigationMenu 
                             closeMenu={() => setShowMenu(false)}

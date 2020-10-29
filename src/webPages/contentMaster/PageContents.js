@@ -26,9 +26,12 @@ const philly_P = require("../../images/PhillyPA_Portrait.jpg"); //Philly homepag
 const philly_L = require("../../images/PhillyPA_Landscape.jpg"); //Philly homepage photo for tablet/desktop view
 
 const homeText = {
-                subHeaderH: `Hello there! Welcome to my corner of online web development.`,
-                mainParagraphH: `Feel free to take a look around. You are currently viewing my home page. The about page contains more
-                information about me and my developer background.`,
+                subHeaderH: `Front-End User Interface Design: Perfectly Balanced To Meet Your Future Business Image`,
+                mainParagraphH: `Are you searching for a new, high-tech, scalable wesbite design to welcome your customers?
+                                Do you have website developers on your current team who specialize behind the scenes, but do 
+                                not work as often on what the end-user views? I can help you! Feel free to browse my portfolio 
+                                gallery for all the examples of user interface design I can provide to your website development 
+                                team! Use the menu button on the top right of your screen to begin.`,
                 captionH: `The photo above was taken in person outside the South-East doorway of the Philladelphia Art Museum overlooking 
                             the famed Rocky Steps in Philladelphia, P.A.`
                 }; 
@@ -41,16 +44,21 @@ const wd_About_Photo = require("../../images/WesleyP18_V2.jpg"); //Main photo us
 const githubLogo = require("../../images/GitHub-Mark-120px-plus.png"); //GitHub Logo
 const linkedInLogo = require("../../images/linkedin-logo.png"); //LinkedIn Logo
 
+const aboutTextTitle = `Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer`; //about page title
+
 const aboutText = {
-                titleA: "Hello World! Meet Wesley Dzitzer",
-                mainParagraphA: `Wesley Dzitzer is a bachelor of science Managment Information Systems graduate from Rowan University
-                                since May of 2017. At Rowan University, Wesley studied object oriented programming, web design, and
-                                database design. His knowledge of programming languages include C++ and Java. In web design his
-                                knowledge includes HTML, CSS, and Java Script. In database design, Wesley is most familiar with SQL. 
-                                Wesley's previous work experience includes a PC refresh contract project and one-year technical customer 
-                                support position located at southern  New Jersey in the online iGaming casino industry. For more 
-                                information, feel free to visit the LinkedIn and GitHub profile links.`
-                };
+                mainParagraphA_1: `I am a bachelor of science Managment Information Systems graduate from Rowan University
+                                since May of 2017. At Rowan University, I studied object oriented programming, web design, and
+                                database design. My path in my knowledge of different computer languages started with
+                                C/C++ and Java. In database design, I studied SQL.`,
+                mainParagraphA_2: `After graduation, I began self-teaching myself the fundamental basics of static 
+                                HTML, CSS, and JavaScript using jQuery. Today, I focus on front-end user interface web design using
+                                ReactJS. I am also familiar with many other front-end related JavaScript libraries such as
+                                TailwindCSS, PostCSS, and React-Spring to name a few. My previous work experience includes 
+                                a PC refresh contract project and one-year technical customer support position located at 
+                                southern New Jersey in the online iGaming casino industry.`,
+                mainParagraphA_3: `For more details, visit the GitHub and LinkedIn profile links below.`,
+                }; //contains the about description block section
 /**
  *  //////////////////////////////////////////////// PORTFOLIO PAGE CONTENT ///////////////////////////////////////////////////////////////////
  *
@@ -178,6 +186,7 @@ module.exports = {
     wd_About_Photo,
     githubLogo,
     linkedInLogo,
+    aboutTextTitle,
     aboutText,
     //////////////////
     portfolioRepoForThisSite,

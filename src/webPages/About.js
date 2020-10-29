@@ -1,9 +1,6 @@
 import React from 'react'
-import { noImage, 
-        wd_About_Photo, 
-        githubLogo,
-        linkedInLogo, 
-        aboutText } from './contentMaster/PageContents.js';
+import { noImage, wd_About_Photo, githubLogo,
+        linkedInLogo, aboutTextTitle, aboutText } from './contentMaster/PageContents.js';
 
 function About(){
     return (
@@ -15,15 +12,23 @@ function About(){
                         <img className="shadow-lg" src={wd_About_Photo} alt={noImage}></img>
                     </div>
                     <div className="md:pl-6 font-title text-xl right-0 p-3">
-                        <h1 className="font-bold text-3x1 text-center">
-                            {aboutText.titleA}
+                        <h1 className="pb-6 font-bold text-3x1 text-center">
+                            {aboutTextTitle}
                         </h1>
                         <br>
                         </br>
                         <div>
-                            <p className="font-body text-md">
-                                {aboutText.mainParagraphA}
-                            </p>
+                            <div className="grid grid-rows-2 grid-cols-1">
+                                <p className="font-body text-md">
+                                    {aboutText.mainParagraphA_1}
+                                </p>
+                                <p className="font-body text-md">
+                                    {aboutText.mainParagraphA_2}
+                                </p>
+                                <p className="pt-16 font-body text-md text-center">
+                                    {aboutText.mainParagraphA_3}
+                                </p>
+                            </div>
                             <br>
                             </br>
                             <div className="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col">
