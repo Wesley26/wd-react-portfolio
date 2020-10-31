@@ -116,7 +116,7 @@ const resumeText = {
                 };
     
     const resumeImg = require("../../images/resumeImage/WD_Resume_IMG.png"); //Image version of Resume
-    const resumeLink = `https://drive.google.com/file/d/1nUh4co4WAaiHz_6Ja6AQJLeiw4Qcy7MA/view?usp=sharing`; //Google Drive resume PDF download link
+    const resumeLink = `https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing`; //Google Drive resume PDF download link
 
 /**
  *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ////////////////////////////////////////////////////////////////////
