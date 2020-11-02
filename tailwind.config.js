@@ -1,13 +1,21 @@
 /**
  * Note: All portfolio background images are rendered through "extend" backgroundImage 
- *        arrow function on line 12.
+ *        arrow function (line 20).
  *        The background images must be placed in ./images/portfolio_BG_Images.
+ * 
+ * Note for "purge": (line 16) Set "enabled" boolean to true while in production.
+ *        Set "enabled" boolean to false while in development.
+ *        The "content" array must contain a string pointing to all web
+ *        component js files ONLY.
  * 
  * All other configurations must be referenced in TailwindCSS's documentation.
  **/
 
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+      content: [ './src/**/*.js' ],
+  },
   theme: {
     extend: {
       backgroundImage: theme => ({
