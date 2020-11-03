@@ -25,7 +25,7 @@ module.exports = {
         'project-three': "url('./images/portfolio_BG_Images/i01Bot.PNG')",
       }),
       fontFamily: {
-        'title': ['Carter One', 'sans-serif'],
+        'title': ['Cabin', 'sans-serif'],
         'body': ['Josefin Sans', 'sans-serif'],
       },
       colors: {
