@@ -5,7 +5,7 @@ Implements [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs
 
 # Information
 
-- As of November 2nd, 2020, wd-react-portfolio reached Minimum Viable Product (MVP) stage and is deployed [here](https://www.wesleywebdev.com/).
+- As of November 2nd, 2020, wd-react-portfolio reached Minimum Viable Product (MVP) stage and is deployed [here](https://wesleywebdev.com/).
 
 ## Important Instructions
 
