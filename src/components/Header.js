@@ -3,7 +3,7 @@ import Navigation from './Navigation';
 import { navTitleField, websiteMasterLogo_Alt } from './navMaster/NavContents.js'
 import { noImage } from '../webPages/contentMaster/PageContents.js'
 
-function Header() {
+const Header = () => {
     return (
         <header className="bg-header-blue mb-3 pl-3 pr-3 pt-1 pb-6 flex justify-between shadow-lg">
             <h1>

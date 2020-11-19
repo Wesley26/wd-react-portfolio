@@ -15,12 +15,12 @@ import Home from './webPages/Home.js';
 import Resume from './webPages/Resume.js';
 import ContactMe from './webPages/ContactMe.js';
 
-function App() {
+const App = () => {
   return (
     <div className="bg-body-gray absolute bottom-0 top-0 left-0 right-0">
       <Router>
 
-      <main className="bg-body-gray html border-solid border-gray-400 border-t-4 border-l-4 border-r-4 pb-24">
+      <main className="bg-body-gray html border-solid border-gray-300 border-t-4 border-l-4 border-r-4 pb-24">
         <div className="text-center">
           <Header />
 

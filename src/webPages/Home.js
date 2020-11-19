@@ -5,9 +5,9 @@ import { noImage,
         philly_L,
         homeText } from './contentMaster/PageContents.js'
 
-function Home(){
+const Home = () => {
     return (
-        <div className="font-body bg-gray-100 m-6 shadow-xl">
+        <div className="font-body bg-body-lightGray m-6 shadow-xl">
 
             <div className="p-6">
                 <div className="pb-10">

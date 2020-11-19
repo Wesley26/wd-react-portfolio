@@ -41,7 +41,11 @@ const homeText = {
  */
 
 const wd_About_Photo = require("../../images/WesleyP18_V2.jpg"); //Main photo used on about page.
+
+const githubLink = `https://github.com/Wesley26`; //GitHub Link
 const githubLogo = require("../../images/GitHub-Mark-120px-plus.png"); //GitHub Logo
+
+const linkedInLink = `https://www.linkedin.com/in/wesleydzitzer/`; //LinkedIn Link
 const linkedInLogo = require("../../images/linkedin-logo.png"); //LinkedIn Logo
 
 const aboutTextTitle = `Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer`; //about page title
@@ -59,6 +63,7 @@ const aboutText = {
                                 southern New Jersey in the online iGaming casino industry.`,
                 mainParagraphA_3: `For more details, visit the GitHub and LinkedIn profile links below.`,
                 }; //contains the about description block section
+
 /**
  *  //////////////////////////////////////////////// PORTFOLIO PAGE CONTENT ///////////////////////////////////////////////////////////////////
  *
@@ -68,12 +73,15 @@ const aboutText = {
  *  Each portfolioText object cooresponds with an icon image const and a repo link const.
  * 
  *  portfolioRepoForThisSite, and portfolioRepoForThisSiteLink each coorespond with the link and text at the top of
- *  the portfolio list webpage. The link takes you to the git repo of this website.
+ *  the portfolio list webpage. The link takes you to the git repo of this website. Instructions are included
+ *  for the end user as to how navigating the portfolio page functions.
  */
 
 const portfolioRepoForThisSite = {
                                 pRFTS1_1: `To view the entire design for this website, visit`,
-                                pRFTS1_2: `this following repo.`
+                                pRFTS1_2: `this following repo.`,
+                                pRFTS1_3: `While on a Desktop device, use your mouse to roll over each portfolio item to see their content.`,
+                                pRFTS1_4: `While on a Tablet/Mobile device, touch each portfolio item to see their content.`
                                 };
 const portfolioRepoForThisSiteLink = `https://github.com/Wesley26/wd-react-portfolio`;
 
@@ -157,6 +165,17 @@ const contactMeHeaderText = "Contact Me"; //Contact Me page header text
                         };
 
     /**
+     *  placeholderText - contains the placeholder text
+     *  for each space in the form.
+     */
+    const placeholderText = {
+                        placeSubject: "Add A Subject",
+                        placeName: "Add A First/Last/Full Name",
+                        placeEmail: "your_email_here@mail.com",
+                        placeMessage: "Hello World!",
+    };
+
+    /**
      *  ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
      *  SERVICE_ID, TEMPLATE_ID, USER_ID, and ACCESS_TOKEN are the API key data for EmailJS account access.
      *  ACCESS_TOKEN is on reserve, SERVICE_ID, TEMPLATE_ID, and USER_ID are implemented on ../src/webPages/ContactMe.js
@@ -184,7 +203,9 @@ module.exports = {
     homeText,
     //////////////////
     wd_About_Photo,
+    githubLink,
     githubLogo,
+    linkedInLink,
     linkedInLogo,
     aboutTextTitle,
     aboutText,
@@ -217,6 +238,7 @@ module.exports = {
         contactMeInstructionsH,
         ////////////////////////
         commonContactFormText,
+        placeholderText,
         //////////////
         SERVICE_ID,
         TEMPLATE_ID,

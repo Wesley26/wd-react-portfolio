@@ -32,6 +32,8 @@ module.exports = {
         'header-blue': '#a8dcd4',
         'footer-blue': '#a8dcd4',
         'body-gray': '#e0dfdf',
+        'body-lightGray': '#f7fafc',
+        'body-form': '#e2e8f0',
       },
       spacing: {
         '11long': '11rem',

@@ -1,13 +1,13 @@
 import React, { useState } from 'react'
 import emailjs from 'emailjs-com';
 import ReCAPTCHA from "react-google-recaptcha";
-import { commonContactFormText, contactMeHeaderText, contactMeInstructionsA, contactMeInstructionsB, 
+import { commonContactFormText, contactMeHeaderText, placeholderText, contactMeInstructionsA, contactMeInstructionsB, 
         contactMeInstructionsC, contactMeInstructionsD, contactMeInstructionsE, contactMeInstructionsF,
-        contactMeInstructionsG, contactMeInstructionsH,
+        contactMeInstructionsG, contactMeInstructionsH, 
         SERVICE_ID, TEMPLATE_ID, USER_ID,
         RECAPTCHA_CLIENT_SIDE_KEY, } from './contentMaster/PageContents.js';
 
-function ContactMe() {
+const ContactMe = () => {
 
     /**
      * botCheck, setBotCheck hooks as a string to match the TailwindCSS className
@@ -88,7 +88,7 @@ function ContactMe() {
     };
   
     return (
-      <div className="font-body bg-gray-100 m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
+      <div className="font-body bg-body-lightGray m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
           <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
               <h3 className="font-title text-xl p-3 font-bold bg-transparent">
                 {contactMeHeaderText}
@@ -97,16 +97,16 @@ function ContactMe() {
                 {contactMeInstructionsA}
               </p>
               <div className="text-lg pl-3 pr-3 pt-3 md:flex md:justify-start text-left">
-                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
+                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
                         <b className="font-title text-xl">{commonContactFormText.subjectText}</b>{contactMeInstructionsB}
                     </p>
-                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
+                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
                         <b className="font-title text-xl">{commonContactFormText.nameText}</b>{contactMeInstructionsC}
                     </p>
-                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-400">
+                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
                         <b className="font-title text-xl">{commonContactFormText.emailText}</b>{contactMeInstructionsD}
                     </p>
-                    <p className="p-3 border-b-4 md:border-b-0 border-gray-400">
+                    <p className="p-3 border-b-4 md:border-b-0 border-gray-300">
                         <b className="font-title text-xl">{commonContactFormText.messageText}</b>{contactMeInstructionsE}
                     </p>
               </div>
@@ -119,7 +119,7 @@ function ContactMe() {
           <div className="bg-body-gray p-6 flex justify-center place-items-center shadow-lg">
       
             <form
-                className="bg-gray-300 md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
+                className="bg-body-form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
                 onSubmit={sendEmail}
             >
                 <div className="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3">
@@ -132,7 +132,8 @@ function ContactMe() {
                         className="shadow-lg"
                         type="text" 
                         name ="subject"
-                        size="25"
+                        size="26"
+                        placeholder={placeholderText.placeSubject}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -142,7 +143,8 @@ function ContactMe() {
                         className="shadow-lg"
                         type="text" 
                         name="name"
-                        size="25"
+                        size="26"
+                        placeholder={placeholderText.placeName}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -152,7 +154,8 @@ function ContactMe() {
                         className="shadow-lg"
                         type="email" 
                         name="email"
-                        size="25"
+                        size="26"
+                        placeholder={placeholderText.placeEmail}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -162,7 +165,8 @@ function ContactMe() {
                         className="shadow-lg"
                         name="message"
                         rows="8"
-                        cols="25"
+                        cols="26"
+                        placeholder={placeholderText.placeMessage}
                         onChange={handleInputChange}
                     />
                 </div>
@@ -178,7 +182,7 @@ function ContactMe() {
                 </div>
 
                 <div className="p-3 flex justify-center">
-                    <div className="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-400 rounded-full hover:bg-gray-500 active:bg-gray-600">
+                    <div className="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-300 rounded-full hover:bg-gray-400 active:bg-gray-500">
                         <input
                             className={botCheck}
                             onClick={submitValue}

@@ -9,10 +9,10 @@ import { navTitleField,
 
 
 /**
- * @param props is passed from Web Component Navigation in Navigation.js (line 64). Controls closing nav menu arrow function.
+ * @param props is passed from Web Component Navigation in Navigation.js (line 48). Controls closing nav menu arrow function.
  */
 
-function NavigationMenu(props) {
+const NavigationMenu = props => {
 
     /*
     * To edit which Navigation Menu pages you have, add a new list item containing
@@ -34,31 +34,31 @@ function NavigationMenu(props) {
                 <li className="pb-2">
                 <Link 
                     to="/" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}>{navItemOne}</Link>
                 </li>
                 <li className="pt-3">
                 <Link 
                     to="/about" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}>{navItemTwo}</Link>
                 </li>
                 <li className="pt-3">
                 <Link 
                     to="/portfolio" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}>{navItemThree}</Link>
                 </li>
                 <li className="pt-3">
                 <Link 
                     to="/resume" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}>{navItemFour}</Link>
                 </li>
                 <li className="pt-3">
                 <Link 
                     to="/contactMe" 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}>{navItemFive}</Link>
                 </li>
             </ul>
@@ -66,7 +66,7 @@ function NavigationMenu(props) {
             </br>
             <div>
                 <h3 
-                    className="text-green-600 md:text-3xl lg:text-4xl py-3 block border-black border-solid border-2 rounded-full hover:bg-gray-400 active:bg-gray-500 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}
                     >
                     {navTitleField.lineTwo}

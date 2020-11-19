@@ -4,10 +4,10 @@ import { noImage,
         resumeLink,
         resumeText } from './contentMaster/PageContents.js';
 
-function Resume() {
+const Resume = () => {
     
     return(
-        <div className="font-body bg-gray-100 m-6 sm:pb-6 shadow-xl">
+        <div className="font-body bg-body-lightGray m-6 sm:pb-6 shadow-xl">
 
             <div className="px-5 py-3">
                 <div className="text-xl p-3 text-center">

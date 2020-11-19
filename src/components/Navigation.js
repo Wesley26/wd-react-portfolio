@@ -5,7 +5,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
 
 
-function Navigation() {
+const Navigation = () => {
     
     /*
     Conditional rendering
@@ -31,7 +31,7 @@ function Navigation() {
                 <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black">
                     <FontAwesomeIcon 
                         icon={faBars}
-                        className="mr-2 p-2 text-5xl hover:bg-gray-300 hover:opacity-75 active:bg-gray-500"
+                        className="mr-2 p-2 text-5xl hover:bg-gray-200 hover:opacity-75 active:bg-gray-400"
                         onClick={() => setShowMenu(!showMenu)}
                     />
                 </div>
@@ -42,7 +42,7 @@ function Navigation() {
                     <animated.div 
                         key={key} 
                         style={props}
-                        className="p-3 border-solid border-4 border-gray-500 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg overflow-auto"
+                        className="p-3 border-solid border-4 border-gray-400 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg overflow-auto"
                     >
                         <NavigationMenu 
                             closeMenu={() => setShowMenu(false)}

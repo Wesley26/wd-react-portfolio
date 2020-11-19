@@ -9,7 +9,7 @@ import ProjectTwo from './portfolioComponents/projectTwo.js'
 import ProjectThree from './portfolioComponents/projectThree.js'
 import WebsiteOne from './portfolioComponents/websiteOne.js'
 
-function Portfolio() {
+const Portfolio = () => {
 
     /**
      * Note: On JSX div elements line 26 and 36, for every 3 portfolio items added, the CSS class
@@ -17,7 +17,7 @@ function Portfolio() {
      */
 
     return (
-        <div className="font-body bg-gray-100 m-6 overflow-auto shadow-xl">
+        <div className="font-body bg-body-lightGray m-6 overflow-auto shadow-xl">
             <div className="text-left p-6">
                 <div className="flex justify-evenly">
 
@@ -28,9 +28,15 @@ function Portfolio() {
                             {portfolioRepoForThisSite.pRFTS1_1}
                                 <a 
                                     href={portfolioRepoForThisSiteLink}
-                                    className="p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-300 active:bg-gray-500">
+                                    className="p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-200 active:bg-gray-400">
                                     {portfolioRepoForThisSite.pRFTS1_2}
                                 </a>
+                            </p>
+                            <p className="pt-3">
+                                {portfolioRepoForThisSite.pRFTS1_3}
+                            </p>
+                            <p className="pb-3">
+                                {portfolioRepoForThisSite.pRFTS1_4}
                             </p>
                         </div>
                         
@@ -39,7 +45,7 @@ function Portfolio() {
                         </h3>
 
                         <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
-                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto shadow-lg">
+                            <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <WebsiteOne />
                             </div>
                         </div>
@@ -49,13 +55,13 @@ function Portfolio() {
                         </h3>
 
                         <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
-                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto shadow-lg">
+                            <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <ProjectOne />
                             </div>
-                            <div className="bg-gray-500 flex justify-center items-center h-auto w-auto shadow-lg">
+                            <div className="bg-gray-400 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <ProjectTwo />
                             </div>
-                            <div className="bg-gray-300 flex justify-center items-center h-auto w-auto shadow-lg">
+                            <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <ProjectThree />
                             </div>
                         </div>

@@ -1,10 +1,10 @@
 import React from 'react'
-import { noImage, wd_About_Photo, githubLogo,
+import { noImage, wd_About_Photo, githubLink, githubLogo, linkedInLink,
         linkedInLogo, aboutTextTitle, aboutText } from './contentMaster/PageContents.js';
 
-function About(){
+const About = () => {
     return (
-        <div className="font-body bg-gray-100 m-6 shadow-xl">
+        <div className="font-body bg-body-lightGray m-6 shadow-xl">
             <div className="text-left p-6">
                 <div className="lg:flex lg:justify-evenly">
 
@@ -32,8 +32,8 @@ function About(){
                             <br>
                             </br>
                             <div className="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col">
-                                <div className="p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500">
-                                    <a href={`https://github.com/Wesley26`}>
+                                <div className="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400">
+                                    <a href={githubLink}>
                                         <img 
                                             src={githubLogo} 
                                             alt={noImage}
@@ -41,8 +41,8 @@ function About(){
                                         </img>
                                     </a>
                                 </div>
-                                <div className="p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500">
-                                    <a href={`https://www.linkedin.com/in/wesleydzitzer/`}>
+                                <div className="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400">
+                                    <a href={linkedInLink}>
                                         <img 
                                             src={linkedInLogo} 
                                             alt={noImage}

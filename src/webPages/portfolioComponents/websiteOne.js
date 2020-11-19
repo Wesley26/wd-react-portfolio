@@ -5,7 +5,7 @@ import { noImage,
         portfolioTextWeb1 } from '../contentMaster/PageContents.js'
 import {useTransition, animated} from 'react-spring'
 
-function WebsiteOne() {
+const WebsiteOne = () => {
 
     /**
      * hoverOver - boolean to determine if the mouse is hovering over portfolio item.
@@ -47,7 +47,7 @@ function WebsiteOne() {
                             <animated.p
                                 key = {key}
                                 style = {props}
-                                className="font-title bg-gray-600 hover:bg-gray-700 active:bg-gray-800 text-gray-200 text-center font-medium w-11long ml-16">
+                                className="font-title bg-gray-500 hover:bg-gray-600 active:bg-gray-700 text-gray-200 text-center font-medium w-11long ml-16">
                                 <a href={w1Link}>{portfolioTextWeb1.subtitleP1_1}</a>
                             </animated.p>
                             )
