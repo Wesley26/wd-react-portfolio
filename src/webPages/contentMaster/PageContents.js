@@ -32,8 +32,8 @@ const homeText = {
                                 not work as often on what the end-user views? I can help you! Feel free to browse my portfolio 
                                 gallery for all the examples of user interface design I can provide to your website development 
                                 team! Use the menu button on the top right of your screen to begin.`,
-                captionH: `The photo above was taken in person outside the South-East doorway of the Philladelphia Art Museum overlooking 
-                            the famed Rocky Steps in Philladelphia, P.A.`
+                captionH: `The photo above was taken in person outside the South-East doorway of the Philadelphia Art Museum overlooking 
+                            the famed Rocky Steps in Philadelphia, P.A.`
                 }; 
 
 /**
@@ -70,9 +70,9 @@ const aboutText = {
  *  Note: portfolioTextWeb"n" object variables are for website portfolio items.
  *        portfolioTextPersonal"n" object variables are for personal project portfolio items.
  * 
- *  Each portfolioText object cooresponds with an icon image const and a repo link const.
+ *  Each portfolioText object corresponds with an icon image const and a repo link const.
  * 
- *  portfolioRepoForThisSite, and portfolioRepoForThisSiteLink each coorespond with the link and text at the top of
+ *  portfolioRepoForThisSite, and portfolioRepoForThisSiteLink each correspond with the link and text at the top of
  *  the portfolio list webpage. The link takes you to the git repo of this website. Instructions are included
  *  for the end user as to how navigating the portfolio page functions.
  */
@@ -95,7 +95,7 @@ const portfolioTextWeb1 = {
                 };
     
     //Logo used is jSLogo
-    const w1Link = `https://github.com/Wesley26/GA-Final-Project-Smile-Design`; //Link cooresponds with portfolioTextWeb1.subtitleP1_1
+    const w1Link = `https://github.com/Wesley26/GA-Final-Project-Smile-Design`; //Link corresponds with portfolioTextWeb1.subtitleP1_1
 
 const portfolioTextPersonal1 = {
                 titleP2: "Personal Projects",
@@ -105,13 +105,13 @@ const portfolioTextPersonal1 = {
                 };
 
     const cPlusPlusLogo = require("../../images/portfolio_Icon_Images/C++Logo.png"); //C++ Portfolio Item Icon
-    const cPlusPlusLink = `https://github.com/Wesley26/ShoppingCart`; //Link cooresponds with portfolioTextPersonal1.subtitleP2_1
+    const cPlusPlusLink = `https://github.com/Wesley26/ShoppingCart`; //Link corresponds with portfolioTextPersonal1.subtitleP2_1
 
     const jSLogo = require("../../images/portfolio_Icon_Images/JavascriptLogo.png"); //JS Portfolio Item Icon
-    const p2Link = `https://github.com/Wesley26/Wesley26.github.io/blob/master/projectTwo.html`; //Link cooresponds with portfolioTextPersonal1.subtitleP2_2
+    const p2Link = `https://github.com/Wesley26/Wesley26.github.io/blob/master/projectTwo.html`; //Link corresponds with portfolioTextPersonal1.subtitleP2_2
 
     const i01MonitorLogo = require("../../images/portfolio_Icon_Images/greeni01Monitor.png"); //i01 Related Portfolio Item Icon
-    const i01BotLink = `https://github.com/Wesley26/i01-bot-prototype-framework`; //Link cooresponds with portfolioTextPersonal1.subtitleP2_3
+    const i01BotLink = `https://github.com/Wesley26/i01-bot-prototype-framework`; //Link corresponds with portfolioTextPersonal1.subtitleP2_3
 
 
 /**
