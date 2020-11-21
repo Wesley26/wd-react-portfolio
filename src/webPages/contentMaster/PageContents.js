@@ -55,7 +55,7 @@ const aboutText = {
                                 since May of 2017. At Rowan University, I studied object oriented programming, web design, and
                                 database design. My path in my knowledge of different computer languages started with
                                 C/C++ and Java. In database design, I studied SQL.`,
-                mainParagraphA_2: `After graduation, I began self-teaching myself the fundamental basics of static 
+                mainParagraphA_2: `After graduation, I began teaching myself the fundamental basics of static 
                                 HTML, CSS, and JavaScript using jQuery. Today, I focus on front-end user interface web design using
                                 ReactJS. I am also familiar with many other front-end related JavaScript libraries such as
                                 TailwindCSS, PostCSS, and React-Spring to name a few. My previous work experience includes 
@@ -138,7 +138,7 @@ const contactMeHeaderText = "Contact Me"; //Contact Me page header text
      * to complete the contact me page form
      */
     const contactMeInstructionsA = `Thank you for your interest in reaching out to me! Complete
-                                    this form to send an email and I will return a reply.
+                                    this form to send an email and I will reply.
                                     For my reply to be sent back to you, be sure to include all the
                                     following details on this form:`;
     const contactMeInstructionsB = " - This is the subject line of the email I receive.";
