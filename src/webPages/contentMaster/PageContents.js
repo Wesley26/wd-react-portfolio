@@ -60,7 +60,7 @@ const aboutText = {
                                 ReactJS. I am also familiar with many other front-end related JavaScript libraries such as
                                 TailwindCSS, PostCSS, and React-Spring to name a few. My previous work experience includes 
                                 a PC refresh contract project and one-year technical customer support position located at 
-                                southern New Jersey in the online iGaming casino industry.`,
+                                Southern New Jersey in the online iGaming casino industry.`,
                 mainParagraphA_3: `For more details, visit the GitHub and LinkedIn profile links below.`,
                 }; //contains the about description block section
 
