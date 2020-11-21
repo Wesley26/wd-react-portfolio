@@ -51,7 +51,7 @@ const linkedInLogo = require("../../images/linkedin-logo.png"); //LinkedIn Logo
 const aboutTextTitle = `Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer`; //about page title
 
 const aboutText = {
-                mainParagraphA_1: `I am a bachelor of science Managment Information Systems graduate from Rowan University
+                mainParagraphA_1: `I am a bachelor of science Management Information Systems graduate from Rowan University
                                 since May of 2017. At Rowan University, I studied object oriented programming, web design, and
                                 database design. My path in my knowledge of different computer languages started with
                                 C/C++ and Java. In database design, I studied SQL.`,
