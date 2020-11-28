@@ -8,11 +8,12 @@ import ProjectOne from './portfolioComponents/projectOne.js'
 import ProjectTwo from './portfolioComponents/projectTwo.js'
 import ProjectThree from './portfolioComponents/projectThree.js'
 import WebsiteOne from './portfolioComponents/websiteOne.js'
+import WebsiteTwo from './portfolioComponents/websiteTwo.js'
 
 const Portfolio = () => {
 
     /**
-     * Note: On JSX div elements line 26 and 36, for every 3 portfolio items added, the CSS class
+     * Note: On JSX div elements line 48 and 61, for every 3 portfolio items added, the CSS class
      * 'lg:grid-rows-1' must increase by one row.
      */
 
@@ -47,6 +48,9 @@ const Portfolio = () => {
                         <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
                             <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <WebsiteOne />
+                            </div>
+                            <div className="bg-gray-400 flex justify-center items-center h-auto w-auto shadow-lg">
+                                <WebsiteTwo />
                             </div>
                         </div>
 

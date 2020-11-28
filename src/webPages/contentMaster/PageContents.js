@@ -92,10 +92,14 @@ const portfolioRepoForThisSiteLink = `https://github.com/Wesley26/wd-react-portf
 const portfolioTextWeb1 = {
                 titleP1: "Website Portfolio",
                 subtitleP1_1: "Website overhaul for Smile Design Dental Office.",
+                subtitleP1_2: "BitBroker Coding Challenge.",
                 };
     
     //Logo used is jSLogo
     const w1Link = `https://github.com/Wesley26/GA-Final-Project-Smile-Design`; //Link corresponds with portfolioTextWeb1.subtitleP1_1
+
+    //Logo used is jSLogo
+    const w2Link = `https://github.com/Wesley26/bitbroker-challenge`; //Link corresponds with portfolioTextWeb1.subtitleP1_2
 
 const portfolioTextPersonal1 = {
                 titleP2: "Personal Projects",
@@ -170,8 +174,8 @@ const contactMeHeaderText = "Contact Me"; //Contact Me page header text
      */
     const placeholderText = {
                         placeSubject: "Add A Subject",
-                        placeName: "Add A First/Last/Full Name",
-                        placeEmail: "your_email_here@mail.com",
+                        placeName: "Add A Name",
+                        placeEmail: "email@mail.com",
                         placeMessage: "Hello World!",
     };
 
@@ -214,6 +218,7 @@ module.exports = {
     portfolioRepoForThisSiteLink,
     portfolioTextWeb1,
         w1Link,
+        w2Link,
     portfolioTextPersonal1,
         cPlusPlusLogo,
         cPlusPlusLink,

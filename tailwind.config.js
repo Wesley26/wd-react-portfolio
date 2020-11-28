@@ -20,6 +20,7 @@ module.exports = {
     extend: {
       backgroundImage: theme => ({
         'website-one': "url('./images/portfolio_BG_Images/DrDzitzerWebsite.PNG')",
+        'website-two': "url('./images/portfolio_BG_Images/BitBrokerChallenge.PNG')",
         'project-one': "url('./images/portfolio_BG_Images/ShoppingCartTitlePage.PNG')",
         'project-two': "url('./images/portfolio_BG_Images/JSCalculatorApp.PNG')",
         'project-three': "url('./images/portfolio_BG_Images/i01Bot.PNG')",
