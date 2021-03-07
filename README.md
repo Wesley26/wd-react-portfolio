@@ -1,7 +1,7 @@
 ![wd-react-portfolio Logo Image](https://raw.githubusercontent.com/Wesley26/wd-react-portfolio/master/src/images/logoImage/WD_Logo.png)
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Implements [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [react-spring](https://www.react-spring.io/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
+Implements [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [react-spring](https://www.react-spring.io/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (core and icons)](https://material-ui.com/), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
 
 
 # Information

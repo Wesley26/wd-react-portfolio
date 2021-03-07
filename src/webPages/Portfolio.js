@@ -4,11 +4,12 @@ import { portfolioRepoForThisSite,
         portfolioTextWeb1, 
         portfolioTextPersonal1 } from './contentMaster/PageContents.js'
 
-import ProjectOne from './portfolioComponents/projectOne.js'
-import ProjectTwo from './portfolioComponents/projectTwo.js'
-import ProjectThree from './portfolioComponents/projectThree.js'
-import WebsiteOne from './portfolioComponents/websiteOne.js'
-import WebsiteTwo from './portfolioComponents/websiteTwo.js'
+import { ProjectOne,
+         ProjectTwo,
+         ProjectThree,
+         WebsiteOne,
+         WebsiteTwo,
+        } from '../webPages/portfolioComponents/index.js';
 
 const Portfolio = () => {
 

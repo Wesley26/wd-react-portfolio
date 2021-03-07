@@ -29,6 +29,9 @@ module.exports = {
         'title': ['Cabin', 'sans-serif'],
         'body': ['Josefin Sans', 'sans-serif'],
       },
+      fontSize: {
+        '35e': '35px',
+      },
       colors: {
         'header-blue': '#a8dcd4',
         'footer-blue': '#a8dcd4',

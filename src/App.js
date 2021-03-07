@@ -9,11 +9,13 @@ import './tailwind.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 
-import Portfolio from './webPages/Portfolio.js';
-import About from './webPages/About.js';
-import Home from './webPages/Home.js';
-import Resume from './webPages/Resume.js';
-import ContactMe from './webPages/ContactMe.js';
+import { About,
+          ContactMe,
+          Home,
+          Portfolio,
+          Resume,
+          TodoList,
+       } from '../src/webPages/index.js';
 
 const App = () => {
   return (
@@ -39,6 +41,9 @@ const App = () => {
             </Route>
             <Route exact path="/contactMe">
               <ContactMe />
+            </Route>
+            <Route exact path="/todoList">
+              <TodoList />
             </Route>
           </Switch>
 

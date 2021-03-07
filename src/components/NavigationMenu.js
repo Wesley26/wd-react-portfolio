@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { navTitleField,
+        navAppSplitterText,
         navItemOne, 
         navItemTwo, 
         navItemThree, 
         navItemFour, 
-        navItemFive } from './navMaster/NavContents.js'
+        navItemFive,
+        navItemSix } from './navMaster/NavContents.js'
 
 
 /**
@@ -21,7 +23,7 @@ const NavigationMenu = props => {
     */
 
     return(
-        <div className="font-title sm:absolute sm:text-center sm:px-3 md:px-6 lg:px-12 justify-evenly items-center">
+        <div className="font-title sm:absolute sm:text-center sm:px-3 md:px-6 lg:px-12 pb-10 justify-evenly items-center">
             <div className="border-solid border-b-4 border-black md:text-2x1 lg:text-3xl">
                 <h3 className="font-semibold">
                     {navTitleField.lineOne}
@@ -61,12 +63,23 @@ const NavigationMenu = props => {
                     className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}>{navItemFive}</Link>
                 </li>
+                <li className="pt-10 pb-3">
+                    <p className="text-35e font-semibold">
+                        {navAppSplitterText}
+                    </p>
+                </li>
+                <li className="pt-3">
+                <Link 
+                    to="/todoList" 
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                    onClick={props.closeMenu}>{navItemSix}</Link>
+                </li>
             </ul>
             <br>
             </br>
             <div>
                 <h3 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-10 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     onClick={props.closeMenu}
                     >
                     {navTitleField.lineTwo}

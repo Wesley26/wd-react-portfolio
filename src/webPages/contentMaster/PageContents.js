@@ -9,6 +9,7 @@
  * Portfolio Page Content - Page content that can appear on Portfolio.js
  * Resume Page Content - Page content that can appear on Resume.js
  * Contact Me Page Content - Page content that can appear on ContactMe.js
+ * ToDo List Page Content - Page content that can appear on TodoList.js
  */
 
 /**
@@ -198,7 +199,13 @@ const contactMeHeaderText = "Contact Me"; //Contact Me page header text
         RECAPTCHA_CLIENT_SIDE_KEY,
     } = require("../../clientSecret/secrets.json");
 
-module.exports = {
+/**
+ *  //////////////////////////////////////////////// TODO LIST PAGE CONTENT ///////////////////////////////////////////////////////////////////////
+ */
+
+const toDoTitle = "My Development Todos";
+
+export {
     noImage,
     websiteMasterLogo,
     //////////////////
@@ -251,4 +258,6 @@ module.exports = {
         ACCESS_TOKEN,
         //////////////
         RECAPTCHA_CLIENT_SIDE_KEY,
+    //////////////////
+    toDoTitle,
 };

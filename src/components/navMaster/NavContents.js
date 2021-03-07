@@ -22,11 +22,14 @@ const navTitleField = {
  * //////////////////////////////////////////////// NAVIGATIONAL PAGE CONTENT //////////////////////////////////////////////////////////////
  */
 
+const navAppSplitterText = "Apps";
+
 const navItemOne = "Home";
 const navItemTwo = "About Me";
 const navItemThree = "Portfolio Gallery";
 const navItemFour = "Resume";
 const navItemFive = "Contact Me";
+const navItemSix = "Todo List";
 
 /**
  * //////////////////////////////////////////////// FOOTER PAGE CONTENT ////////////////////////////////////////////////////////////////////
@@ -79,15 +82,17 @@ let clockTime = currentTime => {
 
 let theTime = clockTime(currentTime);
 
-module.exports = {
+export {
     websiteMasterLogo_Alt,
     navTitleField,
     //////////////////////////
+    navAppSplitterText,
     navItemOne,
     navItemTwo,
     navItemThree,
     navItemFour,
     navItemFive,
+    navItemSix,
     //////////////////////////
     copyrightText,
     currentYear,
