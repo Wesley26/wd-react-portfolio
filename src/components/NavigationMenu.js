@@ -64,7 +64,7 @@ const NavigationMenu = props => {
                     onClick={props.closeMenu}>{navItemFive}</Link>
                 </li>
                 <li className="pt-10 pb-3">
-                    <p className="text-35e font-semibold">
+                    <p className="text-20e md:text-35e lg:text-35e font-semibold">
                         {navAppSplitterText}
                     </p>
                 </li>

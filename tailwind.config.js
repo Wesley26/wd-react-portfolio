@@ -30,6 +30,7 @@ module.exports = {
         'body': ['Josefin Sans', 'sans-serif'],
       },
       fontSize: {
+        '20e': '20px',
         '35e': '35px',
       },
       colors: {

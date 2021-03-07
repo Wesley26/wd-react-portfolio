@@ -29,7 +29,7 @@ const navItemTwo = "About Me";
 const navItemThree = "Portfolio Gallery";
 const navItemFour = "Resume";
 const navItemFive = "Contact Me";
-const navItemSix = "Todo List";
+const navItemSix = "To-do List";
 
 /**
  * //////////////////////////////////////////////// FOOTER PAGE CONTENT ////////////////////////////////////////////////////////////////////

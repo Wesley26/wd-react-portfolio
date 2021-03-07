@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { placeholderToDoItemText } from '../../webPages/contentMaster/PageContents.js'
+
+
 import TextField from '@material-ui/core/TextField';
 
 /**
@@ -23,7 +26,7 @@ const TodoForm = ({ saveToDo }) => {
 
                 <TextField 
                     variant="outlined"
-                    placeholder="Add todo"
+                    placeholder={placeholderToDoItemText}
                     margin="normal"
                     onChange={e => {
                         setValue(e.target.value);

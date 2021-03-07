@@ -68,12 +68,18 @@ Contains every individual portfolio item listed on the portfolio web page. Each 
 - projectTwo.js: JavaScript miscellaneous portfolio web component.
 - websiteOne.js: Smile Design Office Website Overhaul portfolio web component.
 
+- **todoComponents:**
+Contains components for the To-do application.
+- todoForm.js: Component takes user input and saves to-do item.
+- todoListing.js: Component displays user input options.
+
 - **webPages root** 
 - About.js: About me web page component. The about me page contains information about me, one photo of me, and two separate links. One link leads to my GitHub page, the other link leads to my LinkedIn page.
 - ContactMe.js: Email form, which implements EmailJS, is where the end user may fill out an email to submit if they wish to contact me directly. The form is protected from bots via Google reCaptcha v2. The end user must follow all instructions displayed at the top of the page in order to send an email to me from this web page component.
 - Home.js: Home web page component. The end user is introduced with my website logo, a city scene, and introduction text.
 - Portfolio.js: This is the portfolio web page component. Each portfolio item is listed on this web page component.
 - Resume.js: This is the web page component which contains the image version of my downloadable pdf resume. The download link for my resume is located at the bottom of this web page component.
+- TodoList.js: This is a To-do list application component. The component requires the components located in the todoComponents folder.
 
 5. Other files in src:
 - App.js: The root JS file in entire app, all web components reference to this JS file; however, it is not the main JS file.

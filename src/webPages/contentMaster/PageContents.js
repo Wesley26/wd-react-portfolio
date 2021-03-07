@@ -203,7 +203,8 @@ const contactMeHeaderText = "Contact Me"; //Contact Me page header text
  *  //////////////////////////////////////////////// TODO LIST PAGE CONTENT ///////////////////////////////////////////////////////////////////////
  */
 
-const toDoTitle = "My Development Todos";
+const toDoTitle = "My Development To-do List";
+const placeholderToDoItemText = "Add to-do item";
 
 export {
     noImage,
@@ -260,4 +261,5 @@ export {
         RECAPTCHA_CLIENT_SIDE_KEY,
     //////////////////
     toDoTitle,
+    placeholderToDoItemText,
 };
