@@ -27,11 +27,11 @@ const philly_P = require("../../images/PhillyPA_Portrait.jpg"); //Philly homepag
 const philly_L = require("../../images/PhillyPA_Landscape.jpg"); //Philly homepage photo for tablet/desktop view
 
 const homeText = {
-                subHeaderH: `Front-End User Interface Design: Perfectly Balanced To Meet Your Future Business Image`,
-                mainParagraphH: `Are you searching for a new, high-tech, scalable wesbite design to welcome your customers?
-                                Do you have website developers on your current team who specialize behind the scenes, but do 
+                subHeaderH: `Web and Mobile Design: Perfectly Balanced To Meet Your Future Business Image`,
+                mainParagraphH: `Are you searching for a new, high-tech, scalable web and/or mobile design to welcome your customers?
+                                Do you have software engineers on your current team who specialize behind the scenes, but do 
                                 not work as often on what the end-user views? I can help you! Feel free to browse my portfolio 
-                                gallery for all the examples of user interface design I can provide to your website development 
+                                gallery for all the examples of web and mobile design I can provide to your software engineer 
                                 team! Use the menu button on the top right of your screen to begin.`,
                 captionH: `The photo above was taken in person outside the South-East doorway of the Philadelphia Art Museum overlooking 
                             the famed Rocky Steps in Philadelphia, P.A.`
@@ -105,7 +105,7 @@ const portfolioTextWeb1 = {
 const portfolioTextPersonal1 = {
                 titleP2: "Personal Projects",
                 subtitleP2_1: "My Personal C++ Shopping Cart application project.",
-                subtitleP2_2: "My Personal Javascript application collection project.",
+                subtitleP2_2: "My Personal JavaScript application collection project.",
                 subtitleP2_3: "Installation 01 Halo fan game prototype discord bot.",
                 };
 
