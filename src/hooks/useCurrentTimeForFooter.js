@@ -27,8 +27,8 @@ const useCurrentTimeForFooter = () => {
         
     }, []);
 
-    let tick = () => {
-        setDate(new Date());
+    const tick = () => {
+        setDate(new Date()); //advance the time with a new date one second, every second
     };
 
     //console.log(date.toLocaleTimeString()); //Uncomment to print the time
@@ -40,10 +40,10 @@ const useCurrentTimeForFooter = () => {
             &copy; {`${copyrightText} ${date.getFullYear()}`}
             <br>
             </br>
-            {`${currentDateText} ${date.toLocaleDateString()}`}
+            {`${currentDateText} ${date.toLocaleDateString("en-us", { timeZone: "America/New_York" })}`}
             <br>
             </br>    
-            {`${currentTimeText}${date.toLocaleTimeString()}`}
+            {`${currentTimeText}${date.toLocaleTimeString("en-us", { timeZone: "America/New_York" })}`}
 
         </footer>
 
