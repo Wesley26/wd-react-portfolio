@@ -1,7 +1,7 @@
 ![wd-react-portfolio Logo Image](https://raw.githubusercontent.com/Wesley26/wd-react-portfolio/master/src/images/logoImage/WD_Logo.png)
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-Implements [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [react-spring](https://www.react-spring.io/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (core and icons)](https://material-ui.com/), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
+Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [CRACO](https://github.com/gsoft-inc/craco), [react-spring](https://www.react-spring.io/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (core)](https://material-ui.com/), [Material-ui (icons)](https://www.npmjs.com/package/@material-ui/icons), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
 
 
 # Information
@@ -12,9 +12,9 @@ Implements [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs
 ## Important Instructions
 
 - When installing for the first time, run `npm install`. 
-- For Tailwind CSS dependency, make sure to run `npm run build:css` if you do not see tailwind.css. Tailwind.css file is ignored. This command will automatically run every time you use `npm start`.
+- For Tailwind CSS dependency using CRACO runtime manager - `npm start` will run on start the `npm update` command. The Poststart following will run `craco start`.
 - `npm update` runs automatically every time you use `npm start`.
-- `npm run build` will write to the build folder. Only use when deploying on server.
+- `npm run build` will write to the build folder. Both `npm update` and `craco build` Only use when deploying on server.
 - Check React documentation if needed for more information [Here](https://github.com/facebook/create-react-app).
 
 
@@ -24,6 +24,9 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 
 
 ## Content of repo
+
+
+# NOTE: Content of repo section will be updated on a future Portfolio update.
 
 ### node_modules folder:
 - Contains all node package dependencies, is ignored in this repo.

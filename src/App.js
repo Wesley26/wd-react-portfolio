@@ -5,7 +5,6 @@ import {
   Route
 } from 'react-router-dom';
 import './index.css';
-import './tailwind.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 

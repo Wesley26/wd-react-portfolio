@@ -8,10 +8,15 @@
  */
 
 /**
+ * //////////////////////////////////////////////// UNIVERSAL TITLE IMAGE CONTENT ///////////////////////////////////////////////////////////
+ */
+
+import websiteMasterLogo_Alt from "../../images/logoImage/WD_Logo_Alt.png"; //Nav bar alternate version of logo page.
+
+/**
  * //////////////////////////////////////////////// UNIVERSAL TITLE PAGE CONTENT ///////////////////////////////////////////////////////////
  */
 
-const websiteMasterLogo_Alt = require("../../images/logoImage/WD_Logo_Alt.png"); //Nav bar alternate version of logo page.
 const navTitleField = {
     lineOne: "Wesley Dzitzer",
     lineTwo: "Close Menu",

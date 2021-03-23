@@ -3,6 +3,7 @@
  * NOTE: Each object can carry up to five values, otherwise the string content may not appear on the app. Do NOT
  * assign a variable to an array of objects.
  * 
+ * Universal Page Images - All image content that can appear on any web page.
  * Universal Page Content - Page content that can appear on any web page.
  * Home Page Content - Page content that can appear on Home.js
  * About Page Content - Page content that can appear on About.js
@@ -13,18 +14,37 @@
  */
 
 /**
+ * //////////////////////////////////////////////// UNIVERSAL PAGE IMAGES //////////////////////////////////////////////////////////////
+ */
+
+import websiteMasterLogo from "../../images/logoImage/WD_Logo.png"; //Master website logo image.
+
+import philly_P from"../../images/PhillyPA_Portrait.jpg"; //Philly homepage photo for mobile view
+import philly_L from "../../images/PhillyPA_Landscape.jpg"; //Philly homepage photo for tablet/desktop view
+
+import wd_About_Photo from "../../images/WesleyP18_V2.jpg"; //Main photo used on about page.
+import githubLogo from "../../images/GitHub-Mark-120px-plus.png"; //GitHub Logo
+import linkedInLogo from "../../images/linkedin-logo.png"; //LinkedIn Logo
+
+/**
+ * Portfolio image links - may be moved to a portfolio JS file on a future update.
+ */
+import cPlusPlusLogo from "../../images/portfolio_Icon_Images/C++Logo.png"; //C++ Portfolio Item Icon
+import jSLogo from "../../images/portfolio_Icon_Images/JavascriptLogo.png"; //JS Portfolio Item Icon
+import i01MonitorLogo from "../../images/portfolio_Icon_Images/greeni01Monitor.png"; //i01 Related Portfolio Item Icon
+
+
+import resumeImg from "../../images/resumeImage/WD_Resume_IMG.png"; //Image version of Resume
+
+/**
  * //////////////////////////////////////////////// UNIVERSAL PAGE CONTENT //////////////////////////////////////////////////////////////
  */
 
 const noImage = "Image has failed to load."; //Image failed to load message.
-const websiteMasterLogo = require("../../images/logoImage/WD_Logo.png"); //Master website logo image.
 
 /**
  * //////////////////////////////////////////////// HOME PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
-
-const philly_P = require("../../images/PhillyPA_Portrait.jpg"); //Philly homepage photo for mobile view
-const philly_L = require("../../images/PhillyPA_Landscape.jpg"); //Philly homepage photo for tablet/desktop view
 
 const homeText = {
                 subHeaderH: `Web and Mobile Design: Perfectly Balanced To Meet Your Future Business Image`,
@@ -41,13 +61,9 @@ const homeText = {
  * //////////////////////////////////////////////// ABOUT PAGE CONTENT ///////////////////////////////////////////////////////////////////
  */
 
-const wd_About_Photo = require("../../images/WesleyP18_V2.jpg"); //Main photo used on about page.
-
 const githubLink = `https://github.com/Wesley26`; //GitHub Link
-const githubLogo = require("../../images/GitHub-Mark-120px-plus.png"); //GitHub Logo
 
 const linkedInLink = `https://www.linkedin.com/in/wesleydzitzer/`; //LinkedIn Link
-const linkedInLogo = require("../../images/linkedin-logo.png"); //LinkedIn Logo
 
 const aboutTextTitle = `Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer`; //about page title
 
@@ -109,13 +125,10 @@ const portfolioTextPersonal1 = {
                 subtitleP2_3: "Installation 01 Halo fan game prototype discord bot.",
                 };
 
-    const cPlusPlusLogo = require("../../images/portfolio_Icon_Images/C++Logo.png"); //C++ Portfolio Item Icon
     const cPlusPlusLink = `https://github.com/Wesley26/ShoppingCart`; //Link corresponds with portfolioTextPersonal1.subtitleP2_1
 
-    const jSLogo = require("../../images/portfolio_Icon_Images/JavascriptLogo.png"); //JS Portfolio Item Icon
     const p2Link = `https://github.com/Wesley26/Wesley26.github.io/blob/master/projectTwo.html`; //Link corresponds with portfolioTextPersonal1.subtitleP2_2
 
-    const i01MonitorLogo = require("../../images/portfolio_Icon_Images/greeni01Monitor.png"); //i01 Related Portfolio Item Icon
     const i01BotLink = `https://github.com/Wesley26/i01-bot-prototype-framework`; //Link corresponds with portfolioTextPersonal1.subtitleP2_3
 
 
@@ -128,7 +141,6 @@ const resumeText = {
                 downloadR: "Download My Resume",
                 };
     
-    const resumeImg = require("../../images/resumeImage/WD_Resume_IMG.png"); //Image version of Resume
     const resumeLink = `https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing`; //Google Drive resume PDF download link
 
 /**

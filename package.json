@@ -1,39 +1,38 @@
 {
   "name": "wd-react-portfolio",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.13",
+    "@craco/craco": "^6.1.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.11.3",
     "@material-ui/icons": "^4.11.2",
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.5.0",
-    "@testing-library/user-event": "^7.2.1",
-    "autoprefixer": "^10.0.4",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
     "emailjs-com": "^2.6.4",
-    "postcss": "^8.1.10",
-    "postcss-cli": "^8.3.0",
-    "react": "^16.14.0",
-    "react-dom": "^16.14.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-google-recaptcha": "^2.1.0",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
+    "react-scripts": "4.0.3",
     "react-spring": "^8.0.27",
-    "tailwindcss": "^2.0.1"
+    "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "build:css": "postcss src/index.css -o src/tailwind.css",
-    "watch:css": "postcss src/index.css -o src/tailwind.css -w",
     "start": "npm update",
-    "poststart": "npm run build:css && react-scripts start",
-    "build": "npm run build:css && react-scripts build",
-    "test": "react-scripts test",
+    "poststart": "craco start",
+    "build": "npm update && craco build",
+    "test": "craco test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "react-app"
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
   "browserslist": {
     "production": [
@@ -46,5 +45,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss7-compat": "^2.0.4",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.4"
   }
 }

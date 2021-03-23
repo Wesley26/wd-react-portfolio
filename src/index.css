@@ -1,11 +1,9 @@
-/*
-Required plugins for Tailwind.
-*/
+/**
+ *  Import tailwind base, components, and utilities.
+ */
 
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
 
 /*

@@ -16,6 +16,7 @@ module.exports = {
     enabled: true,
       content: [ './src/**/*.js' ],
   },
+  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: theme => ({
@@ -52,4 +53,5 @@ module.exports = {
     gridAutoFlow: ['responsive', 'hover', 'focus'],
   },
   plugins: [],
-}
+};
+
