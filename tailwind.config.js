@@ -20,6 +20,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
+        'mobile-one': "url('./images/portfolio_BG_Images/iOS_Weather_App.png')",
         'website-one': "url('./images/portfolio_BG_Images/DrDzitzerWebsite.PNG')",
         'website-two': "url('./images/portfolio_BG_Images/BitBrokerChallenge.PNG')",
         'project-one': "url('./images/portfolio_BG_Images/ShoppingCartTitlePage.PNG')",

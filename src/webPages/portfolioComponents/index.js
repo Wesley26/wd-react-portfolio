@@ -2,6 +2,9 @@
  *  Export Portfolio item components from here to Portfolio.js
  */
 
+//Mobile App Projects
+export { default as MobileOne } from './mobileOne.js';
+
 //Personal Projects
 export { default as ProjectOne } from './projectOne.js';
 export { default as ProjectThree } from './projectThree.js';

@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { noImage,
+import { noImage } from '../contentMaster/PageContents.js'
+import { 
         jSLogo,
         w1Link,
-        portfolioTextWeb1 } from '../contentMaster/PageContents.js'
+        portfolioTextWeb1 } from '../contentMaster/PortfolioPageContents.js'
 import {useTransition, animated} from 'react-spring'
 
 const WebsiteOne = () => {

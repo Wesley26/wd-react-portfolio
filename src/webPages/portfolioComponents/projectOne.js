@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { noImage,
+import { noImage } from '../contentMaster/PageContents.js'
+import { 
         cPlusPlusLogo,
         cPlusPlusLink,
-        portfolioTextPersonal1 } from '../contentMaster/PageContents.js'
+        portfolioTextPersonal1 } from '../contentMaster/PortfolioPageContents.js'
 import {useTransition, animated} from 'react-spring'
 
 const ProjectOne = () => {

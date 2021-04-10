@@ -20,13 +20,12 @@ Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/),
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This readme was last updated on November 2nd, 2020.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This readme was last updated on April 10th, 2021.
 
 
 ## Content of repo
 
 
-# NOTE: Content of repo section will be updated on a future Portfolio update.
 
 ### node_modules folder:
 - Contains all node package dependencies, is ignored in this repo.
@@ -35,8 +34,9 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 ### public folder:
 1. index.html: Index page of the entire web app.
 2. manifest.json: JSON that holds all basic website information.
-3. robots.txt: Do not edit on this repo.
-4. WDfavicon.ico: Fav icon logo for wd-react-portfolio.
+3. robots.txt: Reference the sitemap, ask robots to not index src/clientSecrets.
+4. sitemap.xml: Sitemap for robots to index important web pages.
+5. WDfavicon.ico: Fav icon logo for wd-react-portfolio.
 
 
 ### src folder:
@@ -66,6 +66,7 @@ Note: each js file is their own displayed web page within the app.
 
 - **portfolioComponents:**
 Contains every individual portfolio item listed on the portfolio web page. Each individual portfolio item is listed below.
+- mobileOne.js: React Native iOS/Android Expo Framework Weather App portfolio web component.
 - projectOne.js: C++ Shopping Cart Application portfolio web component.
 - projectThree.js: i01 halo fan game discord bot portfolio web component.
 - projectTwo.js: JavaScript miscellaneous portfolio web component.
@@ -89,13 +90,12 @@ Contains components for the To-do application.
 - App.test.js: Tests the App.
 - index.css: Main CSS file, tailwind CSS is referenced here.
 - index.js: Main JS file.
-- serviceWorker.js: Part of create-react-app, do not edit.
+- reportWebVitals.js: Part of create-react-app, do not edit.
 - setupTests.js: Part of create-react-app, do not edit.
-- tailwind.css: Generated using tailwind.css, ignored in this repo, is generated automatically upon start or build. Do not edit.
 
 
 ### Other files:
 - package.json
 - package-lock.json
-- postcss.config.js - Requires auto-prefixer, and tailwind.css which is used to purge unused CSS classes.
+- craco.config.js - CRACO config file, runs tailwind.css which is used to purge unused CSS classes, manage tailwindCSS runtime.
 - tailwind.config.js - tailwind plugin configuration JS file. Insert custom tailwind CSS class settings and purge CSS configurations in this JS file.

@@ -1,10 +1,12 @@
 import React from 'react'
 import { portfolioRepoForThisSite,
         portfolioRepoForThisSiteLink,
+        portfolioTextMobile1,
         portfolioTextWeb1, 
-        portfolioTextPersonal1 } from './contentMaster/PageContents.js'
+        portfolioTextPersonal1 } from './contentMaster/PortfolioPageContents.js';
 
-import { ProjectOne,
+import { MobileOne, 
+         ProjectOne,
          ProjectTwo,
          ProjectThree,
          WebsiteOne,
@@ -14,7 +16,7 @@ import { ProjectOne,
 const Portfolio = () => {
 
     /**
-     * Note: On JSX div elements line 48 and 61, for every 3 portfolio items added, the CSS class
+     * Note: On JSX div elements line 51, 61, and 74, for every 3 portfolio items added, the CSS class
      * 'lg:grid-rows-1' must increase by one row.
      */
 
@@ -41,7 +43,17 @@ const Portfolio = () => {
                                 {portfolioRepoForThisSite.pRFTS1_4}
                             </p>
                         </div>
-                        
+
+                        <h3 className="font-title text-xl p-3 text-center font-bold">
+                            {portfolioTextMobile1.titleP3}
+                        </h3>
+
+                        <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
+                            <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
+                                <MobileOne />
+                            </div>
+                        </div>
+
                         <h3 className="font-title text-xl p-3 text-center font-bold">
                             {portfolioTextWeb1.titleP1}
                         </h3>
