@@ -3,7 +3,11 @@ import { noImage,
         websiteMasterLogo,
         philly_P,
         philly_L,
-        homeText } from './contentMaster/PageContents.js'
+        homeText, 
+        cookieStore,
+        cookieStoreText,
+        cookieStoreLink
+        } from './contentMaster/PageContents.js'
 
 const Home = () => {
     return (
@@ -26,8 +30,25 @@ const Home = () => {
                     <p className="text-lg">
                         {homeText.mainParagraphH}
                     </p>
+
                     <br>
                     </br>
+
+                    <div className="pb-6 flex flex-col items-center justify-center">
+                        <div className="p-3 h-64 w-64 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400">
+                            <a href={cookieStoreLink}>
+                                <img 
+                                    src={cookieStore} 
+                                    alt={noImage}
+                                    className="mt-7 focus:outline-none">
+                                </img>
+                            </a>
+                        </div>
+                        <p className="text-lg">
+                            {cookieStoreText.fundraiserA}
+                        </p>
+                    </div>
+
                     <div>
                         <figure>
                             <img 
