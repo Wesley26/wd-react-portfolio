@@ -20,8 +20,6 @@ import websiteMasterLogo from "../../images/logoImage/WD_Logo.png"; //Master web
 
 import philly_P from"../../images/PhillyPA_Portrait.jpg"; //Philly homepage photo for mobile view
 import philly_L from "../../images/PhillyPA_Landscape.jpg"; //Philly homepage photo for tablet/desktop view
-import cookieStore from "../../images/fundraiserImage/Cookie-PNG-File.png"; //cookieStore photo icon for CHOYCES internship fundraiser
-//re-visit on May 14th, 2021
 
 import wd_About_Photo from "../../images/WesleyP18_V2.jpg"; //Main photo used on about page.
 import githubLogo from "../../images/GitHub-Mark-120px-plus.png"; //GitHub Logo
@@ -49,20 +47,6 @@ const homeText = {
                 captionH: `The photo above was taken in person outside the South-East doorway of the Philadelphia Art Museum overlooking 
                             the famed Rocky Steps in Philadelphia, P.A.`
                 };
-
-                /**
-                 * @cookieStoreText - re-visit on May 14th, 2021
-                 * @cookieStoreLink - re-visit on May 14th, 2021
-                 */
-
-const cookieStoreText = {
-                fundraiserA: `I'm helping to raise funds for the CHOYCES Online Cookie Dough Fundraiser! We're offering great tasting
-                            cookie dough products for you and your family to enjoy. A large portion of the proceeds from every purchase
-                            will go to our group to help fund a variety of needs and activities. The fundraiser is running until
-                            May 14th, 2021.`
-                };
-
-const cookieStoreLink = `https://ah.1cookie.com/buy/Wesley-Store/`;
 
 /**
  * //////////////////////////////////////////////// ABOUT PAGE CONTENT ///////////////////////////////////////////////////////////////////
@@ -180,10 +164,7 @@ export {
     //////////////////
     philly_P,
     philly_L,
-    cookieStore,
     homeText,
-    cookieStoreText,
-    cookieStoreLink,
     //////////////////
     wd_About_Photo,
     githubLink,
