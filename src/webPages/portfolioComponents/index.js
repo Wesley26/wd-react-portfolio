@@ -4,6 +4,7 @@
 
 //Mobile App Projects
 export { default as MobileOne } from './mobileOne.js';
+export { default as MobileTwo } from './mobileTwo.js';
 
 //Personal Projects
 export { default as ProjectOne } from './projectOne.js';

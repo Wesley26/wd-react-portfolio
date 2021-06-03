@@ -44,10 +44,14 @@ const portfolioRepoForThisSiteLink = `https://github.com/Wesley26/wd-react-portf
     const portfolioTextMobile1 = {
         titleP3: "Mobile App Portfolio",
         subtitleP3_1: "React Native Weather App",
+        subtitleP3_2: "CHOYCES React Native App",
     };
 
         //Logo used is reactJSLogo
         const m1Link = `https://github.com/Wesley26/weather-App`; //Link corresponds with portfolioTextMobile1.subtitleP3_1
+
+        //Logo used is reactJSLogo
+        const m2Link = `https://github.com/Wesley26/ChoycesMobile`; //Link corresponds with portfolioTextMobile1.subtitleP3_2
     
     const portfolioTextWeb1 = {
         titleP1: "Website Portfolio",
@@ -82,6 +86,7 @@ export {
     portfolioTextMobile1,
         reactJSLogo,
         m1Link,
+        m2Link,
     portfolioTextWeb1,
         w1Link,
         w2Link,

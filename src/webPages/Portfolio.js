@@ -5,7 +5,8 @@ import { portfolioRepoForThisSite,
         portfolioTextWeb1, 
         portfolioTextPersonal1 } from './contentMaster/PortfolioPageContents.js';
 
-import { MobileOne, 
+import { MobileOne,
+         MobileTwo,
          ProjectOne,
          ProjectTwo,
          ProjectThree,
@@ -16,7 +17,7 @@ import { MobileOne,
 const Portfolio = () => {
 
     /**
-     * Note: On JSX div elements line 51, 61, and 74, for every 3 portfolio items added, the CSS class
+     * Note: On JSX div elements line 52, 65, and 78, for every 3 portfolio items added, the CSS class
      * 'lg:grid-rows-1' must increase by one row.
      */
 
@@ -51,6 +52,9 @@ const Portfolio = () => {
                         <div className="grid md:grid-cols-1 md:p-3 lg:grid-cols-3 lg:grid-rows-1 gap-4 justify-items-center">
                             <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
                                 <MobileOne />
+                            </div>
+                            <div className="bg-gray-200 flex justify-center items-center h-auto w-auto shadow-lg">
+                                <MobileTwo />
                             </div>
                         </div>
 
@@ -91,4 +95,4 @@ const Portfolio = () => {
     )
 };
 
-export default Portfolio
+export default Portfolio;

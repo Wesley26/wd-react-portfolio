@@ -20,7 +20,7 @@ Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/),
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This readme was last updated on April 10th, 2021.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This readme was last updated on June 3rd, 2021.
 
 
 ## Content of repo
@@ -67,10 +67,12 @@ Note: each js file is their own displayed web page within the app.
 - **portfolioComponents:**
 Contains every individual portfolio item listed on the portfolio web page. Each individual portfolio item is listed below.
 - mobileOne.js: React Native iOS/Android Expo Framework Weather App portfolio web component.
+- mobileTwo.js: CHOYCES Mobile App Internship React Native portfolio web component.
 - projectOne.js: C++ Shopping Cart Application portfolio web component.
 - projectThree.js: i01 halo fan game discord bot portfolio web component.
 - projectTwo.js: JavaScript miscellaneous portfolio web component.
 - websiteOne.js: Smile Design Office Website Overhaul portfolio web component.
+- websiteTwo.js: BitBroker Website Coding challenge portfolio web component.
 
 - **todoComponents:**
 Contains components for the To-do application.
