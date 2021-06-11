@@ -48,7 +48,7 @@ const MobileTwo = () => {
                             <animated.p
                                 key = {key}
                                 style = {props}
-                                className="font-title bg-gray-500 hover:bg-gray-600 active:bg-gray-700 text-gray-200 text-center font-medium w-11long ml-16">
+                                className="font-title bg-gray-500 hover:bg-gray-600 active:bg-gray-700 text-gray-200 text-center font-medium w-11long px-1 ml-16">
                                 <a href={m2Link}>{portfolioTextMobile1.subtitleP3_2}</a>
                             </animated.p>
                             )

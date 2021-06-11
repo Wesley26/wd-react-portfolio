@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
         toDoTitle,
+        storageText,
         } from './contentMaster/PageContents.js';
 
 import ToDoForm from './todoComponents/todoForm.js';
@@ -9,6 +10,22 @@ import TodoListing from './todoComponents/todoListing.js';
 const TodoList = () => {
 
     const [todos, setTodos] = useState([]);
+    const [todosMem, setTodosMem] = useState([]);
+
+    useEffect(() => {
+
+        localStorage.setItem('rememberTodo', todos);
+
+        let memoryTodo = localStorage.getItem('rememberTodo');
+        //console.log(memoryTodo); //uncomment to see localStorage in action
+
+        if (memoryTodo) {
+            setTodosMem(memoryTodo);
+        };
+
+    }, [todos]);
+
+    console.log(todosMem); //uncomment to see localStorage in action
 
     return (
         
@@ -20,12 +37,22 @@ const TodoList = () => {
                     {toDoTitle}
                 </h1>
 
+                <h3 className="text-md p-3 text-center">
+                    {storageText}{localStorage.getItem('rememberTodo')}
+                </h3>
+
                 <ToDoForm 
                     saveToDo={todoText => {
-                        const trimmedText = todoText.trim();
 
-                        if (trimmedText.length > 0) {
-                            setTodos([...todos, trimmedText]);
+                        if (todoText) {
+                            /**
+                             * Handle Todos from current window
+                             */
+                            const trimmedText = todoText.trim();
+
+                            if (trimmedText.length > 0) {
+                                setTodos([...todos, trimmedText]);
+                            };
                         };
                     }}
                 />

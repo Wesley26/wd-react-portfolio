@@ -157,6 +157,7 @@ const contactMeHeaderText = "Contact Me"; //Contact Me page header text
 
 const toDoTitle = "My Development To-do List";
 const placeholderToDoItemText = "Add to-do item";
+const storageText = "Your current locally stored to-do list items: ";
 
 export {
     noImage,
@@ -201,4 +202,5 @@ export {
     //////////////////
     toDoTitle,
     placeholderToDoItemText,
+    storageText,
 };
