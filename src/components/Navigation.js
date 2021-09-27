@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import NavigationMenu from './NavigationMenu'
+import NavigationMenuD from './NavigationMenuD';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
@@ -28,12 +29,17 @@ const Navigation = () => {
     return (
         <nav>
             <span className="font-body mr-3 pt-3 pb-3 pr-3 pl-12 absolute right-0 float-right text-l">
-                <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black">
-                    <FontAwesomeIcon 
-                        icon={faBars}
-                        className="mr-2 p-2 text-5xl hover:bg-gray-200 hover:opacity-75 active:bg-gray-400"
-                        onClick={() => setShowMenu(!showMenu)}
-                    />
+                <div className="flex flex-row-reverse">
+                    <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black h-44">
+                        <FontAwesomeIcon 
+                            icon={faBars}
+                            className="mr-2 p-2 text-5xl hover:bg-gray-200 hover:opacity-75 active:bg-gray-400"
+                            onClick={() => setShowMenu(!showMenu)}
+                        />
+                    </div>
+                    <div className="invisible hidden sm:p-3 sm:visible sm:flex sm:justify-center sm:items-center">
+                        <NavigationMenuD />
+                    </div>
                 </div>
             </span>
             {

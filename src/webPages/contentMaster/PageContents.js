@@ -65,10 +65,10 @@ const aboutText = {
                                 C/C++ and Java. In database design, I studied SQL.`,
                 mainParagraphA_2: `After graduation, I began teaching myself the fundamental basics of static 
                                 HTML, CSS, and JavaScript using jQuery. Today, I focus on front-end user interface web design using
-                                ReactJS. I am also familiar with many other front-end related JavaScript libraries such as
-                                TailwindCSS, PostCSS, and React-Spring to name a few. My previous work experience includes 
-                                a PC refresh contract project and one-year technical customer support position located at 
-                                Southern New Jersey in the online iGaming casino industry.`,
+                                ReactJS for Web and React Native for Mobile. I am also familiar with many other front-end related 
+                                JavaScript libraries such as TailwindCSS, PostCSS, and React-Spring to name a few. 
+                                My previous work experience includes a PC refresh contract project and one-year technical 
+                                customer support position located at Southern New Jersey in the online iGaming casino industry.`,
                 mainParagraphA_3: `For more details, visit the GitHub and LinkedIn profile links below.`,
                 }; //contains the about description block section
 

@@ -11,6 +11,7 @@ import { navTitleField,
 
 
 /**
+ * @NavigationMenu - Mobile component version of NavigationMenu.
  * @param props is passed from Web Component Navigation in Navigation.js (line 48). Controls closing nav menu arrow function.
  */
 
@@ -32,49 +33,49 @@ const NavigationMenu = props => {
                     {navTitleField.lineThree}
                 </h3>
             </div>
-            <ul className="font-title pt-6 pb-12">
-                <li className="pb-2">
-                <Link 
-                    to="/" 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                    onClick={props.closeMenu}>{navItemOne}</Link>
-                </li>
-                <li className="pt-3">
-                <Link 
-                    to="/about" 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                    onClick={props.closeMenu}>{navItemTwo}</Link>
-                </li>
-                <li className="pt-3">
-                <Link 
-                    to="/portfolio" 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                    onClick={props.closeMenu}>{navItemThree}</Link>
-                </li>
-                <li className="pt-3">
-                <Link 
-                    to="/resume" 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                    onClick={props.closeMenu}>{navItemFour}</Link>
-                </li>
-                <li className="pt-3">
-                <Link 
-                    to="/contactMe" 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                    onClick={props.closeMenu}>{navItemFive}</Link>
-                </li>
-                <li className="pt-10 pb-3">
-                    <p className="text-20e md:text-35e lg:text-35e font-semibold">
-                        {navAppSplitterText}
-                    </p>
-                </li>
-                <li className="pt-3">
-                <Link 
-                    to="/todoList" 
-                    className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                    onClick={props.closeMenu}>{navItemSix}</Link>
-                </li>
-            </ul>
+                <ul className="font-title pt-6 pb-12">
+                    <li className="pb-2 md:hidden sm:grid">
+                    <Link 
+                        to="/" 
+                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        onClick={props.closeMenu}>{navItemOne}</Link>
+                    </li>
+                    <li className="pt-3 md:hidden sm:grid">
+                    <Link 
+                        to="/about" 
+                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        onClick={props.closeMenu}>{navItemTwo}</Link>
+                    </li>
+                    <li className="pt-3 md:hidden sm:grid">
+                    <Link 
+                        to="/portfolio" 
+                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        onClick={props.closeMenu}>{navItemThree}</Link>
+                    </li>
+                    <li className="pt-3 md:hidden sm:grid">
+                    <Link 
+                        to="/resume" 
+                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        onClick={props.closeMenu}>{navItemFour}</Link>
+                    </li>
+                    <li className="pt-3 md:hidden sm:grid">
+                    <Link 
+                        to="/contactMe" 
+                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        onClick={props.closeMenu}>{navItemFive}</Link>
+                    </li>
+                    <li className="pt-10 pb-3">
+                        <p className="text-20e md:text-35e lg:text-35e font-semibold">
+                            {navAppSplitterText}
+                        </p>
+                    </li>
+                    <li className="pt-3">
+                    <Link 
+                        to="/todoList" 
+                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        onClick={props.closeMenu}>{navItemSix}</Link>
+                    </li>
+                </ul>
             <br>
             </br>
             <div>
