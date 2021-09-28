@@ -90,4 +90,4 @@ const NavigationMenu = props => {
     );
 };
 
-export default NavigationMenu
+export default NavigationMenu;

@@ -30,16 +30,16 @@ const Navigation = () => {
         <nav>
             <span className="font-body mr-3 pt-3 pb-3 pr-3 pl-12 absolute right-0 float-right text-l">
                 <div className="flex flex-row-reverse">
-                    <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black h-44">
+                    <div className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black h-20">
                         <FontAwesomeIcon 
                             icon={faBars}
                             className="mr-2 p-2 text-5xl hover:bg-gray-200 hover:opacity-75 active:bg-gray-400"
                             onClick={() => setShowMenu(!showMenu)}
                         />
                     </div>
-                    <div className="invisible hidden sm:p-3 sm:visible sm:flex sm:justify-center sm:items-center">
-                        <NavigationMenuD />
-                    </div>
+                </div>
+                <div className="invisible hidden h-auto sm:pt-1 sm:visible sm:flex sm:flex-1 sm:justify-center sm:items-center">
+                    <NavigationMenuD />
                 </div>
             </span>
             {
@@ -60,4 +60,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation
+export default Navigation;
