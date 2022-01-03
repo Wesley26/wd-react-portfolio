@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
@@ -16,10 +16,15 @@ import DeleteIcon from '@material-ui/icons/Delete';
  * index to remove todo item.
  */
 
-const TodoListing = ({ todos, deleteTodo }) => (
+interface TODOLISTING {
+    todos: any,
+    deleteTodo: (todoIndex: any) => void,
+}
+
+const TodoListing:FC<TODOLISTING> = (props:TODOLISTING) => (
 
     <List>
-        {todos.map((todo, index) => (
+        {props.todos.map((todo: any, index: any) => (
 
             <ListItem key={index.toString()} dense button>
                 <Checkbox 
@@ -31,7 +36,7 @@ const TodoListing = ({ todos, deleteTodo }) => (
                     <IconButton
                         aria-label={`Delete`}
                         onClick={() => {
-                            deleteTodo(index);
+                            props.deleteTodo(index);
                         }}
                     >
                         <DeleteIcon />
@@ -44,7 +49,5 @@ const TodoListing = ({ todos, deleteTodo }) => (
     </List>
 
 );
-
-
 
 export default TodoListing;

@@ -1,4 +1,4 @@
-import React from 'react'
+import { FC } from 'react';
 import { portfolioRepoForThisSite,
         portfolioRepoForThisSiteLink,
         portfolioTextMobile1,
@@ -12,9 +12,9 @@ import { MobileOne,
          ProjectThree,
          WebsiteOne,
          WebsiteTwo,
-        } from '../webPages/portfolioComponents/index.js';
+        } from './portfolioComponents/index.js';
 
-const Portfolio = () => {
+const Portfolio:FC = () => {
 
     /**
      * Note: On JSX div elements line 52, 65, and 78, for every 3 portfolio items added, the CSS class

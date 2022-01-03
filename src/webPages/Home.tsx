@@ -1,12 +1,10 @@
-import React from 'react'
-import { noImage,
-        websiteMasterLogo,
-        philly_P,
-        philly_L,
-        homeText,
-        } from './contentMaster/PageContents.js'
+import { FC } from 'react';
+import PageContents from './contentMaster/PageContents';
 
-const Home = () => {
+const Home:FC = () => {
+
+    const pageContents = PageContents();
+
     return (
         <div className="font-body bg-body-lightGray m-6 shadow-xl">
 
@@ -14,18 +12,18 @@ const Home = () => {
                 <div className="pb-10">
                     <div className="flex justify-center items-center">
                         <img
-                        src={websiteMasterLogo}
-                        alt={noImage}
+                        src={pageContents.allImages.masterLogo}
+                        alt={pageContents.noImage}
                         className="focus:outline-none">
                         </img>
                     </div>
                     <h3 className="font-title text-xl text-center font-bold">
-                        {homeText.subHeaderH}
+                        {pageContents.homeText.subHeaderH}
                     </h3>
                     <br>
                     </br>
                     <p className="text-lg">
-                        {homeText.mainParagraphH}
+                        {pageContents.homeText.mainParagraphH}
                     </p>
 
                     <br>
@@ -34,17 +32,17 @@ const Home = () => {
                     <div>
                         <figure>
                             <img 
-                                src={philly_P} 
-                                alt={noImage}
+                                src={pageContents.allImages.phillyPort} 
+                                alt={pageContents.noImage}
                                 className="lg:hidden focus:outline-none shadow-lg">
                             </img>
                             <img 
-                                src={philly_L} 
-                                alt={noImage}
+                                src={pageContents.allImages.phillyLand} 
+                                alt={pageContents.noImage}
                                 className="invisible h-1 w-1 lg:visible lg:h-full lg:w-full focus:outline-none shadow-lg">
                             </img>
                             <figcaption className="pt-2 text-left">
-                                {homeText.captionH}
+                                {pageContents.homeText.captionH}
                             </figcaption>
                         </figure>
                     </div>

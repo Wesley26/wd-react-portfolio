@@ -14,12 +14,12 @@
 module.exports = {
   purge: {
     enabled: true,
-      content: [ './src/**/*.js' ],
+      content: [ './src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: theme => ({
+      backgroundImage: {
         'mobile-one': "url('./images/portfolio_BG_Images/iOS_Weather_App.png')",
         'mobile-two': "url('./images/portfolio_BG_Images/CHOYCES_App_Demo_1.PNG')",
         'website-one': "url('./images/portfolio_BG_Images/DrDzitzerWebsite.PNG')",
@@ -27,7 +27,7 @@ module.exports = {
         'project-one': "url('./images/portfolio_BG_Images/ShoppingCartTitlePage.PNG')",
         'project-two': "url('./images/portfolio_BG_Images/JSCalculatorApp.PNG')",
         'project-three': "url('./images/portfolio_BG_Images/i01Bot.PNG')",
-      }),
+      },
       fontFamily: {
         'title': ['Cabin', 'sans-serif'],
         'body': ['Josefin Sans', 'sans-serif'],

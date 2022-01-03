@@ -1,4 +1,4 @@
-import React from 'react';
+import { FC } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,9 +14,9 @@ import { About,
           Portfolio,
           Resume,
           TodoList,
-       } from '../src/webPages/index.js';
+       } from './webPages/index';
 
-const App = () => {
+const App:FC = () => {
   return (
     <div className="bg-body-gray absolute bottom-0 top-0 left-0 right-0">
       <Router>

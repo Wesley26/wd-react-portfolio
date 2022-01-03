@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { noImage } from '../contentMaster/PageContents.js'
+import PageContents from '../contentMaster/PageContents';
 import { 
         jSLogo,
         w1Link,
@@ -14,7 +14,7 @@ const WebsiteOne = () => {
      * 
      * visibleTransitions - animates the paragraph JSX element (the clickable link description)
      */
-
+    const pageContents = PageContents();
     const [hoverOver, setHoverOver] = useState(false);
 
     const visibleTransitions = useTransition(hoverOver, null, {
@@ -38,7 +38,7 @@ const WebsiteOne = () => {
                             <animated.img
                                 key = {key}
                                 style = {props}
-                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={jSLogo} alt={noImage}>
+                                className="ml-24 mr-20 p-1 h-2/5 w-2/5" src={jSLogo} alt={pageContents.noImage}>
                             </animated.img>
                             )
                         }

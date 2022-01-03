@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { FC, useState } from 'react'
 import NavigationMenu from './NavigationMenu'
 import NavigationMenuD from './NavigationMenuD';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -6,7 +6,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {useTransition, animated} from 'react-spring'
 
 
-const Navigation = () => {
+const Navigation:FC = () => {
     
     /*
     Conditional rendering
@@ -18,7 +18,7 @@ const Navigation = () => {
     NavigationMenu takes a prop called closeMenu, See NavigationMenu.js
     */
    
-    const [showMenu, setShowMenu] = useState(false);
+    const [showMenu, setShowMenu] = useState<boolean>(false);
 
     const menuTransitions = useTransition(showMenu, null, {
         from: { opacity: 0, transform: 'translateX(-100%)' },

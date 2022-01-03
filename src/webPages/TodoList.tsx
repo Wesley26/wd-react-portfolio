@@ -1,16 +1,14 @@
-import React, { useEffect, useState } from 'react';
-import {
-        toDoTitle,
-        storageText,
-        } from './contentMaster/PageContents.js';
+import { FC, useEffect, useState } from 'react';
+import PageContents from './contentMaster/PageContents';
 
-import ToDoForm from './todoComponents/todoForm.js';
-import TodoListing from './todoComponents/todoListing.js';
+import ToDoForm from './todoComponents/todoForm';
+import TodoListing from './todoComponents/todoListing';
 
-const TodoList = () => {
+const TodoList:FC = () => {
 
-    const [todos, setTodos] = useState([]);
-    const [todosMem, setTodosMem] = useState([]);
+    const pageContents = PageContents();
+    const [todos, setTodos] = useState<any>([]);
+    const [todosMem, setTodosMem] = useState<any>([]);
 
     useEffect(() => {
 
@@ -34,15 +32,15 @@ const TodoList = () => {
             <div className="px-5 md:px-40 py-3">
 
                 <h1 className="text-xl p-3 text-center">
-                    {toDoTitle}
+                    {pageContents.toDoTitle}
                 </h1>
 
                 <h3 className="text-md p-3 text-center">
-                    {storageText}{localStorage.getItem('rememberTodo')}
+                    {pageContents.storageText}{localStorage.getItem('rememberTodo')}
                 </h3>
 
                 <ToDoForm 
-                    saveToDo={todoText => {
+                    saveTodo={(todoText: any) => {
 
                         if (todoText) {
                             /**
@@ -59,8 +57,8 @@ const TodoList = () => {
 
                 <TodoListing 
                     todos={todos}
-                    deleteTodo={todoIndex => {
-                        const newTodos = todos.filter((_, index) => index !== todoIndex);
+                    deleteTodo={(todoIndex: any) => {
+                        const newTodos = todos.filter((_: any, index: any) => index !== todoIndex);
 
                         setTodos(newTodos);
                     }}
