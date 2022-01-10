@@ -20,13 +20,20 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
+        ///////////////////////PORTFOLIO BACKGROUND IMAGES////////////////////////////////
+        'realWorld-oneA': "url('./images/portfolio_BG_Images/SketchDev1.PNG')",
+        'realWorld-oneB': "url('./images/portfolio_BG_Images/SketchDev2.PNG')",
+        'realWorld-oneC': "url('./images/portfolio_BG_Images/SketchDev3.PNG')",
+        'realWorld-oneD': "url('./images/portfolio_BG_Images/SketchDev4.PNG')",
+        'realWorld-oneE': "url('./images/portfolio_BG_Images/SketchDev5.png')",
+        'realWorld-oneF': "url('./images/portfolio_BG_Images/SketchDev6.png')",
         'mobile-one': "url('./images/portfolio_BG_Images/iOS_Weather_App.png')",
         'mobile-two': "url('./images/portfolio_BG_Images/CHOYCES_App_Demo_1.PNG')",
         'website-one': "url('./images/portfolio_BG_Images/DrDzitzerWebsite.PNG')",
         'website-two': "url('./images/portfolio_BG_Images/BitBrokerChallenge.PNG')",
-        'project-one': "url('./images/portfolio_BG_Images/ShoppingCartTitlePage.PNG')",
-        'project-two': "url('./images/portfolio_BG_Images/JSCalculatorApp.PNG')",
-        'project-three': "url('./images/portfolio_BG_Images/i01Bot.PNG')",
+        'website-three': "url('./images/portfolio_BG_Images/WD_VIZE.png')",
+        'project-one': "url('./images/portfolio_BG_Images/KartersBotScreen.PNG')",
+        //////////////////////////////////////////////////////////////////////////////////
       },
       fontFamily: {
         'title': ['Cabin', 'sans-serif'],
@@ -43,11 +50,25 @@ module.exports = {
         'body-lightGray': '#f7fafc',
         'body-form': '#e2e8f0',
       },
+      height: {
+        '51.6long': '51.6rem',
+        '30long': '30rem',
+        '26.9long': '26.9rem',
+        '23.5long': '23.5rem',
+        '11.2long': '11.2rem',
+      },
       spacing: {
         '11long': '11rem',
         '20long': '20rem',
         '32long': '32rem',
         '34long': '34rem',
+      },
+      width: {
+        '43.5long': '43.5rem',
+        '38long': '38rem',
+        '23.9long': '23.9rem',
+        '18long': '18rem',
+        '13.9long': '13.9rem',
       },
     },
   },

@@ -21,7 +21,7 @@ Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/),
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 3rd, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 10th, 2022.
 
 
 ## Content of repo
@@ -50,7 +50,7 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 3. components folder:
 
 - **navMaster:**
-- `NavContent.ts`: Contains all JavaScript functionality for the navigational web components. All navigational web components import their variables from this custom hook ts file.
+- `NavContent.ts`: Contains all TypeScript functionality for the navigational web components. All navigational web components import their variables from this custom hook ts file.
 
 - **components root:**
 - `Footer.tsx`: The footer web component for wd-react-portfolio.
@@ -61,6 +61,7 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 
 4. hooks folder:
 
+- `PortfolioDisplayContext.ts`: Context hook to help control portfolio page navigation.
 - `useCurrentTime.ts`:  Custom React Hook which displays the current time. Returns the date ticking every second.
 
 5. webPages folder:
@@ -70,14 +71,20 @@ Note: each ts/tsx file is their own displayed web page within the app.
 - `PageContent.ts`: Contains all TypeScript functionality for individual web page components. All individual page web components import their variables from this custom hook ts file.
 
 - **portfolioComponents:**
+Contains portfolio components
+- `PortfolioCard.tsx`: Portfolio card page web component.
+- `PortfolioNav.tsx`: Portfolio left caret and right caret arrow component.
+- `PortfolioPageContents.ts`: Custom hook containing all content for each portfolio item listed below.
+
+- **portfolioChildren:**
 Contains every individual portfolio item listed on the portfolio web page. Each individual portfolio item is listed below.
-- `mobileOne.js`: React Native iOS/Android Expo Framework Weather App portfolio web component.
-- `mobileTwo.js`: CHOYCES Mobile App Internship React Native portfolio web component.
-- `projectOne.js`: C++ Shopping Cart Application portfolio web component.
-- `projectThree.js`: i01 halo fan game discord bot portfolio web component.
-- `projectTwo.js`: JavaScript miscellaneous portfolio web component.
-- `websiteOne.js`: Smile Design Office Website Overhaul portfolio web component.
-- `websiteTwo.js`: BitBroker Website Coding challenge portfolio web component.
+- `RealWorldOne.tsx`: Sketch/Eastman Chemical Company portfolio web component.
+- `MobileOne.tsx`: React Native iOS/Android Expo Framework Weather App portfolio web component.
+- `MobileTwo.tsx`: CHOYCES Mobile App Internship React Native portfolio web component.
+- `ProjectOne.tsx`: 'The Karters' discord community bot portfolio web component.
+- `WebsiteOne.tsx`: Smile Design Office Website Overhaul portfolio web component.
+- `WebsiteTwo.tsx`: BitBroker Website Coding challenge portfolio web component.
+- `WebsiteThree.tsx`: Vize Feedback Page Coding challenge portfolio web component.
 
 - **todoComponents:**
 Contains components for the To-do application.
