@@ -1,13 +1,11 @@
 import { FC } from 'react';
-import { 
-    List,
-    ListItem,
-    ListItemSecondaryAction,
-    ListItemText,
-    Checkbox,
-    IconButton,
-} from '@mui/material';
-import { DeleteForever } from '@mui/icons-material';
+import List from "@mui/material/List";
+import ListItem from "@mui/material/ListItem";
+import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
+import ListItemText from '@mui/material/ListItemText';
+import Checkbox from '@mui/material/Checkbox';
+import IconButton from '@mui/material/IconButton';
+import DeleteForever from '@mui/icons-material/DeleteForever';
 
 /**
  * Individual todo list component. This component does not need
@@ -16,6 +14,9 @@ import { DeleteForever } from '@mui/icons-material';
  * @todos array of todos, map over each one and create list item
  * @deleteTodo called when clicking IconButton, identify the unique
  * index to remove todo item.
+ * 
+ * NOTE: Import your material icons seperately, not all at once.
+ * It will greatly slow down build performance otherwise.
  */
 
 interface TODOLISTING {
