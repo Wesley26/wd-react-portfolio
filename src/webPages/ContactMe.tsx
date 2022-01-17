@@ -1,5 +1,5 @@
 import { FC, useState } from 'react'
-import emailjs from 'emailjs-com';
+import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import PageContents from './contentMaster/PageContents';
 
@@ -59,9 +59,9 @@ const ContactMe:FC = () => {
     let sendEmail = (e: any) => {
         e.preventDefault();
 
-        const SERVICE_ID = pageContents.apiContent.SERVICE_ID as string;
-        const TEMPLATE_ID = pageContents.apiContent.TEMPLATE_ID as string;
-        const USER_ID = pageContents.apiContent.USER_ID as string;
+        const SERVICE_ID = pageContents.apiContent.serviceID as string;
+        const TEMPLATE_ID = pageContents.apiContent.templateID as string;
+        const USER_ID = pageContents.apiContent.userID as string;
 
         if (allowSend === true) {
             emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID) //sends the form
@@ -91,7 +91,7 @@ const ContactMe:FC = () => {
     };
   
     return (
-      <div className="font-body bg-body-lightGray m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
+      <div className="font_body bg-body_lightGray m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
           <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
               <h3 className="font-title text-xl p-3 font-bold bg-transparent">
                 {pageContents.contactMeHeaderText}
@@ -119,10 +119,10 @@ const ContactMe:FC = () => {
           </div>
           <br>
           </br>
-          <div className="bg-body-gray p-6 flex justify-center place-items-center shadow-lg">
+          <div className="bg-body_gray p-6 flex justify-center place-items-center shadow-lg">
       
             <form
-                className="bg-body-form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
+                className="bg-body_form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
                 onSubmit={sendEmail}
             >
                 <div className="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3">
@@ -163,7 +163,7 @@ const ContactMe:FC = () => {
                     />
                 </div>
                 <div className="p-3 grid justify-items-center">
-                    <label className="font-title text-xl p-3 flex justify-center"><b>{pageContents.commonContactFormText.messageText}</b></label>
+                    <label className="fon-title text-xl p-3 flex justify-center"><b>{pageContents.commonContactFormText.messageText}</b></label>
                     <textarea
                         className="shadow-lg"
                         name="message"
@@ -176,7 +176,7 @@ const ContactMe:FC = () => {
 
                 <div className="p-3 flex justify-center">
                     <ReCAPTCHA
-                        sitekey={pageContents.apiContent.RECAPTCHA_CLIENT_SIDE_KEY}
+                        sitekey={pageContents.apiContent.recaptchaClientKey}
                         onChange={onPass}
                         onExpired={onFail}
                         onErrored={onFail} 

@@ -1,7 +1,8 @@
 import { FC, useContext, useEffect, useState } from 'react';
-import { useTransition, animated } from 'react-spring';
 import PageContents from '../../contentMaster/PageContents';
 import PortfolioPageContents from '../PortfolioPageContents';
+import PortfolioAnimations from '../PortfolioAnimations';
+import { motion } from 'framer-motion';
 
 import { PortfolioDisplayContext } from '../../../hooks/PortfolioDisplayContext';
 
@@ -9,15 +10,10 @@ const WebsiteThree:FC = () => {
 
     const pageContents = PageContents();
     const portfolioPageContents = PortfolioPageContents();
+    const portfolioAnimations = PortfolioAnimations();
     const { portfolioSetter } = useContext(PortfolioDisplayContext);
 
     const [visible, setVisible] = useState<boolean>(false);
-
-    const visibleTransitions = useTransition(visible, null, {
-        from: { opacity: 0.1 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0.1 },
-    });
 
     useEffect(() => {
 
@@ -30,16 +26,15 @@ const WebsiteThree:FC = () => {
     }, [portfolioSetter]);
 
     return (
-        <> {
-            visible && visibleTransitions.map(({ item, key, props }) => 
-            item && 
-            <animated.div
-                key={key}
-                style={props}
+        <>  { visible ? (
+            <motion.div 
+                initial={portfolioAnimations.initialStyle}
+                animate={portfolioAnimations.animateStyle}
+                transition={portfolioAnimations.transitionStyle}
                 className="mx-1 flex flex-col justify-center items-center w-max"
             >
 
-                <div className="bg-website-three bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-11.2long md:h-23.5long lg:h-26.9long w-18long md:w-38long lg:w-43.5long" />
+                <div className="bg-website_three bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-11.2long md:h-23.5long lg:h-26.9long w-18long md:w-38long lg:w-43.5long" />
 
                 <div className="p-3 bg-transparent" />
 
@@ -69,8 +64,8 @@ const WebsiteThree:FC = () => {
 
                 </div>
                 
-            </animated.div>
-            )}
+            </motion.div>
+            ) : null }
         </>
     );
 };

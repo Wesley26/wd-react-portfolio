@@ -1,7 +1,8 @@
 import { FC, useContext, useEffect, useState } from 'react';
-import { useTransition, animated } from 'react-spring';
 import PageContents from '../../contentMaster/PageContents';
 import PortfolioPageContents from '../PortfolioPageContents';
+import PortfolioAnimations from '../PortfolioAnimations';
+import { motion } from 'framer-motion';
 
 import { PortfolioDisplayContext } from '../../../hooks/PortfolioDisplayContext';
 
@@ -9,15 +10,10 @@ const MobileOne:FC = () => {
 
     const pageContents = PageContents();
     const portfolioPageContents = PortfolioPageContents();
+    const portfolioAnimations = PortfolioAnimations();
     const { portfolioSetter } = useContext(PortfolioDisplayContext);
 
     const [visible, setVisible] = useState<boolean>(false);
-
-    const visibleTransitions = useTransition(visible, null, {
-        from: { opacity: 0.1 },
-        enter: { opacity: 1 },
-        leave: { opacity: 0.1 },
-    });
 
     useEffect(() => {
 
@@ -30,16 +26,15 @@ const MobileOne:FC = () => {
     }, [portfolioSetter]);
 
     return (
-        <> {
-            visible && visibleTransitions.map(({ item, key, props }) => 
-            item && 
-            <animated.div
-                key={key}
-                style={props}
+        <>  { visible ? (
+            <motion.div 
+                initial={portfolioAnimations.initialStyle}
+                animate={portfolioAnimations.animateStyle}
+                transition={portfolioAnimations.transitionStyle}
                 className="mx-1 md:mx-16 flex flex-col lg:flex-row justify-center items-center w-max"
             >
 
-                <div className="bg-mobile-one bg-contain bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96" />
+                <div className="bg-mobile_one bg-contain bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96" />
 
                 <div className="p-3 bg-transparent" />
 
@@ -68,8 +63,8 @@ const MobileOne:FC = () => {
                     </p>
 
                 </div>
-            </animated.div>
-            )}
+            </motion.div>
+            ) : null }
         </>
     );
 };

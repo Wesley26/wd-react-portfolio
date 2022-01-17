@@ -17,15 +17,7 @@ import resumeImg from "../../images/resumeImage/WD_Resume_IMG.png"; //Image vers
  * //////////////////////////////////////////////// UNIVERSAL API IMPORTS /////////////////////////////////////////////////////////
  */
 
-import {
-    ///////////EmailJS////////
-    SERVICE_ID,
-    TEMPLATE_ID,
-    USER_ID,
-    ACCESS_TOKEN,
-    ////////reCaptcha_v2///////
-    RECAPTCHA_CLIENT_SIDE_KEY,
-} from "../../clientSecret/secrets.json";
+import secrets from '../../clientSecret/secrets.json';
 
 /**
  * Content on every main informational webpage is imported from this TS custom hook.
@@ -149,22 +141,22 @@ const PageContents = () => {
      */
 
     interface APICONTENT {
-        SERVICE_ID: string,
-        TEMPLATE_ID: string,
-        USER_ID: string,
-        ACCESS_TOKEN: string,
-        RECAPTCHA_CLIENT_SIDE_KEY: string,
+        serviceID: string,
+        templateID: string,
+        userID: string,
+        accessToken: string,
+        recaptchaClientKey: string,
     };
 
     const apiContent: APICONTENT = {
 
-        ///////////EmailJS////////
-        SERVICE_ID: SERVICE_ID,
-        TEMPLATE_ID: TEMPLATE_ID,
-        USER_ID: USER_ID,
-        ACCESS_TOKEN: ACCESS_TOKEN,
-        ////////reCaptcha_v2///////
-        RECAPTCHA_CLIENT_SIDE_KEY: RECAPTCHA_CLIENT_SIDE_KEY,
+        ///////////EmailJS/////////////////////////////////////
+        serviceID: secrets.SERVICE_ID,
+        templateID: secrets.TEMPLATE_ID,
+        userID: secrets.USER_ID,
+        accessToken: secrets.ACCESS_TOKEN,
+        ////////reCaptcha_v2///////////////////////////////////
+        recaptchaClientKey: secrets.RECAPTCHA_CLIENT_SIDE_KEY,
 
     };
 

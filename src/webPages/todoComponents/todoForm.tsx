@@ -1,7 +1,7 @@
 import { FC, useState } from 'react';
 import PageContents from '../contentMaster/PageContents';
 
-import TextField from '@material-ui/core/TextField';
+import { TextField } from '@mui/material';
 
 /**
  *  Component to add todos to the list.

@@ -6,7 +6,7 @@ const About:FC = () => {
     const pageContents = PageContents();
 
     return (
-        <div className="font-body bg-body-lightGray m-6 shadow-xl">
+        <div className="font-body bg-body_lightGray m-6 shadow-xl">
             <div className="text-left p-6">
                 <div className="lg:flex lg:justify-evenly">
 

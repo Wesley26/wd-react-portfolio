@@ -1,6 +1,6 @@
 import { FC, ReactElement, useRef, useState } from 'react';
-import PortfolioPageContents from './portfolioComponents/PortfolioPageContents';
 import PortfolioCard from './portfolioComponents/PortfolioCard';
+import PortfolioHeader from './portfolioComponents/PortfolioHeader';
 import PortfolioNav from './portfolioComponents/PortfolioNav';
 
 import { PortfolioDisplayContext } from '../hooks/PortfolioDisplayContext';
@@ -24,7 +24,6 @@ import {
 
 const Portfolio:FC = () => {
 
-    const portfolioPageContents = PortfolioPageContents();
     const [portfolioSetter, setPortfolioSetter] = useState<number>(0);
     let portfolioChildList: Array<ReactElement> = [
         /**
@@ -46,37 +45,17 @@ const Portfolio:FC = () => {
     const portfolioNavRef = useRef<any>(null);
 
     return (
-        <div className="font-body bg-body-lightGray m-6 overflow-auto shadow-xl">
+        <div className="font-body bg-body_lightGray m-6 overflow-auto shadow-xl">
             <div className="text-left p-6">
                 <div className="flex justify-evenly">
 
                     <div className="left-0 p-3">
                         
-                        <div className="text-lg p-6 text-center">
-                            <p>
-                            {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_1}
-                                <a 
-                                    href={portfolioPageContents.portfolioRepoForThisSiteLink}
-                                    rel="noreferrer"
-                                    target="_blank"
-                                    className="p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-200 active:bg-gray-400">
-                                    {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_2}
-                                </a>
-                            </p>
-                            <p className="pt-3">
-                                {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_3}
-                            </p>
-                            <p className="pb-3">
-                                {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_4}
-                            </p>
-                            <p className="pb-3">
-                                {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_5}
-                            </p>
-                        </div>
-
-                        <div ref={portfolioNavRef} />
-
                         <PortfolioDisplayContext.Provider value={{ portfolioSetter, setPortfolioSetter, portfolioChildList }}>
+
+                            <PortfolioHeader />
+
+                            <div ref={portfolioNavRef} />
 
                             <div className="flex flex-row justify-center items-center">
 

@@ -3,28 +3,25 @@ import NavigationMenu from './NavigationMenu'
 import NavigationMenuD from './NavigationMenuD';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'
-import {useTransition, animated} from 'react-spring'
-
+import { motion } from "framer-motion";
 
 const Navigation:FC = () => {
-    
-    /*
-    Conditional rendering
-    showMenu - Menu variable in hook.
-    setShowMenu - Sets the useState from false to true and vice versa.
-    maskTransitions - Constant variable for mask transitions, mask behind actual menu.
-    menuTransitions - Constant variable for menu transitions, actual menu content.
-
-    NavigationMenu takes a prop called closeMenu, See NavigationMenu.js
-    */
    
     const [showMenu, setShowMenu] = useState<boolean>(false);
 
-    const menuTransitions = useTransition(showMenu, null, {
-        from: { opacity: 0, transform: 'translateX(-100%)' },
-        enter: { opacity: 1, transform: 'translateX(0%)' },
-        leave: { opacity: 0, transform: 'translateX(-100%)' },
-    });
+    interface NAV_ANIMATIONS {
+        initialStyle: object,
+        animateStyle: object,
+        transitionStyle: object,
+    };
+
+    const navAnimations: NAV_ANIMATIONS = {
+
+        initialStyle: { x: -100, y: 0, opacity: 0 },
+        animateStyle: { x: 0, y: 0, opacity: 1 },
+        transitionStyle: { style: "spring", stiffness: 100 },
+
+    };
 
     return (
         <nav>
@@ -42,20 +39,19 @@ const Navigation:FC = () => {
                     <NavigationMenuD />
                 </div>
             </span>
-            {
-                menuTransitions.map(({ item, key, props }) =>
-                    item && 
-                    <animated.div 
-                        key={key} 
-                        style={props}
-                        className="p-3 border-solid border-4 border-gray-400 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg overflow-auto"
-                    >
-                        <NavigationMenu 
-                            closeMenu={() => setShowMenu(false)}
-                        />
-                    </animated.div>
-                ) 
-            }
+            { showMenu ? (
+                <motion.div 
+                    initial={navAnimations.initialStyle}
+                    animate={navAnimations.animateStyle}
+                    transition={navAnimations.transitionStyle}
+                    className="bg-header_blue p-3 border-solid border-4 border-gray-400 bg-header-blue fixed top-0 left-0 w-2/5 h-full z-50 shadow-lg overflow-auto"
+                >
+                    
+                    <NavigationMenu 
+                        closeMenu={() => setShowMenu(false)}
+                    />
+                </motion.div>
+            ) : null }
         </nav>
     );
 };

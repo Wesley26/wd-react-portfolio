@@ -8,6 +8,7 @@ import { createContext, ReactElement } from "react";
  * displayed portfolio item, index of the portfolioChildList
  * @param setPortfolioSetter - sets portfolioSetter
  * @param portfolioChildList - contains all portfolio Items
+ * @param animationValue - a number value to compare to portfolioSetter
  */
 
 export type PORTFOLIO_SETTER = {

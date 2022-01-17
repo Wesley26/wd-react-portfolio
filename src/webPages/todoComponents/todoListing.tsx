@@ -1,11 +1,13 @@
 import { FC } from 'react';
-import List from '@material-ui/core/List';
-import ListItem from '@material-ui/core/ListItem';
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction';
-import ListItemText from '@material-ui/core/ListItemText';
-import Checkbox from '@material-ui/core/Checkbox';
-import IconButton from '@material-ui/core/IconButton';
-import DeleteIcon from '@material-ui/icons/Delete';
+import { 
+    List,
+    ListItem,
+    ListItemSecondaryAction,
+    ListItemText,
+    Checkbox,
+    IconButton,
+} from '@mui/material';
+import { DeleteForever } from '@mui/icons-material';
 
 /**
  * Individual todo list component. This component does not need
@@ -39,7 +41,7 @@ const TodoListing:FC<TODOLISTING> = (props:TODOLISTING) => (
                             props.deleteTodo(index);
                         }}
                     >
-                        <DeleteIcon />
+                        <DeleteForever />
                     </IconButton>
                 </ListItemSecondaryAction>
 

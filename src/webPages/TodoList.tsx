@@ -27,7 +27,7 @@ const TodoList:FC = () => {
 
     return (
         
-        <div className="font-body bg-body-lightGray m-6 shadow-xl">
+        <div className="font-body bg-body_lightGray m-6 shadow-xl">
 
             <div className="px-5 md:px-40 py-3">
 

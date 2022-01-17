@@ -6,7 +6,7 @@ const Home:FC = () => {
     const pageContents = PageContents();
 
     return (
-        <div className="font-body bg-body-lightGray m-6 shadow-xl">
+        <div className="font-body bg-body_lightGray m-6 shadow-xl">
 
             <div className="p-6">
                 <div className="pb-10">

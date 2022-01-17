@@ -6,7 +6,7 @@ const Resume:FC = () => {
     const pageContents = PageContents();
     
     return(
-        <div className="font-body bg-body-lightGray m-6 sm:pb-6 shadow-xl">
+        <div className="font-body bg-body_lightGray m-6 sm:pb-6 shadow-xl">
 
             <div className="px-5 py-3">
                 <div className="text-xl p-3 text-center">

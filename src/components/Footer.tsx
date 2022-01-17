@@ -11,7 +11,7 @@ const Footer:FC = () => {
 
     return (
         <div>
-            <footer className="font-body bg-footer-blue border-solid border-gray-300 border-b-4 border-l-4 border-r-4 text-center text-s p-3 fixed bottom-0 w-full shadow-lg">
+            <footer className="font-body bg-footer_blue border-solid border-gray-300 border-b-4 border-l-4 border-r-4 text-center text-s p-3 fixed bottom-0 w-full shadow-lg">
 
                 &copy; {`${copyrightText} ${date.getFullYear()}`}
                 <br>

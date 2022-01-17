@@ -1,7 +1,9 @@
 ![wd-react-portfolio Logo Image](https://raw.githubusercontent.com/Wesley26/wd-react-portfolio/master/src/images/logoImage/WD_Logo.png)
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with TypeScript support.
-Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [CRACO](https://github.com/gsoft-inc/craco), [react-spring](https://www.react-spring.io/), [react-spring/types](https://www.npmjs.com/package/@react-spring/types), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (core)](https://material-ui.com/), [Material-ui (icons)](https://www.npmjs.com/package/@material-ui/icons), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
+Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [Framer Motion](https://www.framer.com/docs/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (MUI)](https://mui.com/), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
+
+No longer implemented, but kept for documentation archives: [CRACO](https://github.com/gsoft-inc/craco), [react-spring](https://www.react-spring.io/)
 
 
 # Information
@@ -12,16 +14,17 @@ Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/),
 ## Important Instructions
 
 - When installing for the first time, run `npm install`. 
-- For Tailwind CSS dependency using CRACO runtime manager - `npm start` will run on start the `npm update` command. The Poststart following will run `craco start`.
+- For Tailwind CSS dependency using CRACO runtime manager - `npm start` will run on start the `npm update` command. The Poststart following will run `react-scripts start`.
 - `npm update` runs automatically every time you use `npm start`.
-- `npm run build` will write to the build folder. Both `npm update` and `craco build` Only use when deploying on server.
+- `npm run build` will write to the build folder. Both `npm update` and `react-scripts build` Only use when deploying on server.
 - On Windows, use an .env file at the root, then add `Browser="none"`. This is for allowing you, the developer, the choice of which web browser you wish to use.
+- Include a .env.production and add `GENERATE_SOURCEMAP=false`. There is no specific reason. The source code for this website is already viewable here from my portfolio page.
 - Check React documentation if needed for more information [Here](https://github.com/facebook/create-react-app).
 
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 10th, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 17th, 2022.
 
 
 ## Content of repo
@@ -72,7 +75,9 @@ Note: each ts/tsx file is their own displayed web page within the app.
 
 - **portfolioComponents:**
 Contains portfolio components
+- `PortfolioAnimations.ts`: Portfolio custom hook component for Framer Motion animation values.
 - `PortfolioCard.tsx`: Portfolio card page web component.
+- `PortfolioHeader.tsx`: Portfolio header component.
 - `PortfolioNav.tsx`: Portfolio left caret and right caret arrow component.
 - `PortfolioPageContents.ts`: Custom hook containing all content for each portfolio item listed below.
 
@@ -112,6 +117,6 @@ Contains components for the To-do application.
 ### Other files:
 - `package.json`
 - `package-lock.json`
-- `craco.config.js` - CRACO config file, runs tailwind.css which is used to purge unused CSS classes, manage tailwindCSS runtime.
+- `postcss.config.js` - postcss config file, runs tailwind.css which is used to purge unused CSS classes, manage tailwindCSS runtime using tailwind's JIT runtime.
 - `tailwind.config.js` - tailwind plugin configuration JS file. Insert custom tailwind CSS class settings and purge CSS configurations in this JS file.
 - `tsconfig.json` - TypeScript config file
