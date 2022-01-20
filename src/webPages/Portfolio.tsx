@@ -1,7 +1,9 @@
-import { FC, ReactElement, useRef, useState } from 'react';
+import { FC, ReactElement, useEffect, useRef, useState } from 'react';
 import PortfolioCard from './portfolioComponents/PortfolioCard';
 import PortfolioHeader from './portfolioComponents/PortfolioHeader';
 import PortfolioNav from './portfolioComponents/PortfolioNav';
+import MainPageAnimations from './contentMaster/MainPageAnimations';
+import { motion } from 'framer-motion';
 
 import { PortfolioDisplayContext } from '../hooks/PortfolioDisplayContext';
 
@@ -23,6 +25,16 @@ import {
  */
 
 const Portfolio:FC = () => {
+
+    const mainPageAnimations = MainPageAnimations();
+    const [visible, setVisible] = useState<boolean>(false);
+
+    useEffect(() => {
+
+        setVisible(false);
+        setVisible(true);
+
+    }, []);
 
     const [portfolioSetter, setPortfolioSetter] = useState<number>(0);
     let portfolioChildList: Array<ReactElement> = [
@@ -46,37 +58,46 @@ const Portfolio:FC = () => {
 
     return (
         <div className="font-body bg-body_lightGray m-6 overflow-auto shadow-xl">
-            <div className="text-left p-6">
-                <div className="flex justify-evenly">
 
-                    <div className="left-0 p-3">
-                        
-                        <PortfolioDisplayContext.Provider value={{ portfolioSetter, setPortfolioSetter, portfolioChildList }}>
+            <> { visible ? (
+                <motion.div
+                    initial={mainPageAnimations.initialStyle}
+                    animate={mainPageAnimations.animateStyle}
+                    transition={mainPageAnimations.transitionStyle}
+                    className="text-left p-6"
+                >
+                    <div className="flex justify-evenly">
 
-                            <PortfolioHeader />
+                        <div className="left-0 p-3">
+                            
+                            <PortfolioDisplayContext.Provider value={{ portfolioSetter, setPortfolioSetter, portfolioChildList }}>
 
-                            <div ref={portfolioNavRef} />
+                                <PortfolioHeader />
 
-                            <div className="flex flex-row justify-center items-center">
+                                <div ref={portfolioNavRef} />
 
-                                <PortfolioNav scrollRef={portfolioNavRef} />
+                                <div className="flex flex-row justify-center items-center">
 
-                            </div>
+                                    <PortfolioNav scrollRef={portfolioNavRef} />
 
-                            <div className="py-3" />
+                                </div>
 
-                            <div className="flex justify-center items-center bg-gray-300 border-2 rounded-md border-gray-800 shadow-xl">
+                                <div className="py-3" />
 
-                                <PortfolioCard />
+                                <div className="flex justify-center items-center bg-gray-300 border-2 rounded-md border-gray-800 shadow-xl">
 
-                            </div>
+                                    <PortfolioCard />
 
-                        </ PortfolioDisplayContext.Provider>
-                        
+                                </div>
+
+                            </ PortfolioDisplayContext.Provider>
+                            
+                        </div>
+
                     </div>
-
-                </div>
-            </div>
+                </motion.div>
+                ) : null }
+            </>
         </div>
     )
 };

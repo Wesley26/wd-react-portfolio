@@ -1,6 +1,6 @@
 /**
- * Note: All portfolio background images are rendered through "extend" backgroundImage 
- *        arrow function (line 20).
+ * Note: All portfolio background images are rendered through "extend" backgroundImage
+ *        located on line 16.
  *        The background images must be placed in ./images/portfolio_BG_Images.
  * 
  * All other configurations must be referenced in TailwindCSS's documentation.
@@ -45,6 +45,7 @@ module.exports = {
         'body_form': '#e2e8f0',
       },
       height: {
+        '5.9long': '5.9rem',
         '51.6long': '51.6rem',
         '30long': '30rem',
         '26.9long': '26.9rem',
@@ -52,6 +53,8 @@ module.exports = {
         '11.2long': '11.2rem',
       },
       spacing: {
+        '0.10long': '0.10rem',
+        '3.5long': '3.5rem',
         '11long': '11rem',
         '20long': '20rem',
         '32long': '32rem',

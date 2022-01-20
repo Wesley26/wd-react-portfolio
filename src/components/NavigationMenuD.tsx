@@ -17,7 +17,7 @@ const NavigationMenuD:FC = () => {
                 <div className="pt-3">
                     <Link
                         to="/"
-                        className="h-20 text-green-600 text-xl mt-1 pt-8 pb-14 px-4 flex border-black border-solid border-2 rounded-md hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        className="h-5.9long text-green-600 text-xl mt-0.10long pt-8 pb-3.5long px-4 flex border-black border-solid border-2 rounded-md hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     >{navContentData.navItemOne}</Link>
                 </div>
                 <div className="px-1"/>
@@ -38,7 +38,7 @@ const NavigationMenuD:FC = () => {
                 <div className="pt-3">
                     <Link
                         to="/resume"
-                        className="h-20 text-green-600 text-xl mt-1 pt-8 pb-14 px-2 flex border-black border-solid border-2 rounded-md hover:bg-gray-300 active:bg-gray-400 shadow-lg"
+                        className="h-5.9long text-green-600 text-xl mt-0.10long pt-8 pb-3.5long px-2 flex border-black border-solid border-2 rounded-md hover:bg-gray-300 active:bg-gray-400 shadow-lg"
                     >{navContentData.navItemFour}</Link>
                 </div>
                 <div className="px-1"/>

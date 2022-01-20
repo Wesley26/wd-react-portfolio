@@ -1,32 +1,13 @@
-import { FC, useContext, useEffect, useState } from 'react';
+import { FC } from 'react';
 import PortfolioPageContents from './PortfolioPageContents';
-import PortfolioAnimations from './PortfolioAnimations';
-import { motion } from 'framer-motion';
-
-import { PortfolioDisplayContext } from '../../hooks/PortfolioDisplayContext';
 
 const PortfolioHeader:FC = () => {
 
     const portfolioPageContents = PortfolioPageContents();
-    const portfolioAnimations = PortfolioAnimations();
-    const { portfolioSetter } = useContext(PortfolioDisplayContext);
-    const [visible, setVisible] = useState<boolean>(false);
-
-    useEffect(() => {
-
-        setVisible(false);
-        setVisible(true);
-
-    }, [portfolioSetter]);
 
     return (
-        <>  { visible ? (
-            <motion.div 
-                initial={portfolioAnimations.initialStyle}
-                animate={portfolioAnimations.animateStyle}
-                transition={portfolioAnimations.transitionStyle}
-                className="text-lg p-6 text-center"
-            >
+        <>
+            <div className="text-lg p-6 text-center">
                 <p>
                     {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_1}
                     <a
@@ -46,8 +27,7 @@ const PortfolioHeader:FC = () => {
                 <p className="pb-3">
                     {portfolioPageContents.portfolioRepoForThisSite.pRFTS1_5}
                 </p>
-            </motion.div>
-            ) : null }
+            </div>
         </>
     );
 };

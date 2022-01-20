@@ -1,11 +1,23 @@
-import { FC, useState } from 'react'
+import { FC, useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import ReCAPTCHA from "react-google-recaptcha";
 import PageContents from './contentMaster/PageContents';
+import MainPageAnimations from './contentMaster/MainPageAnimations';
+import { motion } from 'framer-motion';
 
 const ContactMe:FC = () => {
 
     const pageContents = PageContents();
+    const mainPageAnimations = MainPageAnimations();
+
+    const [visible, setVisible] = useState<boolean>(false);
+
+    useEffect(() => {
+
+        setVisible(false);
+        setVisible(true);
+
+    }, []);
 
     /**
      * botCheck, setBotCheck hooks as a string to match the TailwindCSS className
@@ -92,110 +104,114 @@ const ContactMe:FC = () => {
   
     return (
       <div className="font_body bg-body_lightGray m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl">
-          <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
-              <h3 className="font-title text-xl p-3 font-bold bg-transparent">
-                {pageContents.contactMeHeaderText}
-              </h3>
-              <p className="text-lg p-3">
-                {pageContents.contactMeInstructionsA}
-              </p>
-              <div className="text-lg pl-3 pr-3 pt-3 md:flex md:justify-start text-left">
-                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
-                        <b className="font-title text-xl">{pageContents.commonContactFormText.subjectText}</b>{pageContents.contactMeInstructionsB}
-                    </p>
-                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
-                        <b className="font-title text-xl">{pageContents.commonContactFormText.nameText}</b>{pageContents.contactMeInstructionsC}
-                    </p>
-                    <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
-                        <b className="font-title text-xl">{pageContents.commonContactFormText.emailText}</b>{pageContents.contactMeInstructionsD}
-                    </p>
-                    <p className="p-3 border-b-4 md:border-b-0 border-gray-300">
-                        <b className="font-title text-xl">{pageContents.commonContactFormText.messageText}</b>{pageContents.contactMeInstructionsE}
-                    </p>
-              </div>
-              <p className="text-lg pt-3">
-                {pageContents.contactMeInstructionsF}<b>{pageContents.contactMeInstructionsG}</b>{pageContents.contactMeInstructionsH}
-              </p>
-          </div>
-          <br>
-          </br>
-          <div className="bg-body_gray p-6 flex justify-center place-items-center shadow-lg">
-      
-            <form
-                className="bg-body_form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
-                onSubmit={sendEmail}
-            >
-                <div className="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3">
-                    <br>
-                    </br>
-                </div>
-                <div className="p-3 grid justify-items-center">
-                    <label className="font-title text-xl p-3"><b>{pageContents.commonContactFormText.subjectText}</b></label>
-                    <input
-                        className="shadow-lg"
-                        type="text" 
-                        name ="subject"
-                        size={26}
-                        placeholder={pageContents.placeholderText.placeSubject}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div className="p-3 grid justify-items-center">
-                    <label className="font-title text-xl p-3"><b>{pageContents.commonContactFormText.nameText}</b></label>
-                    <input
-                        className="shadow-lg"
-                        type="text" 
-                        name="name"
-                        size={26}
-                        placeholder={pageContents.placeholderText.placeName}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div className="p-3 grid justify-items-center">
-                    <label className="font-title text-xl p-3"><b>{pageContents.commonContactFormText.emailText}</b></label>
-                    <input
-                        className="shadow-lg"
-                        type="email" 
-                        name="email"
-                        size={26}
-                        placeholder={pageContents.placeholderText.placeEmail}
-                        onChange={handleInputChange}
-                    />
-                </div>
-                <div className="p-3 grid justify-items-center">
-                    <label className="fon-title text-xl p-3 flex justify-center"><b>{pageContents.commonContactFormText.messageText}</b></label>
-                    <textarea
-                        className="shadow-lg"
-                        name="message"
-                        rows={8}
-                        cols={26}
-                        placeholder={pageContents.placeholderText.placeMessage}
-                        onChange={handleInputChange}
-                    />
-                </div>
 
-                <div className="p-3 flex justify-center">
-                    <ReCAPTCHA
-                        sitekey={pageContents.apiContent.recaptchaClientKey}
-                        onChange={onPass}
-                        onExpired={onFail}
-                        onErrored={onFail} 
-                    />
-                </div>
-
-                <div className="p-3 flex justify-center">
-                    <div className="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-300 rounded-full hover:bg-gray-400 active:bg-gray-500">
-                        <input
-                            className={botCheck}
-                            onClick={submitValue}
-                            type="submit" 
-                            value="Send Information"
-                        />
+        <> { visible ? (
+                <motion.div
+                    initial={mainPageAnimations.initialStyle}
+                    animate={mainPageAnimations.animateStyle}
+                    transition={mainPageAnimations.transitionStyle}
+                >
+                <div className="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center">
+                    <h3 className="font-title text-xl p-3 font-bold bg-transparent">
+                        {pageContents.contactMeHeaderText}
+                    </h3>
+                    <p className="text-lg p-3">
+                        {pageContents.contactMeInstructionsA}
+                    </p>
+                    <div className="text-lg pl-3 pr-3 pt-3 md:flex md:justify-start text-left">
+                        <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
+                            <b className="font-title text-xl">{pageContents.commonContactFormText.subjectText}</b>{pageContents.contactMeInstructionsB}
+                        </p>
+                        <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
+                            <b className="font-title text-xl">{pageContents.commonContactFormText.nameText}</b>{pageContents.contactMeInstructionsC}
+                        </p>
+                        <p className="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300">
+                            <b className="font-title text-xl">{pageContents.commonContactFormText.emailText}</b>{pageContents.contactMeInstructionsD}
+                        </p>
+                        <p className="p-3 border-b-4 md:border-b-0 border-gray-300">
+                            <b className="font-title text-xl">{pageContents.commonContactFormText.messageText}</b>{pageContents.contactMeInstructionsE}
+                        </p>
                     </div>
+                    <p className="text-lg pt-3">
+                        {pageContents.contactMeInstructionsF}<b>{pageContents.contactMeInstructionsG}</b>{pageContents.contactMeInstructionsH}
+                    </p>
                 </div>
-            </form>
+                <br>
+                </br>
+                <div className="bg-body_gray p-6 flex justify-center place-items-center shadow-lg">
 
-          </div>
+                        <form
+                            className="bg-body_form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
+                            onSubmit={sendEmail}
+                        >
+                            <div className="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3">
+                                <br>
+                                </br>
+                            </div>
+                            <div className="p-3 grid justify-items-center">
+                                <label className="font-title text-xl p-3"><b>{pageContents.commonContactFormText.subjectText}</b></label>
+                                <input
+                                    className="shadow-lg"
+                                    type="text"
+                                    name="subject"
+                                    size={26}
+                                    placeholder={pageContents.placeholderText.placeSubject}
+                                    onChange={handleInputChange} />
+                            </div>
+                            <div className="p-3 grid justify-items-center">
+                                <label className="font-title text-xl p-3"><b>{pageContents.commonContactFormText.nameText}</b></label>
+                                <input
+                                    className="shadow-lg"
+                                    type="text"
+                                    name="name"
+                                    size={26}
+                                    placeholder={pageContents.placeholderText.placeName}
+                                    onChange={handleInputChange} />
+                            </div>
+                            <div className="p-3 grid justify-items-center">
+                                <label className="font-title text-xl p-3"><b>{pageContents.commonContactFormText.emailText}</b></label>
+                                <input
+                                    className="shadow-lg"
+                                    type="email"
+                                    name="email"
+                                    size={26}
+                                    placeholder={pageContents.placeholderText.placeEmail}
+                                    onChange={handleInputChange} />
+                            </div>
+                            <div className="p-3 grid justify-items-center">
+                                <label className="fon-title text-xl p-3 flex justify-center"><b>{pageContents.commonContactFormText.messageText}</b></label>
+                                <textarea
+                                    className="shadow-lg"
+                                    name="message"
+                                    rows={8}
+                                    cols={26}
+                                    placeholder={pageContents.placeholderText.placeMessage}
+                                    onChange={handleInputChange} />
+                            </div>
+
+                            <div className="p-3 flex justify-center">
+                                <ReCAPTCHA
+                                    sitekey={pageContents.apiContent.recaptchaClientKey}
+                                    onChange={onPass}
+                                    onExpired={onFail}
+                                    onErrored={onFail} />
+                            </div>
+
+                            <div className="p-3 flex justify-center">
+                                <div className="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-300 rounded-full hover:bg-gray-400 active:bg-gray-500">
+                                    <input
+                                        className={botCheck}
+                                        onClick={submitValue}
+                                        type="submit"
+                                        value="Send Information" />
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </motion.div>
+            ) : null }
+        </>
     </div>
     );
 };

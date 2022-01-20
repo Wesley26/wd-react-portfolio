@@ -14,9 +14,9 @@ No longer implemented, but kept for documentation archives: [CRACO](https://gith
 ## Important Instructions
 
 - When installing for the first time, run `npm install`. 
-- For Tailwind CSS dependency using CRACO runtime manager - `npm start` will run on start the `npm update` command. The Poststart following will run `react-scripts start`.
+- `npm start` will run on start the `npm update` command. The Poststart following will run `react-scripts start`.
 - `npm update` runs automatically every time you use `npm start`.
-- `npm run build` will write to the build folder. Both `npm update` and `react-scripts build` Only use when deploying on server.
+- `npm run build` will write to the build folder. Both `npm update` and `react-scripts build` Only use when deploying on server. NOTE: If server does not have enough ram (more than 1 GB ram may be required to build), it is recommended to build locally and feed the server the build files from your local development machine.
 - On Windows, use an .env file at the root, then add `Browser="none"`. This is for allowing you, the developer, the choice of which web browser you wish to use.
 - Include a .env.production and add `GENERATE_SOURCEMAP=false`. There is no specific reason. The source code for this website is already viewable here from my portfolio page.
 - Check React documentation if needed for more information [Here](https://github.com/facebook/create-react-app).
@@ -24,7 +24,7 @@ No longer implemented, but kept for documentation archives: [CRACO](https://gith
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 17th, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 20th, 2022.
 
 
 ## Content of repo
@@ -71,6 +71,7 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 Note: each ts/tsx file is their own displayed web page within the app.
 
 - **contentMaster:**
+- `MainPageAnimations.ts`: MainPageAnimations component for Framer Motion custom hook.
 - `PageContent.ts`: Contains all TypeScript functionality for individual web page components. All individual page web components import their variables from this custom hook ts file.
 
 - **portfolioComponents:**
@@ -115,6 +116,7 @@ Contains components for the To-do application.
 
 
 ### Other files:
+- `.eslintignore` - help with `npm run build` command optimization, ignore node_modules folder.
 - `package.json`
 - `package-lock.json`
 - `postcss.config.js` - postcss config file, runs tailwind.css which is used to purge unused CSS classes, manage tailwindCSS runtime using tailwind's JIT runtime.
