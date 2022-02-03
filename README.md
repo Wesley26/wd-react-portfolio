@@ -24,7 +24,7 @@ No longer implemented, but kept for documentation archives: [CRACO](https://gith
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on January 20th, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on February 3rd, 2022.
 
 
 ## Content of repo
@@ -64,6 +64,7 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 
 4. hooks folder:
 
+- `ImportantNavContext.ts`: Context hook for navigation important styles across the app with global scope.
 - `PortfolioDisplayContext.ts`: Context hook to help control portfolio page navigation.
 - `useCurrentTime.ts`:  Custom React Hook which displays the current time. Returns the date ticking every second.
 

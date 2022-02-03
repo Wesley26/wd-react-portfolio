@@ -1,6 +1,7 @@
-import { FC } from 'react';
+import { FC, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import NavContents from './navMaster/NavContents';
+import { ImportantNavContext } from '../hooks/ImportantNavContext';
 
 /**
  * @NavigationMenu - Mobile component version of NavigationMenu.
@@ -16,10 +17,11 @@ const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
 
     /*
     * To edit which Navigation Menu pages you have, add a new list item containing
-    * the Link you want to name it. Next, go to App.js, and add a new Route with
+    * the Link you want to name it. Next, go to App.tsx, and add a new Route with
     * the JSX page content that you want to feature inside.
     */
 
+    const { importantNavStyle, setImportantNavStyle } = useContext(ImportantNavContext);
     const navContentData = NavContents();
 
     return(
@@ -36,32 +38,37 @@ const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
                     <li className="pb-2 md:hidden sm:grid">
                     <Link 
                         to="/" 
-                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                        onClick={props.closeMenu}>{navContentData.navItemOne}</Link>
+                        className={importantNavStyle === `Home` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
+                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`Home`); }}>{navContentData.navItemOne}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/about" 
-                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                        onClick={props.closeMenu}>{navContentData.navItemTwo}</Link>
+                        className={importantNavStyle === `About` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
+                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`About`); }}>{navContentData.navItemTwo}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/portfolio" 
-                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                        onClick={props.closeMenu}>{navContentData.navItemThree}</Link>
+                        className={importantNavStyle === `Portfolio` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
+                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`Portfolio`); }}>{navContentData.navItemThree}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/resume" 
-                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                        onClick={props.closeMenu}>{navContentData.navItemFour}</Link>
+                        className={importantNavStyle === `Resume` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
+                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`Resume`); }}>{navContentData.navItemFour}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/contactMe" 
-                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                        onClick={props.closeMenu}>{navContentData.navItemFive}</Link>
+                        className={importantNavStyle === `ContactMe` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
+                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`ContactMe`); }}>{navContentData.navItemFive}</Link>
                     </li>
                     <li className="pt-10 pb-3">
                         <p className="text-20e md:text-35e lg:text-35e font-semibold">
@@ -71,8 +78,9 @@ const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
                     <li className="pt-3">
                     <Link 
                         to="/todoList" 
-                        className="h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg"
-                        onClick={props.closeMenu}>{navContentData.navItemSix}</Link>
+                        className={importantNavStyle === `TodoList` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
+                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`TodoList`); }}>{navContentData.navItemSix}</Link>
                     </li>
                 </ul>
             <br>

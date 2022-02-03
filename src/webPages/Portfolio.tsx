@@ -1,4 +1,4 @@
-import { FC, ReactElement, useEffect, useRef, useState } from 'react';
+import { FC, ReactElement, useEffect, useMemo, useRef, useState } from 'react';
 import PortfolioCard from './portfolioComponents/PortfolioCard';
 import PortfolioHeader from './portfolioComponents/PortfolioHeader';
 import PortfolioNav from './portfolioComponents/PortfolioNav';
@@ -37,22 +37,29 @@ const Portfolio:FC = () => {
     }, []);
 
     const [portfolioSetter, setPortfolioSetter] = useState<number>(0);
-    let portfolioChildList: Array<ReactElement> = [
-        /**
-         * List each portfolio item component in this Array
-         */
-        ///////////////REAL WORLD PROJECTS/////////////////////////////
-        <RealWorldOne />, //0, (Sketch/Eastman Core Mobile App)
-        ///////////////MOBILE APP PROJECTS/////////////////////////////
-        <MobileOne />, //1, MobileOne (Weather Utility App)
-        <MobileTwo />, //2, MobileTwo (CHOYCES Mobile)
-        ///////////////WEBSITE PROJECTS////////////////////////////////
-        <WebsiteOne />, //3, WebsiteOne, (Smile Design Website)
-        <WebsiteTwo />, //4, WebsiteTwo, (Bit Broker Challenge)
-        <WebsiteThree />, //5, WebsiteThree, (wd_vize Challenge)
-        ///////////////PERSONAL PROJECTS///////////////////////////////
-        <ProjectOne />, //6, ProjectOne, (Karters Discord Bot Project)
-    ];
+
+    const portfolioChildListMemo = useMemo(() => {
+
+        const portfolioChildList: Array<ReactElement> = [
+            /**
+             * List each portfolio item component in this Array
+             */
+            ///////////////REAL WORLD PROJECTS/////////////////////////////
+            <RealWorldOne />, //0, (Sketch/Eastman Core Mobile App)
+            ///////////////MOBILE APP PROJECTS/////////////////////////////
+            <MobileOne />, //1, MobileOne (Weather Utility App)
+            <MobileTwo />, //2, MobileTwo (CHOYCES Mobile)
+            ///////////////WEBSITE PROJECTS////////////////////////////////
+            <WebsiteOne />, //3, WebsiteOne, (Smile Design Website)
+            <WebsiteTwo />, //4, WebsiteTwo, (Bit Broker Challenge)
+            <WebsiteThree />, //5, WebsiteThree, (wd_vize Challenge)
+            ///////////////PERSONAL PROJECTS///////////////////////////////
+            <ProjectOne />, //6, ProjectOne, (Karters Discord Bot Project)
+        ];
+
+        return portfolioChildList;
+
+    }, []);
 
     const portfolioNavRef = useRef<any>(null);
 
@@ -70,7 +77,7 @@ const Portfolio:FC = () => {
 
                         <div className="left-0 p-3">
                             
-                            <PortfolioDisplayContext.Provider value={{ portfolioSetter, setPortfolioSetter, portfolioChildList }}>
+                            <PortfolioDisplayContext.Provider value={{ portfolioSetter, setPortfolioSetter, portfolioChildListMemo }}>
 
                                 <PortfolioHeader />
 

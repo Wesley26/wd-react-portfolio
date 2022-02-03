@@ -1,4 +1,4 @@
-import { FC, useContext } from 'react';
+import { FC, useContext, useEffect, useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 
@@ -12,10 +12,48 @@ const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
 
     const { portfolioSetter, 
             setPortfolioSetter,
-            portfolioChildList,
+            portfolioChildListMemo,
         } = useContext(PortfolioDisplayContext);
 
+    const arrowStylesMemo = useMemo(() => {
+
+        const arrowStyles: Array<string> = [
+
+            `text-gray-600`,
+            `text-gray-100`,
+        
+        ];
+
+        return arrowStyles;
+
+    }, []);
+
+    const [ dynamicArrowStyleL, setDynamicArrowStyleL ] = useState<string>(arrowStylesMemo[0]);
+    const [ dynamicArrowStyleR, setDynamicArrowStyleR ] = useState<string>(arrowStylesMemo[0]);
+
     const runScroll = () => props.scrollRef.current.scrollIntoView();
+
+    useEffect(() => {
+
+        const beginIndex = 0 as number;
+        const endIndex = portfolioChildListMemo.length - 1 as number;
+
+        switch (portfolioSetter) {
+            case (beginIndex):
+                setDynamicArrowStyleL(arrowStylesMemo[1]);
+                break;
+            
+            case (endIndex):
+                setDynamicArrowStyleR(arrowStylesMemo[1]);
+                break;
+
+            default:
+                setDynamicArrowStyleL(arrowStylesMemo[0]);
+                setDynamicArrowStyleR(arrowStylesMemo[0]);
+                break;
+        };
+
+    }, [arrowStylesMemo, portfolioSetter, portfolioChildListMemo]);
 
     return (
         <>
@@ -30,7 +68,7 @@ const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
             >
                 <FontAwesomeIcon
                     icon={faCaretLeft}
-                    className="text-9xl text-gray-600"
+                    className={`text-9xl ${dynamicArrowStyleL}`}
                 />
             </div>
 
@@ -39,7 +77,7 @@ const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
             <div
                 className="p-3 flex rounded-full justify-center hover:bg-gray-400 active:bg-gray-500"
                 onClick={() => {
-                    if (portfolioSetter < portfolioChildList.length - 1) {
+                    if (portfolioSetter < portfolioChildListMemo.length - 1) {
                         setPortfolioSetter(portfolioSetter + 1);
                         runScroll();
                     }
@@ -47,7 +85,7 @@ const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
             >
                 <FontAwesomeIcon
                     icon={faCaretRight}
-                    className="text-9xl text-gray-600"
+                    className={`text-9xl ${dynamicArrowStyleR}`}
                 />
             </div>
         </>

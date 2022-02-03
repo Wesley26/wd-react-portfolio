@@ -40,6 +40,7 @@ module.exports = {
       colors: {
         'header_blue': '#a8dcd4',
         'footer_blue': '#a8dcd4',
+        'important_blue': '#a4eac5',
         'body_gray': '#e0dfdf',
         'body_lightGray': '#f7fafc',
         'body_form': '#e2e8f0',
