@@ -5,7 +5,7 @@ import { createContext } from 'react';
  * important styles across the app with global scope.
  * 
  * @param importantNavStyle - sets the string value for
- * important nav style, default is 'Home'.
+ * important nav style, default is 'None'.
  * @param setImportantNavStyle - sets importantNavStyle
  */
 
@@ -16,7 +16,7 @@ export type IMPORTANT_NAV = {
 
 export let ImportantNavContext = createContext<IMPORTANT_NAV>({
 
-    importantNavStyle: `Home`,
+    importantNavStyle: `None`,
     setImportantNavStyle: () => {},
 
 });

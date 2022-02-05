@@ -1,4 +1,4 @@
-import { FC, useState } from 'react';
+import { FC, useState, useEffect } from 'react';
 import { Route, Routes } from 'react-router';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
@@ -16,7 +16,42 @@ import { About,
 
 const App:FC = () => {
 
-  const [ importantNavStyle, setImportantNavStyle ] = useState<string>(`Home`);
+  const [ importantNavStyle, setImportantNavStyle ] = useState<string>(`None`);
+
+  useEffect(() => {
+
+    /**
+     * Each route must have its own case
+     */
+    const currentURL = window.location.pathname as string;
+
+    switch (currentURL) {
+      case '/about':
+        setImportantNavStyle(`About`);
+        break;
+
+      case '/portfolio':
+        setImportantNavStyle(`Portfolio`);
+        break;
+
+      case '/resume':
+        setImportantNavStyle(`Resume`);
+        break;
+
+      case '/contactMe':
+        setImportantNavStyle(`ContactMe`);
+        break;
+
+      case '/todoList':
+        setImportantNavStyle(`TodoList`);
+        break;
+    
+      default:
+        setImportantNavStyle(`Home`);
+        break;
+    };
+
+  }, []);
 
   return (
     <div className="bg-body_gray absolute bottom-0 top-0 left-0 right-0">
