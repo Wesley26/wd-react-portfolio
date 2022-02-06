@@ -5,6 +5,7 @@ import './index.css';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import { ImportantNavContext } from './hooks/ImportantNavContext';
+import usePathname from './hooks/usePathname';
 
 import { About,
           ContactMe,
@@ -17,41 +18,13 @@ import { About,
 const App:FC = () => {
 
   const [ importantNavStyle, setImportantNavStyle ] = useState<string>(`None`);
+  const currentURL = usePathname();
 
   useEffect(() => {
 
-    /**
-     * Each route must have its own case
-     */
-    const currentURL = window.location.pathname as string;
+    setImportantNavStyle(currentURL);
 
-    switch (currentURL) {
-      case '/about':
-        setImportantNavStyle(`About`);
-        break;
-
-      case '/portfolio':
-        setImportantNavStyle(`Portfolio`);
-        break;
-
-      case '/resume':
-        setImportantNavStyle(`Resume`);
-        break;
-
-      case '/contactMe':
-        setImportantNavStyle(`ContactMe`);
-        break;
-
-      case '/todoList':
-        setImportantNavStyle(`TodoList`);
-        break;
-    
-      default:
-        setImportantNavStyle(`Home`);
-        break;
-    };
-
-  }, []);
+  }, [currentURL]);
 
   return (
     <div className="bg-body_gray absolute bottom-0 top-0 left-0 right-0">
