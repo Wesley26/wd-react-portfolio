@@ -38,36 +38,31 @@ const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
                     <li className="pb-2 md:hidden sm:grid">
                     <Link 
                         to="/" 
-                        className={importantNavStyle === `Home` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
-                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        className={`${importantNavStyle === `Home` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`Home`); }}>{navContentData.navItemOne}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/about" 
-                        className={importantNavStyle === `About` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
-                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        className={`${importantNavStyle === `About` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`About`); }}>{navContentData.navItemTwo}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/portfolio" 
-                        className={importantNavStyle === `Portfolio` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
-                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        className={`${importantNavStyle === `Portfolio` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`Portfolio`); }}>{navContentData.navItemThree}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/resume" 
-                        className={importantNavStyle === `Resume` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
-                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        className={`${importantNavStyle === `Resume` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`Resume`); }}>{navContentData.navItemFour}</Link>
                     </li>
                     <li className="pt-3 md:hidden sm:grid">
                     <Link 
                         to="/contactMe" 
-                        className={importantNavStyle === `ContactMe` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
-                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        className={`${importantNavStyle === `ContactMe` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`ContactMe`); }}>{navContentData.navItemFive}</Link>
                     </li>
                     <li className="pt-10 pb-3">
@@ -78,8 +73,7 @@ const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
                     <li className="pt-3">
                     <Link 
                         to="/todoList" 
-                        className={importantNavStyle === `TodoList` ? `bg-important_blue h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg` :
-                    `h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        className={`${importantNavStyle === `TodoList` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`TodoList`); }}>{navContentData.navItemSix}</Link>
                     </li>
                 </ul>
