@@ -1,0 +1,604 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ContactMe.tsx test component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="font-body bg-body_lightGray m-6 overflow-auto shadow-xl"
+      >
+         
+        <div
+          class="text-left p-6"
+          style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+        >
+          <div
+            class="flex justify-evenly"
+          >
+            <div
+              class="left-0 p-3"
+            >
+              <div
+                class="text-lg p-6 text-center"
+              >
+                <p>
+                  To view the entire design for this website, visit
+                  <a
+                    class="border-gray-700 border-2 p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-200 active:bg-gray-400 shadow-md"
+                    href="https://github.com/Wesley26/wd-react-portfolio"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    this following repo.
+                  </a>
+                </p>
+                <p
+                  class="pt-3"
+                >
+                  Use the navigation arrows below to view each portfolio item.
+                </p>
+                <p
+                  class="pb-3"
+                >
+                  A project with a publicly viewable GitHub repository includes a 
+        clickable link to the corresponding repository.
+                </p>
+                <p
+                  class="pb-3"
+                >
+                  A project that does not contain a public repository includes a
+        screenshot gallery and description.
+                </p>
+              </div>
+              <div />
+              <div
+                class="flex flex-row justify-center items-center"
+              >
+                <div
+                  class="p-3 flex rounded-full justify-center hover:bg-gray-400 active:bg-gray-500"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-caret-left text-9xl text-gray-100"
+                    data-icon="caret-left"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 256 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div
+                  class="px-12 md:px-44 lg:px-64"
+                />
+                <div
+                  class="p-3 flex rounded-full justify-center hover:bg-gray-400 active:bg-gray-500"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="svg-inline--fa fa-caret-right text-9xl text-gray-600"
+                    data-icon="caret-right"
+                    data-prefix="fas"
+                    focusable="false"
+                    role="img"
+                    viewBox="0 0 256 512"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div
+                class="py-3"
+              />
+              <div
+                class="flex justify-center items-center bg-gray-300 border-2 rounded-md border-gray-800 shadow-xl"
+              >
+                <div
+                  class="px-3 py-12 flex"
+                >
+                   
+                   
+                  <div
+                    class="mx-1 flex flex-col justify-center items-center w-max"
+                    style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0);"
+                  >
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="p-3 flex rounded-full justify-center"
+                      >
+                        <img
+                          alt="Image has failed to load."
+                          class="focus:outline-none"
+                          src="[object Object]"
+                        />
+                      </div>
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long md:w-96"
+                      >
+                        React Native CLI Mobile App
+                      </p>
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long md:w-96"
+                      >
+                        Sketch Development/Eastman Chemical Company Mobile App
+                      </p>
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long md:w-96"
+                      >
+                        All screens shown below were built by me from a Figma design.
+        The mobile app started as a vanilla JavaScript React Native app. The mobile app received
+        a TypeScript upgrade in the last week of its development period. This React Native mobile
+        app, compatible for both iOS and Android, is designed for internal use with one of
+        Eastman Chemical Company's vehicle trim vendor clients.
+                      </p>
+                    </div>
+                    <div
+                      class="py-3 bg-transparent"
+                    />
+                    <div>
+                      <div
+                        class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                      >
+                        <div
+                          class="bg-realWorld_oneA bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                        />
+                        <div
+                          class="py-3 bg-transparent"
+                        />
+                        <p
+                          class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                        >
+                          Android: No vehicle VIN ID found page
+                        </p>
+                      </div>
+                      <div
+                        class="pt-3 pb-6 bg-transparent"
+                      />
+                    </div>
+                    <div>
+                      <div
+                        class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                      >
+                        <div
+                          class="bg-realWorld_oneB bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                        />
+                        <div
+                          class="py-3 bg-transparent"
+                        />
+                        <p
+                          class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                        >
+                          iOS: No vehicle VIN ID found page
+                        </p>
+                      </div>
+                      <div
+                        class="pt-3 pb-6 bg-transparent"
+                      />
+                    </div>
+                    <div>
+                      <div
+                        class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                      >
+                        <div
+                          class="bg-realWorld_oneC bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                        />
+                        <div
+                          class="py-3 bg-transparent"
+                        />
+                        <p
+                          class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                        >
+                          Android: Vehicle Lookup selection screen
+                        </p>
+                      </div>
+                      <div
+                        class="pt-3 pb-6 bg-transparent"
+                      />
+                    </div>
+                    <div>
+                      <div
+                        class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                      >
+                        <div
+                          class="bg-realWorld_oneD bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                        />
+                        <div
+                          class="py-3 bg-transparent"
+                        />
+                        <p
+                          class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                        >
+                          iOS: Vehicle Lookup selection screen
+                        </p>
+                      </div>
+                      <div
+                        class="pt-3 pb-6 bg-transparent"
+                      />
+                    </div>
+                    <div>
+                      <div
+                        class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                      >
+                        <div
+                          class="bg-realWorld_oneE bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                        />
+                        <div
+                          class="py-3 bg-transparent"
+                        />
+                        <p
+                          class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                        >
+                          iOS: My Shop Notes empty state page
+                        </p>
+                      </div>
+                      <div
+                        class="pt-3 pb-6 bg-transparent"
+                      />
+                    </div>
+                    <div>
+                      <div
+                        class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                      >
+                        <div
+                          class="bg-realWorld_oneF bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                        />
+                        <div
+                          class="py-3 bg-transparent"
+                        />
+                        <p
+                          class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                        >
+                          iOS: Select Model page with PPF/Tint options
+                        </p>
+                      </div>
+                      <div
+                        class="pt-3 pb-6 bg-transparent"
+                      />
+                    </div>
+                  </div>
+                   
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="font-body bg-body_lightGray m-6 overflow-auto shadow-xl"
+    >
+       
+      <div
+        class="text-left p-6"
+        style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+      >
+        <div
+          class="flex justify-evenly"
+        >
+          <div
+            class="left-0 p-3"
+          >
+            <div
+              class="text-lg p-6 text-center"
+            >
+              <p>
+                To view the entire design for this website, visit
+                <a
+                  class="border-gray-700 border-2 p-3 rounded-full flex justify-center md:ml-48 md:mr-48 lg:ml-20long lg:mr-20long hover:bg-gray-200 active:bg-gray-400 shadow-md"
+                  href="https://github.com/Wesley26/wd-react-portfolio"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  this following repo.
+                </a>
+              </p>
+              <p
+                class="pt-3"
+              >
+                Use the navigation arrows below to view each portfolio item.
+              </p>
+              <p
+                class="pb-3"
+              >
+                A project with a publicly viewable GitHub repository includes a 
+        clickable link to the corresponding repository.
+              </p>
+              <p
+                class="pb-3"
+              >
+                A project that does not contain a public repository includes a
+        screenshot gallery and description.
+              </p>
+            </div>
+            <div />
+            <div
+              class="flex flex-row justify-center items-center"
+            >
+              <div
+                class="p-3 flex rounded-full justify-center hover:bg-gray-400 active:bg-gray-500"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-caret-left text-9xl text-gray-100"
+                  data-icon="caret-left"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 256 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M137.4 406.6l-128-127.1C3.125 272.4 0 264.2 0 255.1s3.125-16.38 9.375-22.63l128-127.1c9.156-9.156 22.91-11.9 34.88-6.943S192 115.1 192 128v255.1c0 12.94-7.781 24.62-19.75 29.58S146.5 415.8 137.4 406.6z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+              <div
+                class="px-12 md:px-44 lg:px-64"
+              />
+              <div
+                class="p-3 flex rounded-full justify-center hover:bg-gray-400 active:bg-gray-500"
+              >
+                <svg
+                  aria-hidden="true"
+                  class="svg-inline--fa fa-caret-right text-9xl text-gray-600"
+                  data-icon="caret-right"
+                  data-prefix="fas"
+                  focusable="false"
+                  role="img"
+                  viewBox="0 0 256 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div
+              class="py-3"
+            />
+            <div
+              class="flex justify-center items-center bg-gray-300 border-2 rounded-md border-gray-800 shadow-xl"
+            >
+              <div
+                class="px-3 py-12 flex"
+              >
+                 
+                 
+                <div
+                  class="mx-1 flex flex-col justify-center items-center w-max"
+                  style="opacity: 0; transform: translateX(0px) translateY(-10px) translateZ(0);"
+                >
+                  <div
+                    class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                  >
+                    <div
+                      class="p-3 flex rounded-full justify-center"
+                    >
+                      <img
+                        alt="Image has failed to load."
+                        class="focus:outline-none"
+                        src="[object Object]"
+                      />
+                    </div>
+                    <p
+                      class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long md:w-96"
+                    >
+                      React Native CLI Mobile App
+                    </p>
+                    <p
+                      class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long md:w-96"
+                    >
+                      Sketch Development/Eastman Chemical Company Mobile App
+                    </p>
+                    <p
+                      class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long md:w-96"
+                    >
+                      All screens shown below were built by me from a Figma design.
+        The mobile app started as a vanilla JavaScript React Native app. The mobile app received
+        a TypeScript upgrade in the last week of its development period. This React Native mobile
+        app, compatible for both iOS and Android, is designed for internal use with one of
+        Eastman Chemical Company's vehicle trim vendor clients.
+                    </p>
+                  </div>
+                  <div
+                    class="py-3 bg-transparent"
+                  />
+                  <div>
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="bg-realWorld_oneA bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                      />
+                      <div
+                        class="py-3 bg-transparent"
+                      />
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                      >
+                        Android: No vehicle VIN ID found page
+                      </p>
+                    </div>
+                    <div
+                      class="pt-3 pb-6 bg-transparent"
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="bg-realWorld_oneB bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                      />
+                      <div
+                        class="py-3 bg-transparent"
+                      />
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                      >
+                        iOS: No vehicle VIN ID found page
+                      </p>
+                    </div>
+                    <div
+                      class="pt-3 pb-6 bg-transparent"
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="bg-realWorld_oneC bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                      />
+                      <div
+                        class="py-3 bg-transparent"
+                      />
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                      >
+                        Android: Vehicle Lookup selection screen
+                      </p>
+                    </div>
+                    <div
+                      class="pt-3 pb-6 bg-transparent"
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="bg-realWorld_oneD bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                      />
+                      <div
+                        class="py-3 bg-transparent"
+                      />
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                      >
+                        iOS: Vehicle Lookup selection screen
+                      </p>
+                    </div>
+                    <div
+                      class="pt-3 pb-6 bg-transparent"
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="bg-realWorld_oneE bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                      />
+                      <div
+                        class="py-3 bg-transparent"
+                      />
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                      >
+                        iOS: My Shop Notes empty state page
+                      </p>
+                    </div>
+                    <div
+                      class="pt-3 pb-6 bg-transparent"
+                    />
+                  </div>
+                  <div>
+                    <div
+                      class="p-3 flex flex-col justify-center items-center border-2 rounded-md border-gray-600 bg-blue-100 shadow-xl"
+                    >
+                      <div
+                        class="bg-realWorld_oneF bg-cover bg-no-repeat border-2 rounded-md border-gray-600 h-30long md:h-51.6long w-56 md:w-96"
+                      />
+                      <div
+                        class="py-3 bg-transparent"
+                      />
+                      <p
+                        class="p-1 font-title bg-gray-500 text-gray-200 text-center font-medium w-11long"
+                      >
+                        iOS: Select Model page with PPF/Tint options
+                      </p>
+                    </div>
+                    <div
+                      class="pt-3 pb-6 bg-transparent"
+                    />
+                  </div>
+                </div>
+                 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

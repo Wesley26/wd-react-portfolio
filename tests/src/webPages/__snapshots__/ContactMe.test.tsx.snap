@@ -1,0 +1,439 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render ContactMe.tsx test component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="font_body bg-body_lightGray m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl"
+      >
+         
+        <div
+          style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+        >
+          <div
+            class="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center"
+          >
+            <h3
+              class="font-title text-xl p-3 font-bold bg-transparent"
+            >
+              Contact Me
+            </h3>
+            <p
+              class="text-lg p-3"
+            >
+              Thank you for your interest in reaching out to me! Complete
+                                    this form to send an email and I will reply.
+                                    For my reply to be sent back to you, be sure to include all the
+                                    following details on this form:
+            </p>
+            <div
+              class="text-lg pl-3 pr-3 pt-3 md:flex md:justify-start text-left"
+            >
+              <p
+                class="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300"
+              >
+                <b
+                  class="font-title text-xl"
+                >
+                  Subject
+                </b>
+                 - This is the subject line of the email I receive.
+              </p>
+              <p
+                class="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300"
+              >
+                <b
+                  class="font-title text-xl"
+                >
+                  Name
+                </b>
+                 - You enter your full name on this line. You may use your first, last, or full name.
+              </p>
+              <p
+                class="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300"
+              >
+                <b
+                  class="font-title text-xl"
+                >
+                  Email
+                </b>
+                 - You enter the email you prefer me to reply back to on this line (example: your_email_here@mail.com).
+              </p>
+              <p
+                class="p-3 border-b-4 md:border-b-0 border-gray-300"
+              >
+                <b
+                  class="font-title text-xl"
+                >
+                  Message
+                </b>
+                 - You enter in your message to me in this text box.
+              </p>
+            </div>
+            <p
+              class="text-lg pt-3"
+            >
+              Be sure to fill out 
+              <b>
+                ALL
+              </b>
+               provided fields below. If the ReCaptcha test
+                                    does not appear, refresh this page. You need to verify that you are human
+                                    to use this email form. A send button will only appear on the bottom of 
+                                    this form if you complete verification.
+            </p>
+          </div>
+          <br />
+          <div
+            class="bg-body_gray p-6 flex justify-center place-items-center shadow-lg"
+          >
+            <form
+              class="bg-body_form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
+            >
+              <div
+                class="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3"
+              >
+                <br />
+              </div>
+              <div
+                class="p-3 grid justify-items-center"
+              >
+                <label
+                  class="font-title text-xl p-3"
+                >
+                  <b>
+                    Subject
+                  </b>
+                </label>
+                <input
+                  class="shadow-lg"
+                  name="subject"
+                  placeholder="Add A Subject"
+                  size="26"
+                  type="text"
+                />
+              </div>
+              <div
+                class="p-3 grid justify-items-center"
+              >
+                <label
+                  class="font-title text-xl p-3"
+                >
+                  <b>
+                    Name
+                  </b>
+                </label>
+                <input
+                  class="shadow-lg"
+                  name="name"
+                  placeholder="Add A Name"
+                  size="26"
+                  type="text"
+                />
+              </div>
+              <div
+                class="p-3 grid justify-items-center"
+              >
+                <label
+                  class="font-title text-xl p-3"
+                >
+                  <b>
+                    Email
+                  </b>
+                </label>
+                <input
+                  class="shadow-lg"
+                  name="email"
+                  placeholder="email@mail.com"
+                  size="26"
+                  type="email"
+                />
+              </div>
+              <div
+                class="p-3 grid justify-items-center"
+              >
+                <label
+                  class="fon-title text-xl p-3 flex justify-center"
+                >
+                  <b>
+                    Message
+                  </b>
+                </label>
+                <textarea
+                  class="shadow-lg"
+                  cols="26"
+                  name="message"
+                  placeholder="Hello World!"
+                  rows="8"
+                />
+              </div>
+              <div
+                class="p-3 flex justify-center"
+              >
+                <div />
+              </div>
+              <div
+                class="p-3 flex justify-center"
+              >
+                <div
+                  class="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-300 rounded-full hover:bg-gray-400 active:bg-gray-500"
+                >
+                  <input
+                    class="hidden bg-transparent font-semibold"
+                    type="submit"
+                    value="Send Information"
+                  />
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadcallback&render=explicit"
+    />
+  </body>,
+  "container": <div>
+    <div
+      class="font_body bg-body_lightGray m-6 pt-6 pl-6 pr-6 pb-16 overflow-auto shadow-xl"
+    >
+       
+      <div
+        style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+      >
+        <div
+          class="md:ml-12 md:mr-12 lg:ml-40 lg:mr-40 p-3 grid grid-cols-1 items-center text-center"
+        >
+          <h3
+            class="font-title text-xl p-3 font-bold bg-transparent"
+          >
+            Contact Me
+          </h3>
+          <p
+            class="text-lg p-3"
+          >
+            Thank you for your interest in reaching out to me! Complete
+                                    this form to send an email and I will reply.
+                                    For my reply to be sent back to you, be sure to include all the
+                                    following details on this form:
+          </p>
+          <div
+            class="text-lg pl-3 pr-3 pt-3 md:flex md:justify-start text-left"
+          >
+            <p
+              class="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300"
+            >
+              <b
+                class="font-title text-xl"
+              >
+                Subject
+              </b>
+               - This is the subject line of the email I receive.
+            </p>
+            <p
+              class="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300"
+            >
+              <b
+                class="font-title text-xl"
+              >
+                Name
+              </b>
+               - You enter your full name on this line. You may use your first, last, or full name.
+            </p>
+            <p
+              class="p-3 border-b-4 md:border-b-0 md:border-r-4 border-gray-300"
+            >
+              <b
+                class="font-title text-xl"
+              >
+                Email
+              </b>
+               - You enter the email you prefer me to reply back to on this line (example: your_email_here@mail.com).
+            </p>
+            <p
+              class="p-3 border-b-4 md:border-b-0 border-gray-300"
+            >
+              <b
+                class="font-title text-xl"
+              >
+                Message
+              </b>
+               - You enter in your message to me in this text box.
+            </p>
+          </div>
+          <p
+            class="text-lg pt-3"
+          >
+            Be sure to fill out 
+            <b>
+              ALL
+            </b>
+             provided fields below. If the ReCaptcha test
+                                    does not appear, refresh this page. You need to verify that you are human
+                                    to use this email form. A send button will only appear on the bottom of 
+                                    this form if you complete verification.
+          </p>
+        </div>
+        <br />
+        <div
+          class="bg-body_gray p-6 flex justify-center place-items-center shadow-lg"
+        >
+          <form
+            class="bg-body_form md:pl-16 md:pr-16 lg:pl-64 lg:pr-64 grid grid-cols-1 items-center overflow-auto shadow-md"
+          >
+            <div
+              class="sm:pl-48 sm:pr-48 md:pl-64 md:pr-64 pt-3 pb-3"
+            >
+              <br />
+            </div>
+            <div
+              class="p-3 grid justify-items-center"
+            >
+              <label
+                class="font-title text-xl p-3"
+              >
+                <b>
+                  Subject
+                </b>
+              </label>
+              <input
+                class="shadow-lg"
+                name="subject"
+                placeholder="Add A Subject"
+                size="26"
+                type="text"
+              />
+            </div>
+            <div
+              class="p-3 grid justify-items-center"
+            >
+              <label
+                class="font-title text-xl p-3"
+              >
+                <b>
+                  Name
+                </b>
+              </label>
+              <input
+                class="shadow-lg"
+                name="name"
+                placeholder="Add A Name"
+                size="26"
+                type="text"
+              />
+            </div>
+            <div
+              class="p-3 grid justify-items-center"
+            >
+              <label
+                class="font-title text-xl p-3"
+              >
+                <b>
+                  Email
+                </b>
+              </label>
+              <input
+                class="shadow-lg"
+                name="email"
+                placeholder="email@mail.com"
+                size="26"
+                type="email"
+              />
+            </div>
+            <div
+              class="p-3 grid justify-items-center"
+            >
+              <label
+                class="fon-title text-xl p-3 flex justify-center"
+              >
+                <b>
+                  Message
+                </b>
+              </label>
+              <textarea
+                class="shadow-lg"
+                cols="26"
+                name="message"
+                placeholder="Hello World!"
+                rows="8"
+              />
+            </div>
+            <div
+              class="p-3 flex justify-center"
+            >
+              <div />
+            </div>
+            <div
+              class="p-3 flex justify-center"
+            >
+              <div
+                class="font-title text-xl p-3 border-solid border-l-4 border-r-4 border-gray-300 rounded-full hover:bg-gray-400 active:bg-gray-500"
+              >
+                <input
+                  class="hidden bg-transparent font-semibold"
+                  type="submit"
+                  value="Send Information"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

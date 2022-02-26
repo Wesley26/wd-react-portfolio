@@ -1,0 +1,182 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render App.tsx test component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="font-body bg-body_lightGray m-6 shadow-xl"
+      >
+         
+        <div
+          class="p-6"
+          style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+        >
+          <div
+            class="pb-10"
+          >
+            <div
+              class="flex justify-center items-center"
+            >
+              <img
+                alt="Image has failed to load."
+                class="focus:outline-none"
+                src="[object Object]"
+              />
+            </div>
+            <h3
+              class="font-title text-xl text-center font-bold"
+            >
+              Web and Mobile Design: Perfectly Balanced To Meet Your Future Business Image
+            </h3>
+            <br />
+            <p
+              class="text-lg"
+            >
+              Are you searching for a new, high-tech, scalable web and/or mobile design to welcome your customers?
+                            Do you have software engineers on your current team who specialize behind the scenes, but do 
+                            not work as often on what the end-user views? I can help you! Feel free to browse my portfolio 
+                            gallery for all the examples of web and mobile design I can provide to your software engineer 
+                            team! Use the menu button on the top right of your screen to begin.
+            </p>
+            <br />
+            <div>
+              <figure>
+                <img
+                  alt="Image has failed to load."
+                  class="lg:hidden focus:outline-none shadow-lg"
+                  src="[object Object]"
+                />
+                <img
+                  alt="Image has failed to load."
+                  class="invisible h-1 w-1 lg:visible lg:h-full lg:w-full focus:outline-none shadow-lg"
+                  src="[object Object]"
+                />
+                <figcaption
+                  class="pt-2 text-left"
+                >
+                  The photo above was taken in person outside the South-East doorway of the Philadelphia Art Museum overlooking 
+                                the famed Rocky Steps in Philadelphia, P.A.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="font-body bg-body_lightGray m-6 shadow-xl"
+    >
+       
+      <div
+        class="p-6"
+        style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+      >
+        <div
+          class="pb-10"
+        >
+          <div
+            class="flex justify-center items-center"
+          >
+            <img
+              alt="Image has failed to load."
+              class="focus:outline-none"
+              src="[object Object]"
+            />
+          </div>
+          <h3
+            class="font-title text-xl text-center font-bold"
+          >
+            Web and Mobile Design: Perfectly Balanced To Meet Your Future Business Image
+          </h3>
+          <br />
+          <p
+            class="text-lg"
+          >
+            Are you searching for a new, high-tech, scalable web and/or mobile design to welcome your customers?
+                            Do you have software engineers on your current team who specialize behind the scenes, but do 
+                            not work as often on what the end-user views? I can help you! Feel free to browse my portfolio 
+                            gallery for all the examples of web and mobile design I can provide to your software engineer 
+                            team! Use the menu button on the top right of your screen to begin.
+          </p>
+          <br />
+          <div>
+            <figure>
+              <img
+                alt="Image has failed to load."
+                class="lg:hidden focus:outline-none shadow-lg"
+                src="[object Object]"
+              />
+              <img
+                alt="Image has failed to load."
+                class="invisible h-1 w-1 lg:visible lg:h-full lg:w-full focus:outline-none shadow-lg"
+                src="[object Object]"
+              />
+              <figcaption
+                class="pt-2 text-left"
+              >
+                The photo above was taken in person outside the South-East doorway of the Philadelphia Art Museum overlooking 
+                                the famed Rocky Steps in Philadelphia, P.A.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

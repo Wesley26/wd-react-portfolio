@@ -3,7 +3,9 @@
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with TypeScript support.
 Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [Framer Motion](https://www.framer.com/docs/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (MUI)](https://mui.com/), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
 
-No longer implemented, but kept for documentation archives: [CRACO](https://github.com/gsoft-inc/craco), [react-spring](https://www.react-spring.io/)
+Unit testing with [Jest (installed jest and @types/jest)](https://jestjs.io/docs/getting-started) [jest-transform-stub (required to include testing components with images)](https://www.npmjs.com/package/jest-transform-stub), and [ts-jest](https://github.com/kulshekhar/ts-jest).
+
+No longer implemented, but kept for documentation archives: [CRACO](https://github.com/gsoft-inc/craco), and [react-spring](https://www.react-spring.io/).
 
 
 # Information
@@ -19,6 +21,7 @@ No longer implemented, but kept for documentation archives: [CRACO](https://gith
 - `npm run build` will write to the build folder. Both `npm update` and `react-scripts build` Only use when deploying on server. NOTE: If server does not have enough ram (more than 1 GB ram may be required to build), it is recommended to build locally and feed the server the build files from your local development machine.
 - On Windows, use an .env file at the root, then add `Browser="none"`. This is for allowing you, the developer, the choice of which web browser you wish to use.
 - Include a .env.production and add `GENERATE_SOURCEMAP=false`. There is no specific reason. The source code for this website is already viewable here from my portfolio page.
+- Run Jest tests with `npm test`, which will run the command "jest --updateSnapshot" (update the snapshot each time a Jest test is run for now). Note: Inside "Jest" under package.json, ensure moduleNameMapper includes every image extension used in the app.
 - Check React documentation if needed for more information [Here](https://github.com/facebook/create-react-app).
 
 

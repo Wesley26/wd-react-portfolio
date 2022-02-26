@@ -1,0 +1,276 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render About.tsx test component 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="font-body bg-body_lightGray m-6 shadow-xl"
+      >
+         
+        <div
+          class="text-left p-6"
+          style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+        >
+          <div
+            class="lg:flex lg:justify-evenly"
+          >
+            <div
+              class="left-0 p-3"
+            >
+              <img
+                alt="Image has failed to load."
+                class="shadow-lg"
+                src="[object Object]"
+              />
+            </div>
+            <div
+              class="md:pl-6 font-title text-xl right-0 p-3"
+            >
+              <h1
+                class="pb-6 font-bold text-3x1 text-center"
+              >
+                Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer
+              </h1>
+              <br />
+              <div>
+                <div
+                  class="grid grid-rows-2 grid-cols-1"
+                >
+                  <p
+                    class="font-body text-md"
+                  >
+                    I am a bachelor of science Management Information Systems graduate from Rowan University
+                            since May of 2017. At Rowan University, I studied object oriented programming, web design, and
+                            database design. My path in my knowledge of different computer languages started with
+                            C/C++ and Java. In database design, I studied SQL.
+                  </p>
+                  <p
+                    class="font-body text-md"
+                  >
+                    After graduation, I began teaching myself the fundamental basics of static 
+                            HTML, CSS, and JavaScript using jQuery. Today, I focus on front-end user interface web design using
+                            ReactJS for Web and React Native for Mobile. I am also familiar with many other front-end related 
+                            JavaScript libraries such as TailwindCSS, PostCSS, and React-Spring to name a few. 
+                            My previous work experience includes a PC refresh contract project and one-year technical 
+                            customer support position located at Southern New Jersey in the online iGaming casino industry.
+                  </p>
+                  <p
+                    class="pt-16 font-body text-md text-center"
+                  >
+                    For more details, visit the GitHub and LinkedIn profile links below.
+                  </p>
+                </div>
+                <br />
+                <div
+                  class="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col"
+                >
+                  <div
+                    class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                  >
+                    <a
+                      href="https://github.com/Wesley26"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Image has failed to load."
+                        class="focus:outline-none"
+                        src="[object Object]"
+                      />
+                    </a>
+                  </div>
+                  <div
+                    class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                  >
+                    <a
+                      href="https://www.linkedin.com/in/wesleydzitzer/"
+                      rel="noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        alt="Image has failed to load."
+                        class="focus:outline-none"
+                        src="[object Object]"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="pb-6"
+          >
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="font-body bg-body_lightGray m-6 shadow-xl"
+    >
+       
+      <div
+        class="text-left p-6"
+        style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
+      >
+        <div
+          class="lg:flex lg:justify-evenly"
+        >
+          <div
+            class="left-0 p-3"
+          >
+            <img
+              alt="Image has failed to load."
+              class="shadow-lg"
+              src="[object Object]"
+            />
+          </div>
+          <div
+            class="md:pl-6 font-title text-xl right-0 p-3"
+          >
+            <h1
+              class="pb-6 font-bold text-3x1 text-center"
+            >
+              Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer
+            </h1>
+            <br />
+            <div>
+              <div
+                class="grid grid-rows-2 grid-cols-1"
+              >
+                <p
+                  class="font-body text-md"
+                >
+                  I am a bachelor of science Management Information Systems graduate from Rowan University
+                            since May of 2017. At Rowan University, I studied object oriented programming, web design, and
+                            database design. My path in my knowledge of different computer languages started with
+                            C/C++ and Java. In database design, I studied SQL.
+                </p>
+                <p
+                  class="font-body text-md"
+                >
+                  After graduation, I began teaching myself the fundamental basics of static 
+                            HTML, CSS, and JavaScript using jQuery. Today, I focus on front-end user interface web design using
+                            ReactJS for Web and React Native for Mobile. I am also familiar with many other front-end related 
+                            JavaScript libraries such as TailwindCSS, PostCSS, and React-Spring to name a few. 
+                            My previous work experience includes a PC refresh contract project and one-year technical 
+                            customer support position located at Southern New Jersey in the online iGaming casino industry.
+                </p>
+                <p
+                  class="pt-16 font-body text-md text-center"
+                >
+                  For more details, visit the GitHub and LinkedIn profile links below.
+                </p>
+              </div>
+              <br />
+              <div
+                class="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col"
+              >
+                <div
+                  class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                >
+                  <a
+                    href="https://github.com/Wesley26"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Image has failed to load."
+                      class="focus:outline-none"
+                      src="[object Object]"
+                    />
+                  </a>
+                </div>
+                <div
+                  class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                >
+                  <a
+                    href="https://www.linkedin.com/in/wesleydzitzer/"
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    <img
+                      alt="Image has failed to load."
+                      class="focus:outline-none"
+                      src="[object Object]"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="pb-6"
+        >
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
