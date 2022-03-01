@@ -29,12 +29,21 @@ module.exports = {
         'project_one': "url('./images/portfolio_BG_Images/KartersBotScreen.PNG')",
         //////////////////////////////////////////////////////////////////////////////////
       },
+      borderRadius: {
+        '16pix': '16px',
+      },
+      flex: {
+        '1And33percent': '1 1 33.333%',
+      },
       fontFamily: {
         'title': ['Cabin', 'sans-serif'],
         'body': ['Josefin Sans', 'sans-serif'],
+        'calculator': ['Fira Sans', 'sans-serif'],
       },
       fontSize: {
+        '14e': '14px',
         '20e': '20px',
+        '24e': '24px',
         '35e': '35px',
       },
       colors: {
@@ -44,6 +53,15 @@ module.exports = {
         'body_gray': '#e0dfdf',
         'body_lightGray': '#f7fafc',
         'body_form': '#e2e8f0',
+        'cal_primary': '#629e84',
+        'cal_secondary': '#8c38ff',
+        'cal_tirshiary': '#000000',
+        'cal_dark': '#4b695e',
+        'cal_light': '#eee',
+        'cal_light_altOne': '#FFF',
+        'cal_blue': '#5f90c7',
+        'cal_hover': '#bdbdbd',
+        'cal_active': '#6e6e6e',
       },
       height: {
         '5.9long': '5.9rem',
@@ -53,6 +71,9 @@ module.exports = {
         '23.5long': '23.5rem',
         '11.2long': '11.2rem',
       },
+      padding: {
+        '16pix': '16px',
+      },
       spacing: {
         '0.10long': '0.10rem',
         '3.5long': '3.5rem',
@@ -60,6 +81,10 @@ module.exports = {
         '20long': '20rem',
         '32long': '32rem',
         '34long': '34rem',
+      },
+      maxWidth: {
+        '33percent': '33.333%',
+        '400pix': '400px',
       },
       width: {
         '43.5long': '43.5rem',

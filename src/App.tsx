@@ -7,6 +7,7 @@ import { ImportantNavContext } from './hooks/ImportantNavContext';
 import usePathname from './hooks/usePathname';
 
 import { About,
+          Calculator,
           ContactMe,
           Home,
           Portfolio,
@@ -41,6 +42,7 @@ const App:FC = () => {
               <Route path="/resume" element={<Resume />} />
               <Route path="/contactMe" element={<ContactMe />} />
               <Route path="/todoList" element={<TodoList />} />
+              <Route path="/calculator" element={<Calculator />} />
             </Routes>
 
           </div>

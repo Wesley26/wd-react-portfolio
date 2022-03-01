@@ -27,7 +27,7 @@ No longer implemented, but kept for documentation archives: [CRACO](https://gith
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on February 24th, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on March 1st, 2022.
 
 
 ## Content of repo
@@ -76,6 +76,10 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 5. webPages folder:
 Note: each ts/tsx file is their own displayed web page within the app.
 
+- **calculatorComponents:**
+Contains components for the calculator application.
+- `CalculatorBase.tsx`: Component that can perform numerical calculations.
+
 - **contentMaster:**
 - `MainPageAnimations.ts`: MainPageAnimations component for Framer Motion custom hook.
 - `PageContent.ts`: Contains all TypeScript functionality for individual web page components. All individual page web components import their variables from this custom hook ts file.
@@ -103,8 +107,9 @@ Contains components for the To-do application.
 - `todoForm.tsx`: Component takes user input and saves to-do item.
 - `todoListing.tsx`: Component displays user input options.
 
-- **webPages root** 
+- **webPages root:** 
 - `About.tsx`: About me web page component. The about me page contains information about me, one photo of me, and two separate links. One link leads to my GitHub page, the other link leads to my LinkedIn page.
+- `Calculator.tsx`: This is a standard calculator application component. The component requires the components located in the calculatorComponents folder.
 - `ContactMe.tsx`: Email form, which implements EmailJS, is where the end user may fill out an email to submit if they wish to contact me directly. The form is protected from bots via Google reCaptcha v2. The end user must follow all instructions displayed at the top of the page in order to send an email to me from this web page component.
 - `Home.tsx`: Home web page component. The end user is introduced with my website logo, a city scene, and introduction text.
 - `Portfolio.tsx`: This is the portfolio web page component. Each portfolio item is listed on this web page component.
@@ -113,17 +118,19 @@ Contains components for the To-do application.
 
 6. Other files in src:
 - `App.tsx`: The root JS file in entire app, all web components reference to this JS file; however, it is not the main JS file.
-- `App.test.tsx`: Tests the App, JEST based test.
 - `index.css`: Main CSS file, tailwind CSS is referenced here.
 - `index.tsx`: Main tsx file.
 - `react-app-env.d.ts`: Part of TypeScript support, do not edit.
 - `reportWebVitals.tsx`: Part of create-react-app, do not edit.
 - `setupTests.tsx`: Part of create-react-app, do not edit.
 
+- **tests/src:**
+Contains a mirror test directory for specific components to test with Jest. Each test creates a snapshot test render for: `App.tsx`, `About.tsx`, `ContactMe.tsx`, `Home.tsx`, `Portfolio.tsx`, `TodoList.tsx`, and `Calculator.tsx`. For example, `App.test.tsx` renders a snapshot test for `App.tsx` and so on. This directory also contains the end result snap files for each test. 
+
 
 ### Other files:
 - `.eslintignore` - help with `npm run build` command optimization, ignore node_modules folder.
-- `package.json`
+- `package.json` - Jest test config is also located here along with dependencies for the entire project.
 - `package-lock.json`
 - `postcss.config.js` - postcss config file, runs tailwind.css which is used to purge unused CSS classes, manage tailwindCSS runtime using tailwind's JIT runtime.
 - `tailwind.config.js` - tailwind plugin configuration JS file. Insert custom tailwind CSS class settings and purge CSS configurations in this JS file.

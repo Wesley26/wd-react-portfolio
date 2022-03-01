@@ -227,6 +227,38 @@ const PageContents = () => {
     const placeholderToDoItemText = "Add to-do item" as string;
     const storageText = "Your current locally stored to-do list items: " as string;
 
+    /**
+     *  //////////////////////////////////////////////// CALCULATOR PAGE CONTENT //////////////////////////////////////////////////////////////////////
+     */
+
+    interface CALCULATORCONTENT {
+        addSign: string,
+        deleteBTN: string,
+        divideSign: string,
+        equalsSign: string,
+        multiplySign: string,
+        periodSign: string,
+        subtractSign: string,
+        zeroSign: number,
+        openCal: string,
+        closeCal: string,
+    };
+
+    const calculatorContent: CALCULATORCONTENT = {
+
+        addSign: `+`,
+        deleteBTN: `DEL`,
+        divideSign: `/`,
+        equalsSign: `=`,
+        multiplySign: `*`,
+        periodSign: `.`,
+        subtractSign: `-`,
+        zeroSign: 0,
+        openCal: `Open Calculator`,
+        closeCal: `Close Calculator`,
+
+    };
+
     return { 
         noImage,
         allImages,
@@ -257,6 +289,8 @@ const PageContents = () => {
         toDoTitle,
         placeholderToDoItemText,
         storageText,
+        /////////////////////////
+        calculatorContent,
     };
 
 };

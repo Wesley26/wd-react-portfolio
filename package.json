@@ -69,7 +69,7 @@
     "preset": "ts-jest",
     "testEnvironment": "jsdom",
     "moduleNameMapper": {
-        ".+\\.(css|scss|png|PNG|jpg|jpeg|svg|ico)$": "jest-transform-stub"
+      ".+\\.(css|scss|png|PNG|jpg|jpeg|svg|ico)$": "jest-transform-stub"
     }
   },
   "overrides": {

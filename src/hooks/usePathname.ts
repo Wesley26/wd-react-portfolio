@@ -36,6 +36,10 @@ const usePathname = () => {
           case '/todoList':
             setImportantNavName(`TodoList`);
             break;
+
+          case '/calculator':
+            setImportantNavName(`Calculator`);
+            break;
         
           default:
             setImportantNavName(`Home`);

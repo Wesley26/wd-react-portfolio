@@ -76,6 +76,12 @@ const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
                         className={`${importantNavStyle === `TodoList` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
                         onClick={() => { props.closeMenu(); setImportantNavStyle(`TodoList`); }}>{navContentData.navItemSix}</Link>
                     </li>
+                    <li className="pt-3">
+                    <Link 
+                        to="/calculator" 
+                        className={`${importantNavStyle === `Calculator` ? `bg-important_blue` : `bg-transparent`} h-20 text-green-600 md:text-3xl lg:text-4xl pt-4 pb-3 block border-black border-solid border-2 rounded-full hover:bg-gray-300 active:bg-gray-400 shadow-lg`}
+                        onClick={() => { props.closeMenu(); setImportantNavStyle(`Calculator`); }}>{navContentData.navItemSeven}</Link>
+                    </li>
                 </ul>
             <br>
             </br>

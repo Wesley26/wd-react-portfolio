@@ -22,6 +22,7 @@ const NavContents = () => {
         navItemFour: string,
         navItemFive: string,
         navItemSix: string,
+        navItemSeven: string,
     };
 
     const navContentData: NAV_CONTENT_DATA = {
@@ -39,6 +40,7 @@ const NavContents = () => {
         navItemFour: "Resume",
         navItemFive: "Contact Me",
         navItemSix: "To-do List",
+        navItemSeven: "Calculator",
     };
 
     return navContentData;

@@ -36,7 +36,9 @@ const TodoList:FC = () => {
 
     }, [todos]);
 
-    console.log(todosMem); //uncomment to see localStorage in action
+    if (todosMem) {}; //keep TS compiler happy
+
+    // console.log(todosMem); //uncomment to see localStorage in action
 
     return (
         
