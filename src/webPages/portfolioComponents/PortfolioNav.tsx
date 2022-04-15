@@ -1,6 +1,7 @@
 import { FC, useContext, useEffect, useMemo, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import { PortfolioDisplayContext } from '../../hooks/PortfolioDisplayContext';
 
@@ -67,7 +68,7 @@ const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
                 }}
             >
                 <FontAwesomeIcon
-                    icon={faCaretLeft}
+                    icon={faCaretLeft as IconProp}
                     className={`text-9xl ${dynamicArrowStyleL}`}
                 />
             </div>
@@ -84,7 +85,7 @@ const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
                 }}
             >
                 <FontAwesomeIcon
-                    icon={faCaretRight}
+                    icon={faCaretRight as IconProp}
                     className={`text-9xl ${dynamicArrowStyleR}`}
                 />
             </div>

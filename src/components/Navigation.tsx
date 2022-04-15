@@ -5,6 +5,7 @@ import NavigationMenuD from './NavigationMenuD';
 import GetWindowDimensions from '../hooks/GetWindowDimensions';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { IconProp } from '@fortawesome/fontawesome-svg-core';
 import { motion } from "framer-motion";
 
 const Navigation:FC = () => {
@@ -38,7 +39,7 @@ const Navigation:FC = () => {
                         transition={navAnimations.transitionStyle}
                         className="pl-6 pt-3 pb-4 border-solid border-l-2 border-black h-20">
                         <FontAwesomeIcon 
-                            icon={faBars}
+                            icon={faBars as IconProp}
                             className="mr-2 p-2 text-4xl hover:bg-gray-200 hover:opacity-75 active:bg-gray-400"
                             onClick={() => setShowMenu(!showMenu)}
                         />
