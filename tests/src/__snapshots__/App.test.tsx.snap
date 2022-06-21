@@ -199,7 +199,15 @@ Object {
             <br />
             The current date of server is:  6/21/2022
             <br />
+<<<<<<< HEAD
             The current time of server is: 6:48:30 PM
+=======
+<<<<<<< HEAD
+            The current time of server is: 6:18:25 PM
+=======
+            The current time of server is: 5:53:11 PM
+>>>>>>> 153df41 (06/21/2022 Commit Edit 1 - ran snapshot tests again to double check work)
+>>>>>>> f2ce4ef (06/21/2022 Commit Edit 3 - finished rebasing)
           </footer>
         </div>
       </div>
@@ -400,7 +408,15 @@ Object {
           <br />
           The current date of server is:  6/21/2022
           <br />
+<<<<<<< HEAD
           The current time of server is: 6:48:30 PM
+=======
+<<<<<<< HEAD
+          The current time of server is: 6:18:25 PM
+=======
+          The current time of server is: 5:53:11 PM
+>>>>>>> 153df41 (06/21/2022 Commit Edit 1 - ran snapshot tests again to double check work)
+>>>>>>> f2ce4ef (06/21/2022 Commit Edit 3 - finished rebasing)
         </footer>
       </div>
     </div>
