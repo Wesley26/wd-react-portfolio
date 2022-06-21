@@ -45,7 +45,7 @@ const Portfolio:FC = () => {
              * List each portfolio item component in this Array
              */
             ///////////////REAL WORLD PROJECTS/////////////////////////////
-            <RealWorldOne />, //0, (Sketch/Eastman Core Mobile App)
+            <RealWorldOne />, //0, (Sketch/Eastman Core Mobile App) 
             ///////////////MOBILE APP PROJECTS/////////////////////////////
             <MobileOne />, //1, MobileOne (Weather Utility App)
             <MobileTwo />, //2, MobileTwo (CHOYCES Mobile)
