@@ -14,7 +14,7 @@ interface TODOFORM {
 const TodoForm:FC<TODOFORM> = (props:TODOFORM) => {
 
     const pageContents = PageContents();
-    const [value, setValue] = useState('');
+    const [value, setValue] = useState<string>('');
 
     return (
 

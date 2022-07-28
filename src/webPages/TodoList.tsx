@@ -20,23 +20,21 @@ const TodoList:FC = () => {
 
     }, []);
 
-    const [todos, setTodos] = useState<any>([]);
-    const [todosMem, setTodosMem] = useState<any>([]);
+    const [todos, setTodos] = useState<string[]>(JSON.parse(localStorage.getItem('rememberTodo') || '[]'));
+    const [todosMem, setTodosMem] = useState<string[]>(JSON.parse(localStorage.getItem('rememberTodo') || '[]'));
 
     useEffect(() => {
 
-        localStorage.setItem('rememberTodo', todos);
+        localStorage.setItem('rememberTodo', JSON.stringify(todos));
 
-        let memoryTodo = localStorage.getItem('rememberTodo');
+        let memoryTodo: string[] = JSON.parse(localStorage.getItem('rememberTodo') || '[]');
         //console.log(memoryTodo); //uncomment to see localStorage in action
 
-        if (memoryTodo) {
+        if (memoryTodo !== null || memoryTodo !== []) {
             setTodosMem(memoryTodo);
         };
 
     }, [todos]);
-
-    if (todosMem) {}; //keep TS compiler happy
 
     // console.log(todosMem); //uncomment to see localStorage in action
 
@@ -57,17 +55,17 @@ const TodoList:FC = () => {
                     </h1>
 
                     <h3 className="text-md p-3 text-center">
-                        {pageContents.storageText}{localStorage.getItem('rememberTodo')}
+                        {pageContents.storageText}{`${todosMem}`}
                     </h3>
 
                     <ToDoForm 
-                        saveTodo={(todoText: any) => {
+                        saveTodo={(todoText: string) => {
 
                             if (todoText) {
                                 /**
                                  * Handle Todos from current window
                                  */
-                                const trimmedText = todoText.trim();
+                                const trimmedText: string = todoText.trim();
 
                                 if (trimmedText.length > 0) {
                                     setTodos([...todos, trimmedText]);
@@ -78,8 +76,8 @@ const TodoList:FC = () => {
 
                     <TodoListing 
                         todos={todos}
-                        deleteTodo={(todoIndex: any) => {
-                            const newTodos = todos.filter((_: any, index: any) => index !== todoIndex);
+                        deleteTodo={(todoIndex: number) => {
+                            const newTodos = todos.filter((_: any, index: number) => index !== todoIndex);
 
                             setTodos(newTodos);
                         }}

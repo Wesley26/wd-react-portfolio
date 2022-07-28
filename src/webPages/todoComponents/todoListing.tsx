@@ -20,14 +20,14 @@ import DeleteForever from '@mui/icons-material/DeleteForever';
  */
 
 interface TODOLISTING {
-    todos: any,
-    deleteTodo: (todoIndex: any) => void,
+    todos: string[],
+    deleteTodo: (todoIndex: number) => void,
 }
 
 const TodoListing:FC<TODOLISTING> = (props:TODOLISTING) => (
 
     <List>
-        {props.todos.map((todo: any, index: any) => (
+        {props.todos.map((todo: string, index: number) => (
 
             <ListItem key={index.toString()} dense button>
                 <Checkbox 
