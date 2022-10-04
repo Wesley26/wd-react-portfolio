@@ -30,7 +30,7 @@ const TodoList:FC = () => {
         let memoryTodo: string[] = JSON.parse(localStorage.getItem('rememberTodo') || '[]');
         //console.log(memoryTodo); //uncomment to see localStorage in action
 
-        if (memoryTodo !== null || memoryTodo !== []) {
+        if (memoryTodo !== null) {
             setTodosMem(memoryTodo);
         };
 
