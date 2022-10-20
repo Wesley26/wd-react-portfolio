@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="font-body bg-body_lightGray m-6 sm:pb-6 shadow-xl"
+        class="font-body bg-body_lightGray m-6 sm:pb-6 shadow-xl h-full"
       >
          
         <div
@@ -17,18 +17,22 @@ Object {
             class="text-xl p-3 text-center"
           >
             <p>
-              To view the full PDF file of my resume, select the download link at the bottom of this page.
+              To view the full PDF file of my resume and supporting documents, select the download link at the bottom of this page.
             </p>
           </div>
-          <div>
-            <img
-              alt="Image has failed to load."
-              class="focus:outline-none shadow-lg"
-              src="[object Object]"
+          <div
+            class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
+          >
+            <iframe
+              class="focus:outline-none shadow-lg h-full w-full"
+              height="100%"
+              src="[object Object]#view=fitH#zoom=scale"
+              title="WD_Resume"
+              width="100%"
             />
           </div>
           <div
-            class="pt-3 pb-12 md:ml-64 md:mr-64 lg:ml-64 lg:mr-64 xl:ml-32long xl:mr-32long grid grid-flow-col"
+            class="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col"
           >
             <div
               class="text-xl p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500"
@@ -38,9 +42,36 @@ Object {
                 rel="noreferrer"
                 target="_blank"
               >
-                Download My Resume
+                Download My Resume and Supporting Documents
               </a>
             </div>
+          </div>
+          <div
+            class="sm:visible sm:mb-32long md:hidden"
+          >
+            <br />
+          </div>
+          <div
+            class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
+          >
+            <iframe
+              class="focus:outline-none shadow-lg h-full w-full"
+              height="100%"
+              src="[object Object]#view=fitH#zoom=scale"
+              title="WD_Letter_Of_Recommendation_B"
+              width="100%"
+            />
+          </div>
+          <div
+            class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
+          >
+            <iframe
+              class="focus:outline-none shadow-lg h-full w-full"
+              height="100%"
+              src="[object Object]#view=fitH#zoom=scale"
+              title="WD_Letter_Of_Recommendation_A"
+              width="100%"
+            />
           </div>
           <div
             class="sm:visible sm:mb-32long md:hidden"
@@ -56,7 +87,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="font-body bg-body_lightGray m-6 sm:pb-6 shadow-xl"
+      class="font-body bg-body_lightGray m-6 sm:pb-6 shadow-xl h-full"
     >
        
       <div
@@ -67,18 +98,22 @@ Object {
           class="text-xl p-3 text-center"
         >
           <p>
-            To view the full PDF file of my resume, select the download link at the bottom of this page.
+            To view the full PDF file of my resume and supporting documents, select the download link at the bottom of this page.
           </p>
         </div>
-        <div>
-          <img
-            alt="Image has failed to load."
-            class="focus:outline-none shadow-lg"
-            src="[object Object]"
+        <div
+          class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
+        >
+          <iframe
+            class="focus:outline-none shadow-lg h-full w-full"
+            height="100%"
+            src="[object Object]#view=fitH#zoom=scale"
+            title="WD_Resume"
+            width="100%"
           />
         </div>
         <div
-          class="pt-3 pb-12 md:ml-64 md:mr-64 lg:ml-64 lg:mr-64 xl:ml-32long xl:mr-32long grid grid-flow-col"
+          class="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col"
         >
           <div
             class="text-xl p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500"
@@ -88,9 +123,36 @@ Object {
               rel="noreferrer"
               target="_blank"
             >
-              Download My Resume
+              Download My Resume and Supporting Documents
             </a>
           </div>
+        </div>
+        <div
+          class="sm:visible sm:mb-32long md:hidden"
+        >
+          <br />
+        </div>
+        <div
+          class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
+        >
+          <iframe
+            class="focus:outline-none shadow-lg h-full w-full"
+            height="100%"
+            src="[object Object]#view=fitH#zoom=scale"
+            title="WD_Letter_Of_Recommendation_B"
+            width="100%"
+          />
+        </div>
+        <div
+          class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
+        >
+          <iframe
+            class="focus:outline-none shadow-lg h-full w-full"
+            height="100%"
+            src="[object Object]#view=fitH#zoom=scale"
+            title="WD_Letter_Of_Recommendation_A"
+            width="100%"
+          />
         </div>
         <div
           class="sm:visible sm:mb-32long md:hidden"

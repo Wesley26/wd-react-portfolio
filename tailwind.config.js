@@ -64,12 +64,14 @@ module.exports = {
         'cal_active': '#6e6e6e',
       },
       height: {
-        '5.9long': '5.9rem',
+        '93percent': '93%',
+        '85.6long': '85.6rem',
         '51.6long': '51.6rem',
         '30long': '30rem',
         '26.9long': '26.9rem',
         '23.5long': '23.5rem',
         '11.2long': '11.2rem',
+        '5.9long': '5.9rem',
       },
       padding: {
         '16pix': '16px',

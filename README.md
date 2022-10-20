@@ -1,7 +1,7 @@
 ![wd-react-portfolio Logo Image](https://raw.githubusercontent.com/Wesley26/wd-react-portfolio/master/src/images/logoImage/WD_Logo.png)
 
 Bootstrapped with [Create React App](https://github.com/facebook/create-react-app) with TypeScript support.
-Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [Framer Motion](https://www.framer.com/docs/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (MUI)](https://mui.com/), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
+Implements the following dependencies: [Tailwind CSS](https://tailwindcss.com/), [PostCSS](https://www.npmjs.com/package/postcss), [Framer Motion](https://www.framer.com/docs/), [react-router-dom](https://www.npmjs.com/package/react-router-dom), [EmailJS](https://www.emailjs.com/docs/), [Google reCaptcha v2](https://www.npmjs.com/package/react-google-recaptcha), [Material-ui (MUI)](https://mui.com/), [React Device Detect](https://www.npmjs.com/package/react-device-detect), and [Font Awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react).
 
 Unit testing with [Jest (installed jest and @types/jest)](https://jestjs.io/docs/getting-started) [jest-transform-stub (required to include testing components with images)](https://www.npmjs.com/package/jest-transform-stub), and [ts-jest](https://github.com/kulshekhar/ts-jest).
 
@@ -22,12 +22,14 @@ No longer implemented, but kept for documentation archives: [CRACO](https://gith
 - On Windows, use an .env file at the root, then add `Browser="none"`. This is for allowing you, the developer, the choice of which web browser you wish to use.
 - Include a .env.production and add `GENERATE_SOURCEMAP=false`. There is no specific reason. The source code for this website is already viewable here from my portfolio page.
 - Run Jest tests with `npm test`, which will run the command "jest --updateSnapshot" (update the snapshot each time a Jest test is run for now). Note: Inside "Jest" under package.json, ensure moduleNameMapper includes every image extension used in the app.
+- See [this Stack Overflow article](https://stackoverflow.com/questions/20562543/zoom-to-fit-pdf-embedded-in-html) on handling PDF files in an iFrame tag
+in ReactJS.
 - Check React documentation if needed for more information [Here](https://github.com/facebook/create-react-app).
 
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on March 1st, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on October 20th, 2022.
 
 
 ## Content of repo
@@ -51,7 +53,7 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 - Contains a JSON with each API key required for all API's implemented on this portfolio website design. It is not tracked for security purposes and must be manually provided on deployment. See `PageContents.ts` under Universal API Imports for the list of string values required in the JSON file manually provided.
 
 2. images folder:
-- Contains all images implemented on this website design. The logoImage folder contains website logo design images. The portfolio_BG_Images folder contains a background photo for each portfolio item. The portfolio_Icon_Images folder contains images used for each animated icon on each portfolio item. The animated icons introduce the subject of the portfolio item. The resumeImage folder contains the .png version of my pdf downloadable resume. All other images used on this website design that do not belong in a specific category are stored in the root of the images folder.
+- Contains all images implemented on this website design. The logoImage folder contains website logo design images. The portfolio_BG_Images folder contains a background photo for each portfolio item. The portfolio_Icon_Images folder contains images used for each animated icon on each portfolio item. The animated icons introduce the subject of the portfolio item. The resumeImage folder contains the .png version of my pdf downloadable resume and supporting documents. All other images used on this website design that do not belong in a specific category are stored in the root of the images folder.
 
 3. components folder:
 
@@ -118,6 +120,7 @@ Contains components for the To-do application.
 
 6. Other files in src:
 - `App.tsx`: The root JS file in entire app, all web components reference to this JS file; however, it is not the main JS file.
+- `global.d.ts`: Declare any file extensions TypeScript complains about here.
 - `index.css`: Main CSS file, tailwind CSS is referenced here.
 - `index.tsx`: Main tsx file.
 - `react-app-env.d.ts`: Part of TypeScript support, do not edit.

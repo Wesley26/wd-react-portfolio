@@ -12,6 +12,11 @@ import githubLogo from "../../images/GitHub-Mark-120px-plus.png"; //GitHub Logo
 import linkedInLogo from "../../images/linkedin-logo.png"; //LinkedIn Logo
 
 import resumeImg from "../../images/resumeImage/WD_Resume_IMG.png"; //Image version of Resume
+import resumePdf from "../../images/resumeImage/WD_Resume_PDF.pdf"; //PDF version of Resume
+import letterAImg from "../../images/resumeImage/lettersOfRecommendation/WD_CHOYCES_LOR.png"; //Image version of CHOYCES letter of recommendation
+import letterAPdf from "../../images/resumeImage/lettersOfRecommendation/WD_CHOYCES_LOR.pdf"; //PDF version of CHOYCES letter of recommendation
+import letterBImg from "../../images/resumeImage/lettersOfRecommendation/WD_ICM_LOR.png"; //Image version of ICM letter of recommendation
+import letterBPdf from "../../images/resumeImage/lettersOfRecommendation/WD_ICM_LOR.pdf"; //PDF version of ICM letter of recommendation
 
 /**
  * //////////////////////////////////////////////// UNIVERSAL API IMPORTS /////////////////////////////////////////////////////////
@@ -54,6 +59,11 @@ const PageContents = () => {
         githubLogo: string,
         linkedInLogo: string,
         resumeImg: string,
+        resumePdf: string,
+        letterAImg: string,
+        letterAPdf: string,
+        letterBImg: string,
+        letterBPdf: string,
     };
 
     const allImages: ALLIMAGES = {
@@ -65,6 +75,11 @@ const PageContents = () => {
         githubLogo: githubLogo,
         linkedInLogo: linkedInLogo,
         resumeImg: resumeImg,
+        resumePdf: resumePdf,
+        letterAImg: letterAImg,
+        letterAPdf: letterAPdf,
+        letterBImg: letterBImg,
+        letterBPdf: letterBPdf,
 
     };
 
@@ -125,12 +140,18 @@ const PageContents = () => {
 
     interface RESUMETEXT {
         infoR: string,
+        resumeTitle: string,
+        letterOfRecommendationTitleA: string,
+        letterOfRecommendationTitleB: string,
         downloadR: string,
     };
 
     const resumeText: RESUMETEXT = {
-            infoR: `To view the full PDF file of my resume, select the download link at the bottom of this page.`,
-            downloadR: "Download My Resume",
+            infoR: `To view the full PDF file of my resume and supporting documents, select the download link at the bottom of this page.`,
+            resumeTitle: `WD_Resume`,
+            letterOfRecommendationTitleA: `WD_Letter_Of_Recommendation_A`,
+            letterOfRecommendationTitleB: `WD_Letter_Of_Recommendation_B`,
+            downloadR: "Download My Resume and Supporting Documents",
     };
     
     const resumeLink = `https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing` as string;
