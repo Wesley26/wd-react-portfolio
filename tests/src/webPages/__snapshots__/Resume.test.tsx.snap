@@ -14,11 +14,30 @@ Object {
           style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
         >
           <div
-            class="text-xl p-3 text-center"
+            class="flex flex-col justify-center items-center"
           >
-            <p>
-              To view the full PDF file of my resume and supporting documents, select the download link at the bottom of this page.
-            </p>
+            <div
+              class="text-xl p-3 text-center"
+            >
+              <p>
+                To view the full PDF file of my resume and supporting documents, select the download link below.
+              </p>
+            </div>
+            <div
+              class="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col"
+            >
+              <div
+                class="border-gray-700 border-2 text-xl p-3 flex rounded-full justify-center shadow-md hover:bg-gray-300 active:bg-gray-500"
+              >
+                <a
+                  href="https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing"
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Download My Resume and Supporting Documents
+                </a>
+              </div>
+            </div>
           </div>
           <div
             class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
@@ -30,21 +49,6 @@ Object {
               title="WD_Resume"
               width="100%"
             />
-          </div>
-          <div
-            class="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col"
-          >
-            <div
-              class="text-xl p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500"
-            >
-              <a
-                href="https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing"
-                rel="noreferrer"
-                target="_blank"
-              >
-                Download My Resume and Supporting Documents
-              </a>
-            </div>
           </div>
           <div
             class="sm:visible sm:mb-32long md:hidden"
@@ -95,11 +99,30 @@ Object {
         style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
       >
         <div
-          class="text-xl p-3 text-center"
+          class="flex flex-col justify-center items-center"
         >
-          <p>
-            To view the full PDF file of my resume and supporting documents, select the download link at the bottom of this page.
-          </p>
+          <div
+            class="text-xl p-3 text-center"
+          >
+            <p>
+              To view the full PDF file of my resume and supporting documents, select the download link below.
+            </p>
+          </div>
+          <div
+            class="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col"
+          >
+            <div
+              class="border-gray-700 border-2 text-xl p-3 flex rounded-full justify-center shadow-md hover:bg-gray-300 active:bg-gray-500"
+            >
+              <a
+                href="https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing"
+                rel="noreferrer"
+                target="_blank"
+              >
+                Download My Resume and Supporting Documents
+              </a>
+            </div>
+          </div>
         </div>
         <div
           class="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long"
@@ -111,21 +134,6 @@ Object {
             title="WD_Resume"
             width="100%"
           />
-        </div>
-        <div
-          class="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col"
-        >
-          <div
-            class="text-xl p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500"
-          >
-            <a
-              href="https://drive.google.com/drive/folders/1Zq6rcMgDz2IeEZCGJr4lKEqATsdVakbW?usp=sharing"
-              rel="noreferrer"
-              target="_blank"
-            >
-              Download My Resume and Supporting Documents
-            </a>
-          </div>
         </div>
         <div
           class="sm:visible sm:mb-32long md:hidden"

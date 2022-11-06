@@ -1,8 +1,15 @@
 import { FC, useEffect, useState } from 'react';
 import PageContents from './contentMaster/PageContents';
 import MainPageAnimations from './contentMaster/MainPageAnimations';
-import { isMobile } from 'react-device-detect';
+import { isIOS } from 'react-device-detect';
 import { motion } from 'framer-motion';
+
+/**
+ * NOTE: For react-device-detect, make sure android allows PDF rendering so the
+ * end user has an option to download the PDF files directly. Only render images
+ * for iOS devices.
+ * @returns Resume page component
+ */
 
 const Resume:FC = () => {
 
@@ -28,13 +35,22 @@ const Resume:FC = () => {
                     transition={mainPageAnimations.transitionStyle}
                     className="px-5 py-3"
                 >
-                    <div className="text-xl p-3 text-center">
-                        <p>
-                            {pageContents.resumeText.infoR}
-                        </p>
+                    <div className="flex flex-col justify-center items-center">
+                        <div className="text-xl p-3 text-center">
+                            <p>
+                                {pageContents.resumeText.infoR}
+                            </p>
+                        </div>
+                        <div className="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col">
+                            <div className="border-gray-700 border-2 text-xl p-3 flex rounded-full justify-center shadow-md hover:bg-gray-300 active:bg-gray-500">
+                                <a href={pageContents.resumeLink} rel="noreferrer" target="_blank">
+                                    {pageContents.resumeText.downloadR}
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div className="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long">
-                        { isMobile ? ( //Resume
+                        { isIOS ? ( //Resume
                             <img 
                                 src={pageContents.allImages.resumePdf}
                                 alt={pageContents.noImage}
@@ -51,19 +67,12 @@ const Resume:FC = () => {
                         )}
                     </div>
                     <>
-                        <div className="pt-3 pb-12 lg:ml-64 lg:mr-64 grid grid-flow-col">
-                            <div className="text-xl p-3 flex rounded-full justify-center hover:bg-gray-300 active:bg-gray-500">
-                                <a href={pageContents.resumeLink} rel="noreferrer" target="_blank">
-                                    {pageContents.resumeText.downloadR}
-                                </a>
-                            </div>
-                        </div>
                         <div className="sm:visible sm:mb-32long md:hidden">
                             <br></br>
                         </div>
                     </>
                     <div className="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long">
-                        { isMobile ? ( //ICM Letter of Recommendation
+                        { isIOS ? ( //ICM Letter of Recommendation
                             <img 
                                 src={pageContents.allImages.letterBImg}
                                 alt={pageContents.noImage}
@@ -80,7 +89,7 @@ const Resume:FC = () => {
                         )}
                     </div>
                     <div className="flex flex-1 justify-center items-center h-30long md:h-51.6long lg:h-85.6long">
-                        { isMobile ? ( //CHOYCES Letter of Recommendation
+                        { isIOS ? ( //CHOYCES Letter of Recommendation
                             <img 
                                 src={pageContents.allImages.letterAImg}
                                 alt={pageContents.noImage}

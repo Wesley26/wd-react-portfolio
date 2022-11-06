@@ -147,7 +147,7 @@ const PageContents = () => {
     };
 
     const resumeText: RESUMETEXT = {
-            infoR: `To view the full PDF file of my resume and supporting documents, select the download link at the bottom of this page.`,
+            infoR: `To view the full PDF file of my resume and supporting documents, select the download link below.`,
             resumeTitle: `WD_Resume`,
             letterOfRecommendationTitleA: `WD_Letter_Of_Recommendation_A`,
             letterOfRecommendationTitleB: `WD_Letter_Of_Recommendation_B`,
