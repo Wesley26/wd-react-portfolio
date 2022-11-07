@@ -14,6 +14,40 @@ Object {
           style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
         >
           <div
+            class="flex flex-row justify-between items-center ml-12 mr-12 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72"
+          >
+            <div
+              class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
+            >
+              <a
+                href="https://github.com/Wesley26"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="Image has failed to load."
+                  class="focus:outline-none"
+                  src="[object Object]"
+                />
+              </a>
+            </div>
+            <div
+              class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
+            >
+              <a
+                href="https://www.linkedin.com/in/wesleydzitzer/"
+                rel="noreferrer"
+                target="_blank"
+              >
+                <img
+                  alt="Image has failed to load."
+                  class="focus:outline-none"
+                  src="[object Object]"
+                />
+              </a>
+            </div>
+          </div>
+          <div
             class="pb-10"
           >
             <div
@@ -75,6 +109,40 @@ Object {
         class="p-6"
         style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
       >
+        <div
+          class="flex flex-row justify-between items-center ml-12 mr-12 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72"
+        >
+          <div
+            class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
+          >
+            <a
+              href="https://github.com/Wesley26"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Image has failed to load."
+                class="focus:outline-none"
+                src="[object Object]"
+              />
+            </a>
+          </div>
+          <div
+            class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
+          >
+            <a
+              href="https://www.linkedin.com/in/wesleydzitzer/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Image has failed to load."
+                class="focus:outline-none"
+                src="[object Object]"
+              />
+            </a>
+          </div>
+        </div>
         <div
           class="pb-10"
         >

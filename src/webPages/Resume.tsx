@@ -4,6 +4,8 @@ import MainPageAnimations from './contentMaster/MainPageAnimations';
 import { isIOS } from 'react-device-detect';
 import { motion } from 'framer-motion';
 
+import { GitHubLinkedInURL } from './reusableComponents/reusableIndex';
+
 /**
  * NOTE: For react-device-detect, make sure android allows PDF rendering so the
  * end user has an option to download the PDF files directly. Only render images
@@ -35,6 +37,7 @@ const Resume:FC = () => {
                     transition={mainPageAnimations.transitionStyle}
                     className="px-5 py-3"
                 >
+                    <GitHubLinkedInURL />
                     <div className="flex flex-col justify-center items-center">
                         <div className="text-xl p-3 text-center">
                             <p>

@@ -3,6 +3,8 @@ import PageContents from './contentMaster/PageContents';
 import MainPageAnimations from './contentMaster/MainPageAnimations';
 import { motion } from 'framer-motion';
 
+import { GitHubLinkedInURL } from './reusableComponents/reusableIndex';
+
 const Home:FC = () => {
 
     const pageContents = PageContents();
@@ -27,6 +29,7 @@ const Home:FC = () => {
                     transition={mainPageAnimations.transitionStyle}
                     className="p-6"
                 >
+                    <GitHubLinkedInURL />
                     <div className="pb-10">
                         <div className="flex justify-center items-center">
                             <img

@@ -5,6 +5,7 @@ import PortfolioNav from './portfolioComponents/PortfolioNav';
 import MainPageAnimations from './contentMaster/MainPageAnimations';
 import { motion } from 'framer-motion';
 
+import { GitHubLinkedInURL } from './reusableComponents/reusableIndex';
 import { PortfolioDisplayContext } from '../hooks/PortfolioDisplayContext';
 
 import {
@@ -65,6 +66,10 @@ const Portfolio:FC = () => {
 
     return (
         <div className="font-body bg-body_lightGray m-6 overflow-auto shadow-xl">
+
+            <div className="pt-3">
+                <GitHubLinkedInURL />
+            </div>
 
             <> { visible ? (
                 <motion.div

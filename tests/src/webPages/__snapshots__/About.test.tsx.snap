@@ -64,10 +64,10 @@ Object {
                 </div>
                 <br />
                 <div
-                  class="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col"
+                  class="flex flex-row justify-between items-center ml-12 mr-12 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72"
                 >
                   <div
-                    class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                    class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
                   >
                     <a
                       href="https://github.com/Wesley26"
@@ -82,7 +82,7 @@ Object {
                     </a>
                   </div>
                   <div
-                    class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                    class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
                   >
                     <a
                       href="https://www.linkedin.com/in/wesleydzitzer/"
@@ -173,10 +173,10 @@ Object {
               </div>
               <br />
               <div
-                class="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col"
+                class="flex flex-row justify-between items-center ml-12 mr-12 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72"
               >
                 <div
-                  class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                  class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
                 >
                   <a
                     href="https://github.com/Wesley26"
@@ -191,7 +191,7 @@ Object {
                   </a>
                 </div>
                 <div
-                  class="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400"
+                  class="border-gray-700 border-2 p-3 flex rounded-full justify-center shadow-md hover:bg-gray-200 active:bg-gray-400"
                 >
                   <a
                     href="https://www.linkedin.com/in/wesleydzitzer/"

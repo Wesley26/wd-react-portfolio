@@ -3,6 +3,8 @@ import PageContents from './contentMaster/PageContents';
 import MainPageAnimations from './contentMaster/MainPageAnimations';
 import { motion } from 'framer-motion';
 
+import { GitHubLinkedInURL } from './reusableComponents/reusableIndex';
+
 const About:FC = () => {
 
     const pageContents = PageContents();
@@ -52,26 +54,7 @@ const About:FC = () => {
                                 </div>
                                 <br>
                                 </br>
-                                <div className="md:ml-12 md:mr-12 lg:ml-36 lg:mr-36 xl:ml-48 xl:mr-48 grid grid-flow-col">
-                                    <div className="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400">
-                                        <a href={pageContents.githubLink} rel="noreferrer" target="_blank">
-                                            <img 
-                                                src={pageContents.allImages.githubLogo} 
-                                                alt={pageContents.noImage}
-                                                className="focus:outline-none">
-                                            </img>
-                                        </a>
-                                    </div>
-                                    <div className="p-3 flex rounded-full justify-center hover:bg-gray-200 active:bg-gray-400">
-                                        <a href={pageContents.linkedInLink} rel="noreferrer" target="_blank">
-                                            <img 
-                                                src={pageContents.allImages.linkedInLogo} 
-                                                alt={pageContents.noImage}
-                                                className="focus:outline-none">
-                                            </img>
-                                        </a>
-                                    </div>
-                                </div>
+                                <GitHubLinkedInURL />
                             </div>
                         </div>
 

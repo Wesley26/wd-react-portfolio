@@ -29,7 +29,7 @@ in ReactJS.
 
 ## Purpose of Repo
 
-This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on October 20th, 2022.
+This repo is my ReactJS build of my portfolio website. On my portfolio website, the end user is able to read about me, browse my portfolio, download my resume, and send an email to my business inbox through a contact form. This readme will be updated as I update this front-end ReactJS design. This website started as a vanilla JavaScript ReactJS web app and was translated to TypeScript January 3rd, 2022. This readme was last updated on November 7th, 2022.
 
 
 ## Content of repo
@@ -117,6 +117,10 @@ Contains components for the To-do application.
 - `Portfolio.tsx`: This is the portfolio web page component. Each portfolio item is listed on this web page component.
 - `Resume.tsx`: This is the web page component which contains the image version of my downloadable pdf resume. The download link for my resume is located at the bottom of this web page component.
 - `TodoList.tsx`: This is a To-do list application component. The component requires the components located in the todoComponents folder.
+
+- **webPages children:**
+- `reusableIndex.ts`: index file for reusableComponents folder components.
+- `GitHubLinkedInURL.tsx`: Render the GitHub and LinkedIn url links component on several page components through the web app.
 
 6. Other files in src:
 - `App.tsx`: The root JS file in entire app, all web components reference to this JS file; however, it is not the main JS file.
