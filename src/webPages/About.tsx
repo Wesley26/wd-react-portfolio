@@ -29,6 +29,7 @@ const About:FC = () => {
                     transition={mainPageAnimations.transitionStyle}
                     className="text-left p-6"
                 >
+                    <GitHubLinkedInURL />
                     <div className="lg:flex lg:justify-evenly">
 
                         <div className="left-0 p-3">
@@ -54,7 +55,6 @@ const About:FC = () => {
                                 </div>
                                 <br>
                                 </br>
-                                <GitHubLinkedInURL />
                             </div>
                         </div>
 

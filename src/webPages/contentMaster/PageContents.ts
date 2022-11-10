@@ -131,7 +131,7 @@ const PageContents = () => {
                             JavaScript libraries such as TailwindCSS, PostCSS, and React-Spring to name a few. 
                             My previous work experience includes a PC refresh contract project and one-year technical 
                             customer support position located at Southern New Jersey in the online iGaming casino industry.`,
-        mainParagraphA_3: `For more details, visit the GitHub and LinkedIn profile links below.`,
+        mainParagraphA_3: `For more details, visit the GitHub and LinkedIn profile links above.`,
     }; //contains the about description block section
 
     /**

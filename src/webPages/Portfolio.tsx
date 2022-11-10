@@ -67,10 +67,6 @@ const Portfolio:FC = () => {
     return (
         <div className="font-body bg-body_lightGray m-6 overflow-auto shadow-xl">
 
-            <div className="pt-3">
-                <GitHubLinkedInURL />
-            </div>
-
             <> { visible ? (
                 <motion.div
                     initial={mainPageAnimations.initialStyle}
@@ -78,6 +74,7 @@ const Portfolio:FC = () => {
                     transition={mainPageAnimations.transitionStyle}
                     className="text-left p-6"
                 >
+                    <GitHubLinkedInURL />
                     <div className="flex justify-evenly">
 
                         <div className="left-0 p-3">
