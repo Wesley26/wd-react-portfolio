@@ -8,8 +8,10 @@ Object {
       <div
         class="font-body bg-body_lightGray m-6 overflow-auto shadow-xl"
       >
+         
         <div
-          class="pt-3"
+          class="text-left p-6"
+          style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
         >
           <div
             class="flex flex-row justify-between items-center ml-12 mr-12 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72"
@@ -45,12 +47,6 @@ Object {
               </a>
             </div>
           </div>
-        </div>
-         
-        <div
-          class="text-left p-6"
-          style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
-        >
           <div
             class="flex justify-evenly"
           >
@@ -319,8 +315,10 @@ Object {
     <div
       class="font-body bg-body_lightGray m-6 overflow-auto shadow-xl"
     >
+       
       <div
-        class="pt-3"
+        class="text-left p-6"
+        style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
       >
         <div
           class="flex flex-row justify-between items-center ml-12 mr-12 md:ml-36 md:mr-36 lg:ml-72 lg:mr-72"
@@ -356,12 +354,6 @@ Object {
             </a>
           </div>
         </div>
-      </div>
-       
-      <div
-        class="text-left p-6"
-        style="opacity: 0; transform: translateX(0px) translateY(-20px) translateZ(0);"
-      >
         <div
           class="flex justify-evenly"
         >
