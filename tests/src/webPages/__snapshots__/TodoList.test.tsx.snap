@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render ContactMe.tsx test component 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -22,7 +22,6 @@ Object {
             class="text-md p-3 text-center"
           >
             Your current locally stored to-do list items: 
-            
           </h3>
           <div>
             <form>
@@ -35,7 +34,7 @@ Object {
                   <input
                     aria-invalid="false"
                     class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                    id="mui-1"
+                    id=":r0:"
                     placeholder="Add to-do item"
                     type="text"
                     value=""
@@ -83,7 +82,6 @@ Object {
           class="text-md p-3 text-center"
         >
           Your current locally stored to-do list items: 
-          
         </h3>
         <div>
           <form>
@@ -96,7 +94,7 @@ Object {
                 <input
                   aria-invalid="false"
                   class="MuiInputBase-input MuiOutlinedInput-input css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input"
-                  id="mui-1"
+                  id=":r0:"
                   placeholder="Add to-do item"
                   type="text"
                   value=""

@@ -162,20 +162,11 @@ const PageContents = () => {
      */
 
     interface APICONTENT {
-        serviceID: string,
-        templateID: string,
-        userID: string,
-        accessToken: string,
         recaptchaClientKey: string,
     };
 
     const apiContent: APICONTENT = {
 
-        ///////////EmailJS/////////////////////////////////////
-        serviceID: secrets.SERVICE_ID,
-        templateID: secrets.TEMPLATE_ID,
-        userID: secrets.USER_ID,
-        accessToken: secrets.ACCESS_TOKEN,
         ////////reCaptcha_v2///////////////////////////////////
         recaptchaClientKey: secrets.RECAPTCHA_CLIENT_SIDE_KEY,
 
@@ -184,61 +175,15 @@ const PageContents = () => {
     const contactMeHeaderText = "Contact Me" as string; //Contact Me page header text
 
     /**
-     * contactMeInstructions A-H are strings that contain
-     * each part of the full instructions for the user
-     * to complete the contact me page form
+     * contactMeInstructions have been simplified
+     * down to Email and phone number information.
      */
-    const contactMeInstructionsA = `Thank you for your interest in reaching out to me! Complete
-                                    this form to send an email and I will reply.
-                                    For my reply to be sent back to you, be sure to include all the
-                                    following details on this form:` as string;
-    const contactMeInstructionsB = " - This is the subject line of the email I receive." as string;
-    const contactMeInstructionsC = " - You enter your full name on this line. You may use your first, last, or full name." as string;
-    const contactMeInstructionsD = " - You enter the email you prefer me to reply back to on this line (example: your_email_here@mail.com)." as string;
-    const contactMeInstructionsE = " - You enter in your message to me in this text box." as string;
-    const contactMeInstructionsF = "Be sure to fill out " as string;
-    const contactMeInstructionsG = "ALL" as string;
-    const contactMeInstructionsH = ` provided fields below. If the ReCaptcha test
-                                    does not appear, refresh this page. You need to verify that you are human
-                                    to use this email form. A send button will only appear on the bottom of 
-                                    this form if you complete verification.` as string;
+    const contactMeInstructionsA = `To view my contact information, complete the Google ReCaptcha:` as string;
+    const contactMeInstructionsB = `I can be contacted by:` as string;
+    const contactMeEmail = `Email: wesdzitzer45@gmail.com` as string;
+    const contactMePhone = `Phone: +1 (609) 742-1426` as string;
+    const contactMeInstructionsC = `or send me a direct message on my LinkedIn page.` as string;
 
-    /**
-     * commonFormText - contains the most common used word 
-     * groups in both the instructions of the form and
-     * the form itself
-     */
-    interface COMMONCONTACTFORMTEXT {
-        subjectText: string,
-        nameText: string,
-        emailText: string,
-        messageText: string,
-    };
-
-    const commonContactFormText: COMMONCONTACTFORMTEXT = {
-            subjectText: "Subject",
-            nameText: "Name",
-            emailText: "Email",
-            messageText: "Message"
-    };
-
-    /**
-     *  placeholderText - contains the placeholder text
-     *  for each space in the form.
-     */
-    interface PLACEHOLDERTEXT {
-        placeSubject: string,
-        placeName: string,
-        placeEmail: string,
-        placeMessage: string,
-    };
-
-    const placeholderText: PLACEHOLDERTEXT = {
-        placeSubject: "Add A Subject",
-        placeName: "Add A Name",
-        placeEmail: "email@mail.com",
-        placeMessage: "Hello World!",
-    };
 
     /**
      *  //////////////////////////////////////////////// TODO LIST PAGE CONTENT ///////////////////////////////////////////////////////////////////////
@@ -298,14 +243,9 @@ const PageContents = () => {
         apiContent,
         contactMeInstructionsA,
         contactMeInstructionsB,
+        contactMeEmail,
+        contactMePhone,
         contactMeInstructionsC,
-        contactMeInstructionsD,
-        contactMeInstructionsE,
-        contactMeInstructionsF,
-        contactMeInstructionsG,
-        contactMeInstructionsH,
-        commonContactFormText,
-        placeholderText,
         /////////////////////////
         toDoTitle,
         placeholderToDoItemText,

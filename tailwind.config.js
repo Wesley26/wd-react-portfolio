@@ -5,6 +5,7 @@
  * 
  * All other configurations must be referenced in TailwindCSS's documentation.
  **/
+/** @type {import('tailwindcss').Config} */
 
 module.exports = {
   content: [ 

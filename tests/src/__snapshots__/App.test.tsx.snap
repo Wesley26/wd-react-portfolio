@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`render App.tsx test component 1`] = `
-Object {
+{
   "asFragment": [Function],
   "baseElement": <body>
     <div>
@@ -229,11 +229,11 @@ Object {
             class="font-body bg-footer_blue border-solid border-gray-300 border-b-4 border-l-4 border-r-4 text-center text-s p-3 fixed bottom-0 w-full shadow-lg"
           >
             © 
-            Copyright 2020 -  2022
+            Copyright 2020 -  2023
             <br />
-            The current date of server is:  11/9/2022
+            The current date of server is:  2/25/2023
             <br />
-            The current time of server is: 11:32:23 PM
+            The current time of server is: 1:46:46 AM
           </footer>
         </div>
       </div>
@@ -464,11 +464,11 @@ Object {
           class="font-body bg-footer_blue border-solid border-gray-300 border-b-4 border-l-4 border-r-4 text-center text-s p-3 fixed bottom-0 w-full shadow-lg"
         >
           © 
-          Copyright 2020 -  2022
+          Copyright 2020 -  2023
           <br />
-          The current date of server is:  11/9/2022
+          The current date of server is:  2/25/2023
           <br />
-          The current time of server is: 11:32:23 PM
+          The current time of server is: 1:46:46 AM
         </footer>
       </div>
     </div>
