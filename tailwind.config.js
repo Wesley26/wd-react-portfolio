@@ -1,3 +1,5 @@
+/** @type {import('tailwindcss').Config} */
+
 /**
  * Note: All portfolio background images are rendered through "extend" backgroundImage
  *        located on line 16.
@@ -5,13 +7,9 @@
  * 
  * All other configurations must be referenced in TailwindCSS's documentation.
  **/
-/** @type {import('tailwindcss').Config} */
 
-module.exports = {
-  content: [ 
-    './src/**/**/**/*.{js,jsx,ts,tsx}', 
-    './public/index.html' 
-  ],
+export default {
+  content: [ './src/**/**/**/**/**/*.{js,jsx,ts,tsx}' ],
   theme: {
     extend: {
       backgroundImage: {

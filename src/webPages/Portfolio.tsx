@@ -62,7 +62,7 @@ const Portfolio:FC = () => {
 
     }, []);
 
-    const portfolioNavRef = useRef<any>(null);
+    const portfolioNavRef = useRef<HTMLDivElement>(null);
 
     return (
         <div className="font-body bg-body_lightGray m-6 overflow-auto shadow-xl">
