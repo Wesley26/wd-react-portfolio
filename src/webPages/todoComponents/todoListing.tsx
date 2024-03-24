@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import { TODOLISTING } from '../../globalTypes/interfaces/otherInterfaces/TodoListing';
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
 import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction';
@@ -18,11 +19,6 @@ import DeleteForever from '@mui/icons-material/DeleteForever';
  * NOTE: Import your material icons seperately, not all at once.
  * It will greatly slow down build performance otherwise.
  */
-
-interface TODOLISTING {
-    todos: string[],
-    deleteTodo: (todoIndex: number) => void,
-}
 
 const TodoListing:FC<TODOLISTING> = (props:TODOLISTING) => (
 

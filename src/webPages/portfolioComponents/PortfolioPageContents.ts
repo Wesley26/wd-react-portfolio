@@ -1,4 +1,14 @@
 /**
+ * //////////////////////////////////////////////// PORTFOLIO PAGE TYPESCRIPT TYPES ////////////////////////////////////////////////////
+ */
+
+import { PORTFOLIOPAGEIMAGES } from "../../globalTypes/interfaces/portfolioPageContent/PortfolioPageImages";
+import { PORTFOLIO_REPO_FOR_THIS_SITE } from "../../globalTypes/interfaces/portfolioPageContent/PortfolioRepoForThisSite";
+import { PORTFOLIO_TEXT_MOBILE_1 } from "../../globalTypes/interfaces/portfolioPageContent/PortfolioTextMobile1";
+import { PORTFOLIO_TEXT_WEB_1 } from "../../globalTypes/interfaces/portfolioPageContent/PortfolioTextWeb1";
+import { PORTFOLIO_TEXT_PERSONAL_1 } from "../../globalTypes/interfaces/portfolioPageContent/PortfolioTextPersonal1";
+
+/**
  * Content on portfolio webpage is imported from this custom hook file.
  * 
  * Portfolio Page Images - All image content that can appear on any web page.
@@ -14,12 +24,6 @@ import reactJSLogo from "../../images/portfolio_Icon_Images/ReactJS.png"; //Reac
 import tSLogo from "../../images/portfolio_Icon_Images/Typescript.png"; //TS Portfolio Item Icon
 
 const PortfolioPageContents = () => {
-
-    interface PORTFOLIOPAGEIMAGES {
-        jSLogo: string,
-        reactJSLogo: string,
-        tSLogo: string,
-    };
 
     const portfolioPageImages: PORTFOLIOPAGEIMAGES = {
 
@@ -42,14 +46,6 @@ const PortfolioPageContents = () => {
      *  for the end user as to how navigating the portfolio page functions.
      */
 
-    interface PORTFOLIO_REPO_FOR_THIS_SITE {
-        pRFTS1_1: string,
-        pRFTS1_2: string,
-        pRFTS1_3: string,
-        pRFTS1_4: string,
-        pRFTS1_5: string,
-    };
-
     const portfolioRepoForThisSite: PORTFOLIO_REPO_FOR_THIS_SITE = {
         pRFTS1_1: `To view the entire design for this website, visit`,
         pRFTS1_2: `this following repo.`,
@@ -65,21 +61,6 @@ const PortfolioPageContents = () => {
     /**
      *  Individual portfolio items are declared and listed after this point.
      */
-
-    interface PORTFOLIO_TEXT_MOBILE_1 {
-        titleP3: string,
-        titleP4: string,
-        subtitleP3_1: string,
-        subtitleP3_2: string,
-        realWorldProjectText1A1: string,
-        realWorldProjectText1A2: string,
-        realWorldProjectText2: string,
-        realWorldProjectText3: string,
-        realWorldProjectText4: string,
-        realWorldProjectText5: string,
-        realWorldProjectText6: string,
-        realWorldProjectText7: string,
-    };
 
     const portfolioTextMobile1: PORTFOLIO_TEXT_MOBILE_1 = {
         titleP3: "React Native Expo Framework Mobile App",
@@ -106,15 +87,6 @@ const PortfolioPageContents = () => {
 
     //Logo used is reactJSLogo
     const m2Link = `https://github.com/Wesley26/ChoycesMobile` as string; //Link corresponds with portfolioTextMobile1.subtitleP3_2
-    
-    interface PORTFOLIO_TEXT_WEB_1 {
-        titleP1: string,
-        titleP2: string,
-        titleP3: string,
-        subtitleP1_1: string,
-        subtitleP1_2: string,
-        subtitleP1_3: string,
-    };
 
     const portfolioTextWeb1: PORTFOLIO_TEXT_WEB_1 = {
         titleP1: "Vanilla HTML CSS3 JavaScript Website",
@@ -133,11 +105,6 @@ const PortfolioPageContents = () => {
 
     //Logo used is reactJSLogo
     const w3Link = `https://github.com/Wesley26/wd_vize` as string; ////Link corresponds with portfolioTextWeb1.subtitleP1_3
-
-    interface PORTFOLIO_TEXT_PERSONAL_1 {
-        titleP1: string,
-        subtitleP2_1: string,
-    };
 
     const portfolioTextPersonal1: PORTFOLIO_TEXT_PERSONAL_1 = {
         titleP1: "Personal TypeScript Project",

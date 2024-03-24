@@ -67,7 +67,20 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 - `NavigationMenu.tsx`: Web component that takes each individual link and displays to the main Navigation web component.
 - `NavigationMenuD.tsx`: Desktop component version of NavigationMenu.
 
-4. hooks folder:
+4. globalTypes folder:
+
+- In this directory, all TypeScript types are centralized here.
+
+- **enums:**
+- Contains all enums for the entire web app.
+
+- **interfaces**
+- Contains all interfaces for the entire web app. Each sub directory contains animation, nav, page content, portfolio page content, and other interfaces.
+
+- **types**
+- Contains all types for the entire web app.
+
+5. hooks folder:
 
 - `GetWindowDimensions.ts`: Custom hook for dynamic screen width and height measurements for components that require this info.
 - `ImportantNavContext.ts`: Context hook for navigation important styles across the app with global scope.
@@ -75,7 +88,7 @@ This repo is my ReactJS build of my portfolio website. On my portfolio website, 
 - `useCurrentTime.ts`:  Custom React Hook which displays the current time. Returns the date ticking every second.
 - `usePathname.ts`: Custom React Hook sets the string name of important navigation pathname in App.tsx.
 
-5. webPages folder:
+6. webPages folder:
 Note: each ts/tsx file is their own displayed web page within the app.
 
 - **calculatorComponents:**
@@ -122,7 +135,7 @@ Contains components for the To-do application.
 - `reusableIndex.ts`: index file for reusableComponents folder components.
 - `GitHubLinkedInURL.tsx`: Render the GitHub and LinkedIn url links component on several page components through the web app.
 
-6. Other files in src:
+7. Other files in src:
 - `App.tsx`: The root JS file in entire app, all web components reference to this JS file; however, it is not the main JS file.
 - `vite-env.d.ts`: Declare any file extensions TypeScript complains about here.
 - `index.css`: Main CSS file, tailwind CSS is referenced here.

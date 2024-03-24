@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { TODOFORM } from '../../globalTypes/interfaces/otherInterfaces/TodoForm';
 import PageContents from '../contentMaster/PageContents';
 
 import TextField from '@mui/material/TextField';
@@ -6,10 +7,6 @@ import TextField from '@mui/material/TextField';
 /**
  *  Component to add todos to the list.
  */
-
-interface TODOFORM {
-    saveTodo: (value: string) => void,
-}
 
 const TodoForm:FC<TODOFORM> = (props:TODOFORM) => {
 

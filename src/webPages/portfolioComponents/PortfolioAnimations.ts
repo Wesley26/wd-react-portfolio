@@ -1,14 +1,10 @@
+import { PORTFOLIO_ANIMATIONS } from "../../globalTypes/interfaces/animationInterfaces/PortfolioAnimations";
+
 /**
  * @returns PortfolioAnimations component for Framer Motion custom hook
  */
 
 const PortfolioAnimations = () => {
-
-    interface PORTFOLIO_ANIMATIONS {
-        initialStyle: object,
-        animateStyle: object,
-        transitionStyle: object,
-    };
 
     const portfolioAnimations: PORTFOLIO_ANIMATIONS = {
 

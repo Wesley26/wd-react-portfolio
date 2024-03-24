@@ -1,4 +1,5 @@
 import { FC, useContext } from 'react';
+import { NAV_MENU_MOBILE } from '../globalTypes/interfaces/navInterfaces/NavMenuMobile';
 import { Link } from 'react-router-dom';
 import NavContents from './navMaster/NavContents';
 import { ImportantNavContext } from '../hooks/ImportantNavContext';
@@ -8,10 +9,6 @@ import { ImportantNavContext } from '../hooks/ImportantNavContext';
  * @param props.closeMenu is passed from Web Component Navigation in Navigation.js (line 44).
  * Controls closing nav menu arrow function.
  */
-
-interface NAV_MENU_MOBILE {
-    closeMenu: () => void;
-};
 
 const NavigationMenu:FC<NAV_MENU_MOBILE> = (props:NAV_MENU_MOBILE) => {
 

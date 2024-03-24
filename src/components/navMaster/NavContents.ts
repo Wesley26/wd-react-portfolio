@@ -1,3 +1,4 @@
+import { NAV_CONTENT_DATA } from "../../globalTypes/interfaces/navInterfaces/NavContentData";
 import websiteMasterLogo_Alt from "../../images/logoImage/WD_Logo_Alt.png";
 
 /**
@@ -9,21 +10,6 @@ import websiteMasterLogo_Alt from "../../images/logoImage/WD_Logo_Alt.png";
  */
 
 const NavContents = () => {
-
-    interface NAV_CONTENT_DATA {
-        masterLogoAlt: string,
-        navTitleField1: string,
-        navTitleField2: string,
-        navTitleField3: string,
-        navAppSplitterText: string,
-        navItemOne: string,
-        navItemTwo: string,
-        navItemThree: string,
-        navItemFour: string,
-        navItemFive: string,
-        navItemSix: string,
-        navItemSeven: string,
-    };
 
     const navContentData: NAV_CONTENT_DATA = {
         /////////////////////////// UNIVERSAL TITLE IMAGE CONTENT /////////////////////////

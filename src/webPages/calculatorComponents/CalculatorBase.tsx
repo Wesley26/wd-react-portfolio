@@ -1,15 +1,5 @@
 import { FC, ReactElement, useState } from 'react';
-
-interface CALCULATOR_BASE {
-    addSign: string,
-    deleteBTN: string,
-    divideSign: string,
-    multiplySign: string,
-    subtractSign: string,
-    zeroSign: number,
-    periodSign: string,
-    equalsSign: string,
-};
+import { CALCULATOR_BASE } from '../../globalTypes/interfaces/otherInterfaces/CalculatorBase';
 
 /**
  * @param props:CALCULATOR_BASE
@@ -31,7 +21,7 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
 
         if ((ops.includes(value) && calc === '') || (ops.includes(value) && ops.includes(calc.slice(-1)))) {
             return;
-        };
+        }
 
         setCalc(calc + value);
 
@@ -46,9 +36,9 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
 
                 throw new Error(`Unexpected error occurred with calculator app while updating calculation.`);
 
-            };
+            }
 
-        };
+        }
 
     };
 
@@ -66,7 +56,7 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
                 >{i}</div>
             );
 
-        };
+        }
 
         return digitBTNs;
 
@@ -83,7 +73,7 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
 
             throw new Error(`Unexpected error occurred with calculator app during calculation.`);
             
-        };
+        }
 
         if (result.includes('.')) {
 
@@ -93,7 +83,7 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
 
             setHasDecimal(false);
 
-        };
+        }
 
     };
 
@@ -103,7 +93,7 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
 
             return;
 
-        };
+        }
 
         const value = calc.slice(0, -999);
 
@@ -180,7 +170,7 @@ const CalculatorBase:FC<CALCULATOR_BASE> = (props:CALCULATOR_BASE) => {
                             if (hasDecimal === false) { 
                                 updateCalc('.'); 
                                 setHasDecimal(true); 
-                            };
+                            }
                         }}
                         className="flex-1And33percent p-4 border-none text-20e max-w-33percent bg-cal_dark hover:bg-cal_hover active:bg-cal_active"
                     >

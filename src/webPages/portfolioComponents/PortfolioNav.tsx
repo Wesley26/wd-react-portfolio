@@ -1,13 +1,10 @@
 import { FC, useContext, useEffect, useMemo, useState } from 'react';
+import { PORTFOLIO_NAV } from '../../globalTypes/interfaces/navInterfaces/PortfolioNav';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretLeft, faCaretRight } from '@fortawesome/free-solid-svg-icons';
 import { IconProp } from '@fortawesome/fontawesome-svg-core';
 
 import { PortfolioDisplayContext } from '../../hooks/PortfolioDisplayContext';
-
-interface PORTFOLIO_NAV {
-    scrollRef: any,
-};
 
 const PortfolioNav:FC<PORTFOLIO_NAV> = (props:PORTFOLIO_NAV) => {
 

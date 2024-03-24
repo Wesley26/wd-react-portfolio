@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { NAV_ANIMATIONS } from '../globalTypes/interfaces/animationInterfaces/NavAnimations';
 import NavContents from './navMaster/NavContents';
 import NavigationMenu from './NavigationMenu';
 import NavigationMenuD from './NavigationMenuD';
@@ -13,12 +14,6 @@ const Navigation:FC = () => {
     const [showMenu, setShowMenu] = useState<boolean>(false);
     const navContent = NavContents();
     const getWindowsDimensions = GetWindowDimensions();
-
-    interface NAV_ANIMATIONS {
-        initialStyle: object,
-        animateStyle: object,
-        transitionStyle: object,
-    };
 
     const navAnimations: NAV_ANIMATIONS = {
 

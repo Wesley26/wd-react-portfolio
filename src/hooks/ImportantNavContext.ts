@@ -1,4 +1,5 @@
 import { createContext } from 'react';
+import { IMPORTANT_NAV } from '../globalTypes/types/ImportantNav';
 
 /**
  * @ImportantNavContext - create Context for navigation
@@ -8,11 +9,6 @@ import { createContext } from 'react';
  * important nav style, default is 'None'.
  * @param setImportantNavStyle - sets importantNavStyle
  */
-
-export type IMPORTANT_NAV = {
-    importantNavStyle: string,
-    setImportantNavStyle: (sINS: string) => void,
-};
 
 export let ImportantNavContext = createContext<IMPORTANT_NAV>({
 

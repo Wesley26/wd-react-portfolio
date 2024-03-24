@@ -1,4 +1,15 @@
 /**
+ * //////////////////////////////////////////////// TYPESCRIPT TYPE IMPORTS ////////////////////////////////////////////////////////
+ */
+
+import { ALLIMAGES } from "../../globalTypes/interfaces/pageContentInterfaces/AllImages";
+import { HOMETEXT } from "../../globalTypes/interfaces/pageContentInterfaces/HomeText";
+import { ABOUTTEXT } from "../../globalTypes/interfaces/pageContentInterfaces/AboutText";
+import { RESUMETEXT } from "../../globalTypes/interfaces/pageContentInterfaces/ResumeText";
+import { APICONTENT } from "../../globalTypes/interfaces/pageContentInterfaces/APIContext";
+import { CALCULATORCONTENT } from "../../globalTypes/interfaces/pageContentInterfaces/CalculatorContent";
+
+/**
  * //////////////////////////////////////////////// UNIVERSAL PAGE IMAGE IMPORTS ///////////////////////////////////////////////////
  */
 
@@ -50,21 +61,6 @@ const PageContents = () => {
      * //////////////////////////////////////////////// UNIVERSAL PAGE CONTENT //////////////////////////////////////////////////////////
      */
     const noImage = "Image has failed to load." as string; //Image failed to load message.
-    
-    interface ALLIMAGES {
-        masterLogo: string,
-        phillyPort: string,
-        phillyLand: string,
-        aboutMePhoto: string,
-        githubLogo: string,
-        linkedInLogo: string,
-        resumeImg: string,
-        resumePdf: string,
-        letterAImg: string,
-        letterAPdf: string,
-        letterBImg: string,
-        letterBPdf: string,
-    };
 
     const allImages: ALLIMAGES = {
 
@@ -87,12 +83,6 @@ const PageContents = () => {
      * //////////////////////////////////////////////// HOME PAGE CONTENT ///////////////////////////////////////////////////////////////////
      */
 
-    interface HOMETEXT {
-        subHeaderH: string,
-        mainParagraphH: string,
-        captionH: string,
-    };
-
     const homeText: HOMETEXT = {
             subHeaderH: `Web and Mobile Design: Perfectly Balanced To Meet Your Future Business Image`,
             mainParagraphH: `Are you searching for a new, high-tech, scalable web and/or mobile design to welcome your customers?
@@ -114,12 +104,6 @@ const PageContents = () => {
 
     const aboutTextTitle = `Gain A Deeper Perspective As To Who I Am As A Person: Meet Wesley Dzitzer` as string; //about page title
 
-    interface ABOUTTEXT {
-        mainParagraphA_1: string,
-        mainParagraphA_2: string,
-        mainParagraphA_3: string,
-    };
-
     const aboutText: ABOUTTEXT = {
         mainParagraphA_1: `I am a bachelor of science Management Information Systems graduate from Rowan University
                             since May of 2017. At Rowan University, I studied object oriented programming, web design, and
@@ -138,14 +122,6 @@ const PageContents = () => {
      *  //////////////////////////////////////////////// RESUME PAGE CONTENT ///////////////////////////////////////////////////////////////////////
      */
 
-    interface RESUMETEXT {
-        infoR: string,
-        resumeTitle: string,
-        letterOfRecommendationTitleA: string,
-        letterOfRecommendationTitleB: string,
-        downloadR: string,
-    };
-
     const resumeText: RESUMETEXT = {
             infoR: `To view the full PDF file of my resume and supporting documents, select the download link below.`,
             resumeTitle: `WD_Resume`,
@@ -160,10 +136,6 @@ const PageContents = () => {
     /**
      *  //////////////////////////////////////////////// CONTACT ME PAGE CONTENT ////////////////////////////////////////////////////////////////////
      */
-
-    interface APICONTENT {
-        recaptchaClientKey: string,
-    };
 
     const apiContent: APICONTENT = {
 
@@ -196,19 +168,6 @@ const PageContents = () => {
     /**
      *  //////////////////////////////////////////////// CALCULATOR PAGE CONTENT //////////////////////////////////////////////////////////////////////
      */
-
-    interface CALCULATORCONTENT {
-        addSign: string,
-        deleteBTN: string,
-        divideSign: string,
-        equalsSign: string,
-        multiplySign: string,
-        periodSign: string,
-        subtractSign: string,
-        zeroSign: number,
-        openCal: string,
-        closeCal: string,
-    };
 
     const calculatorContent: CALCULATORCONTENT = {
 

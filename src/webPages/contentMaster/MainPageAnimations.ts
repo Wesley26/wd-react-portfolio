@@ -1,14 +1,10 @@
+import { MAIN_PAGE_ANIMATIONS } from "../../globalTypes/interfaces/animationInterfaces/MainPageAnimations";
+
 /**
  * @returns MainPageAnimations component for Framer Motion custom hook
  */
 
 const MainPageAnimations = () => {
-
-    interface MAIN_PAGE_ANIMATIONS {
-        initialStyle: object,
-        animateStyle: object,
-        transitionStyle: object,
-    };
 
     const mainPageAnimations: MAIN_PAGE_ANIMATIONS = {
 
